@@ -9,10 +9,14 @@
   color: black;
 }
 
-.contact-form form {
-  width: 40rem;
-}
-
 .form-floating textarea[placeholder="Message"] {
   height: 10em;
+}
+
+.material-symbols-rounded:hover {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
