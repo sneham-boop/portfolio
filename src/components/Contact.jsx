@@ -9,18 +9,19 @@ import "./style/Contact.css";
 function Contact() {
   return (
     <section className="contact-form">
+      <h3>Contact Me</h3>
       <Form>
         <FloatingLabel controlId="floatingInput" label="Name" className="mb-3">
           <Form.Control type="text" placeholder="Name" />
         </FloatingLabel>
         <Row>
-          <Col>
+          <Col xs={7}>
             <FloatingLabel
               controlId="floatingInput"
               label="Email"
               className="mb-3"
             >
-              <Form.Control type="email" placeholder="Email" />
+              <Form.Control type="email" placeholder="Email"/>
             </FloatingLabel>
           </Col>
           <Col>
