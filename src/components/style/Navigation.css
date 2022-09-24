@@ -2,3 +2,11 @@
   padding-left: 1em;
   padding-right: 1em; 
 }
+
+.navigation button {
+  border: none;
+}
+
+.navigation button:focus {
+  box-shadow: none;
+}
