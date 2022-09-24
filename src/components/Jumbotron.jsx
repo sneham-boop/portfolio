@@ -1,7 +1,11 @@
 import React from "react";
+import './style/Jumbotron.css';
 
 function Jumbotron() {
-  return <div>Jumbotron</div>;
+  return (
+  <div className="jumbotron">
+
+  </div>);
 }
 
 export default Jumbotron;

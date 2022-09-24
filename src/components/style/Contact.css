@@ -1,0 +1,18 @@
+.contact-form {
+  background-color: black;
+  color: white;
+  padding: 2em;
+  /* width: 60rem; */
+}
+
+.contact-form label{
+  color: black;
+}
+
+.contact-form form {
+  width: 40rem;
+}
+
+.form-floating textarea[placeholder="Message"] {
+  height: 10em;
+}
