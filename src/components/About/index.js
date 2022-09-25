@@ -1,13 +1,13 @@
-import React from "react";
 import Icon from "./Icon";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import AboutText from "./AboutText";
+import "./About.css";
 
 function About() {
   return (
-    <Container fluid>
+    <Container id="about" fluid>
       <Row>
         <Col>
           <AboutText />
