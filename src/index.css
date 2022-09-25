@@ -7,3 +7,12 @@
   font-family: "Poppins", sans-serif;
   /* font-family: "Secular One", sans-serif; */
 }
+
+.material-symbols-rounded {
+  font-size: 2rem;
+}
+
+.material-symbols-rounded:hover {
+  font-variation-settings:
+  'FILL' 1;
+}

@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Contact.css";
 
 function ContactForm() {
-  return (
+  return ( 
     <Form>
       <FloatingLabel controlId="floatingInput" label="Name" className="mb-3">
         <Form.Control type="text" placeholder="Name" />
@@ -38,7 +38,7 @@ function ContactForm() {
         <Form.Control as="textarea" type="text" placeholder="Message" />
       </FloatingLabel>
 
-      <Button variant="primary" type="submit">
+      <Button id="contact-submit" variant="primary" type="submit">
         Submit
       </Button>
     </Form>
