@@ -1,4 +1,4 @@
-.contact {
+#contact {
   background-color: black;
   color: white;
   padding: 2em;
@@ -10,7 +10,7 @@
   margin-bottom: auto;
 }
 
-.contact h3 {
+#contact h3 {
   font-family: "Secular One", sans-serif;
   font-size: 80px;
 }
@@ -20,17 +20,17 @@
   font-weight: 200;
 }
 
-.contact label{
+#contact label{
   color: white;
 }
 
-.contact input, 
+#contact input, 
 .form-floating textarea[placeholder="Message"] {
   background-color: rgb(32, 32, 32);
   border: none;
 }
 
-.contact input:focus {
+#contact input:focus {
   background-color: rgb(32, 32, 32);
 }
 

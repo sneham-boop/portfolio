@@ -8,7 +8,7 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <Container className="contact" fluid>
+    <Container id="contact" fluid>
       <Row className="contact-row">
         <Col xs={7}>
           <ContactInfo />

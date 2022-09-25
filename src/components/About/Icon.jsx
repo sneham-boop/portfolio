@@ -1,7 +1,7 @@
 function Icon({ icon }) {
   return (
     <>
-      <i class={`fa-brands fa-${icon} fa-4x`}></i>
+      <i className={`fa-brands fa-${icon} fa-4x icon`}></i>
     </>
   );
 }
