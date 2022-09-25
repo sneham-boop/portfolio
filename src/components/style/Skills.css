@@ -1,0 +1,10 @@
+#skills {
+  height: 100vh;
+  background-color: black;
+}
+
+#skills h3 {
+  font-family: "Secular One", sans-serif;
+  font-size: 80px;
+  color: white;
+}
