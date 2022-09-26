@@ -30,6 +30,11 @@
   border: none;
 }
 
+#contact input:hover, 
+.form-floating textarea[placeholder="Message"]:hover {
+  background-color: rgb(45, 45, 45);
+}
+
 #contact input:focus {
   background-color: rgb(32, 32, 32);
 }
