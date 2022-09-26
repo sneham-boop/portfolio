@@ -6,7 +6,7 @@ import './style/Navigation.css';
 
 function CollapsibleExample() {
   return (
-    <Navbar className="navigation" collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar className="navigation" collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="#home">Sneha Mahajan</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
