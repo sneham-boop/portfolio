@@ -1,8 +1,5 @@
 import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-// import Image from 'react-bootstrap/Image';
 import AboutText from "./AboutText";
 import "./About.css";
 import photo from "../images/headshot.JPG";
