@@ -1,6 +1,6 @@
 .navigation {
   padding-left: 1em;
-  padding-right: 1em; 
+  padding-right: 1em;
   background-color: black;
 }
 
@@ -11,3 +11,5 @@
 .navigation button:focus {
   box-shadow: none;
 }
+
+/*# sourceMappingURL=Navigation.css.map */

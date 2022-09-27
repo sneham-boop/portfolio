@@ -48,7 +48,6 @@
   transform: scale(1);
 }
 
-
 @keyframes example {
   0% {
     top: 0px;
@@ -60,3 +59,5 @@
     top: 0px;
   }
 }
+
+/*# sourceMappingURL=Skills.css.map */

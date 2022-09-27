@@ -20,18 +20,18 @@
   font-weight: 200;
 }
 
-#contact label{
+#contact label {
   color: white;
 }
 
-#contact input, 
-.form-floating textarea[placeholder="Message"] {
+#contact input,
+.form-floating textarea[placeholder=Message] {
   background-color: rgb(32, 32, 32);
   border: none;
 }
 
-#contact input:hover, 
-.form-floating textarea[placeholder="Message"]:hover {
+#contact input:hover,
+.form-floating textarea[placeholder=Message]:hover {
   background-color: rgb(45, 45, 45);
 }
 
@@ -50,6 +50,8 @@
   border: none;
 }
 
-.form-floating textarea[placeholder="Message"] {
+.form-floating textarea[placeholder=Message] {
   height: 10em;
 }
+
+/*# sourceMappingURL=Contact.css.map */
