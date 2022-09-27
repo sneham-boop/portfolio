@@ -5,6 +5,9 @@ import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";
 import Container from "react-bootstrap/Container";
 
+import "./Contact.scss";
+
+
 function Contact() {
   return (
     <Container id="contact" fluid>

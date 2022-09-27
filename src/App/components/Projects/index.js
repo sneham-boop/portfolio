@@ -2,6 +2,9 @@ import React from "react";
 import Project from "./Project";
 import Container from "react-bootstrap/Container";
 
+import "./Projects.scss";
+
+
 function Projects() {
   const projects = () => {
     return (

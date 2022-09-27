@@ -1,6 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Icons from "./Icons";
 
+import "./Skills.scss";
+
+
 function Skills() {
   return (
     <Container id="skills" fluid>
