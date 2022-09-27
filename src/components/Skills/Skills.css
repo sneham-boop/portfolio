@@ -39,13 +39,15 @@
   /* animation-name: example;
   animation-duration: 1s;
   animation-timing-function: ease; */
-  transition: 0.3s;
-  transform: scale(1.1);
+  transition: 0.4s;
+  transform: scale(1.2);
 }
 
-/* .skill:not(:hover) {
-  /* animation-direction: reverse; 
-*/
+.skill:not(:hover) {
+  transition: 0.4s;
+  transform: scale(1);
+}
+
 
 @keyframes example {
   0% {
