@@ -1,12 +1,14 @@
 #skills {
   height: 100vh;
   background-color: black;
+  padding: 2em;
 }
 
 #skills h3 {
   font-family: "Secular One", sans-serif;
   font-size: 80px;
   color: white;
+  margin-bottom: 1em;
 }
 
 #skills ul {
@@ -23,9 +25,36 @@
 }
 
 .skill {
+  justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
   width: fit-content;
+  position: relative;
+  /* animation-name: example; */
+}
+
+.skill:hover {
+  /* animation-name: example;
+  animation-duration: 1s;
+  animation-timing-function: ease; */
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+/* .skill:not(:hover) {
+  /* animation-direction: reverse; 
+*/
+
+@keyframes example {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
 }
