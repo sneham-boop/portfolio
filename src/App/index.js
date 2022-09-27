@@ -1,5 +1,12 @@
 import React from "react";
-import "./App.css";
+import "./sass/App.scss";
+import "./sass/About.scss";
+import "./sass/Contact.scss";
+import "./sass/Jumbotron.scss";
+import "./sass/Navigation.scss";
+import "./sass/Projects.scss";
+import "./sass/Resume.scss";
+import "./sass/Skills.scss";
 import Navigation from "./components/Navigation";
 import Jumbotron from "./components/Jumbotron";
 import Projects from "./components/Projects";

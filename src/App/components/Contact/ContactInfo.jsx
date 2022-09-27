@@ -1,6 +1,5 @@
 import InfoRow from "./InfoRow";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Contact.css";
 
 function ContactInfo() {
   return (

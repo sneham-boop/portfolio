@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Contact.css";
+
 
 function ContactForm() {
   return ( 

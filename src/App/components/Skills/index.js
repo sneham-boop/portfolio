@@ -1,5 +1,4 @@
 import Container from "react-bootstrap/Container";
-import "./Skills.css";
 import Icons from "./Icons";
 
 function Skills() {

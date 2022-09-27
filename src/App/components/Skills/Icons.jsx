@@ -15,7 +15,6 @@ import {
   Storybook,
   Redux,
 } from "@icons-pack/react-simple-icons";
-import "./Skills.css";
 import Badge from "react-bootstrap/Badge";
 
 const IconsInfo = [

@@ -1,6 +1,5 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import "./Contact.css";
 
 function InfoRow({ icon, info }) {
   return (

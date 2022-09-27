@@ -4,7 +4,6 @@ import Row from "react-bootstrap/Row";
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";
 import Container from "react-bootstrap/Container";
-import "./Contact.css";
 
 function Contact() {
   return (

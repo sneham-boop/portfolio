@@ -1,0 +1,33 @@
+#about {
+  height: 100vh;
+  background-color: rgb(32, 32, 32);
+  padding: 2em;
+  padding-top: 25vh;
+}
+
+#about .card {
+  border: none;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+#about .card-text {
+  font-size: 18px;
+}
+
+#about .icon {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+#about .icon:hover {
+  /* background-color: white; */
+  /* color: #ffa200; */
+  color: #FFAD1F;
+  transition: 0.3s;
+}
+
+#about img {
+  width: 25rem;
+  border-radius: 50%;
+}

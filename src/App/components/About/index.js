@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
 import AboutText from "./AboutText";
-import "./About.css";
 import photo from "../images/headshot.JPG";
 
 function About() {
