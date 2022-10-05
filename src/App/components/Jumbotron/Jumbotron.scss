@@ -1,0 +1,56 @@
+.jumbotron {
+  /* background: linear-gradient(0deg, rgba(158,239,241,1) 0%, rgba(227,207,130,1) 100%); */
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  // grid-template-columns: repeat(300, 10px [col-start]);
+  // grid-template-rows: repeat(300, 10px [row-start]);
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+}
+
+.animate {
+  border-radius: 50%;
+  // background-color: gray;
+
+  // animation-name: fade-this;
+  // animation-duration: 5s;
+  // animation-timing-function: ease-in;
+  // animation-fill-mode: forwards;
+}
+
+.animate:hover {
+  // animation-name: show-this;
+  // animation-duration: 5s;
+  // animation-timing-function: ease-in;
+  // animation-fill-mode: forwards;
+  background-color: rgba(255, 179, 0, 0.5);
+  transition: 0.2s;
+}
+
+.animate:not(:hover) {
+  // animation-name: show-this;
+  // animation-duration: 5s;
+  // animation-timing-function: ease-in-out;
+  background-color: black;
+  transition: 50s;
+}
+
+@keyframes fade-this {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes show-this {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: gray;
+  }
+}
