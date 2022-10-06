@@ -27,17 +27,19 @@
 .animate svg {
   width: 100%;
   height: 100%;
+  // z-index: 800;
 }
 
 .animate circle {
-  opacity: 0;
+  opacity: 1;
   r: 1rem;
   cy: 1rem;
   cx: 1rem;
+  fill: #222801;
 }
 
 .animate circle:hover {
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .animate circle:not(:hover) {
