@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(2rem, 1fr));
-  grid-gap: 0;
+  grid-gap: 1rem;
   overflow: hidden;
   > div {
     position: relative;
@@ -32,10 +32,7 @@
 
 .animate circle {
   opacity: 1;
-  r: 1rem;
-  cy: 1rem;
-  cx: 1rem;
-  fill: #222801;
+  fill: #c8e71800;
 }
 
 .animate circle:hover {
