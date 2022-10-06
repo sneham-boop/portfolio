@@ -1,26 +1,21 @@
-import { useEffect, useState } from "react";
+import { gsap } from "gsap";
+import React, { useEffect } from "react";
 
 export default function Animate(props) {
   const { color, setColor } = props;
 
-  // const appStyles = {
-  //   background: `${color}`,
-  // };
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     console.log("This will run every second!");
-  //     setColor((prev) => {
-  //       const prevColor = { ...prev };
-  //       return "#ffb90080";
-  //     });
-  //   }, 3000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, { fill: "#fc7a57" });
+  };
+  
+  const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, { fill: "#ffdd13" });
+  };
 
   return (
-    <div className="animate">
+    <div className="animate" >
       <svg>
-        <circle/>
+        <circle onMouseEnter={onEnter} onMouseLeave={onLeave}/>
       </svg>
     </div>
   );

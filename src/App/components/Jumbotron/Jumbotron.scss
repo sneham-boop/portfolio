@@ -18,45 +18,28 @@
   }
 }
 
-// .animate {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
+.animate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-// .animate svg {
-//   width: 100%;
-//   height: 100%;
-// }
+.animate svg {
+  width: 100%;
+  height: 100%;
+}
 
-// .animate circle {
-//   fill: #ffffff;
-//   opacity: 0.03;
-//   r: 1rem;
-//   cy: 1rem;
-//   cx: 1rem;
-// }
+.animate circle {
+  opacity: 0;
+  r: 1rem;
+  cy: 1rem;
+  cx: 1rem;
+}
 
 .animate circle:hover {
-  // fill: #ffff9a;
-  // opacity: 0.08;
-  // animation: grow 10s infinite;
-  // animation-direction: alternate-reverse;
-  // transform: scale(1.2);
+  opacity: 0.4;
 }
 
 .animate circle:not(:hover) {
-  // transition: 10s;
-  // animation: grow 10s infinite;
-  // animation-direction: alternate-reverse;
-  // transform: scale(1);
+  transition: 10s;
 }
-
-// @keyframes grow {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 0.5;
-//   }
-// }
