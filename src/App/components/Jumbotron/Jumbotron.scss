@@ -1,56 +1,62 @@
 .jumbotron {
-  /* background: linear-gradient(0deg, rgba(158,239,241,1) 0%, rgba(227,207,130,1) 100%); */
   background-color: black;
   height: 100vh;
   width: 100vw;
   display: grid;
-  // grid-template-columns: repeat(300, 10px [col-start]);
-  // grid-template-rows: repeat(300, 10px [row-start]);
-  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
-}
-
-.animate {
-  border-radius: 50%;
-  // background-color: gray;
-
-  // animation-name: fade-this;
-  // animation-duration: 5s;
-  // animation-timing-function: ease-in;
-  // animation-fill-mode: forwards;
-}
-
-.animate:hover {
-  // animation-name: show-this;
-  // animation-duration: 5s;
-  // animation-timing-function: ease-in;
-  // animation-fill-mode: forwards;
-  background-color: rgba(255, 179, 0, 0.5);
-  transition: 0.2s;
-}
-
-.animate:not(:hover) {
-  // animation-name: show-this;
-  // animation-duration: 5s;
-  // animation-timing-function: ease-in-out;
-  background-color: black;
-  transition: 50s;
-}
-
-@keyframes fade-this {
-  from {
-    background-color: gray;
-  }
-  to {
-    background-color: black;
+  grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(2rem, 1fr));
+  grid-gap: 0;
+  overflow: hidden;
+  > div {
+    position: relative;
+    &::before {
+      // for apsect ratio
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
   }
 }
 
-@keyframes show-this {
-  from {
-    background-color: black;
-  }
-  to {
-    background-color: gray;
-  }
+// .animate {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .animate svg {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .animate circle {
+//   fill: #ffffff;
+//   opacity: 0.03;
+//   r: 1rem;
+//   cy: 1rem;
+//   cx: 1rem;
+// }
+
+.animate circle:hover {
+  // fill: #ffff9a;
+  // opacity: 0.08;
+  // animation: grow 10s infinite;
+  // animation-direction: alternate-reverse;
+  // transform: scale(1.2);
 }
+
+.animate circle:not(:hover) {
+  // transition: 10s;
+  // animation: grow 10s infinite;
+  // animation-direction: alternate-reverse;
+  // transform: scale(1);
+}
+
+// @keyframes grow {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 0.5;
+//   }
+// }
