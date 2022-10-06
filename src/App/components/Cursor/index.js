@@ -11,8 +11,8 @@ export default function Cursor({ app }) {
       const onMouseMove = (e) => {
         gsap.to(".cursor__ball--big", {
           duration: 0.7,
-          x: e.clientX - 15,
-          y: e.clientY - 15,
+          x: e.clientX - 16,
+          y: e.clientY - 16,
         });
         gsap.to(".cursor__ball--small", {
           duration: 0.05,
@@ -46,8 +46,8 @@ export default function Cursor({ app }) {
     <>
       <div className="cursor">
         <div className="cursor__ball cursor__ball--big ">
-          <svg height="30" width="30">
-            <circle cx="15" cy="15" r="13" strokeWidth="0"></circle>
+          <svg height="2rem" width="2rem">
+            <circle cx="1rem" cy="1rem" r="1rem" strokeWidth="0"></circle>
           </svg>
         </div>
 
