@@ -5,39 +5,39 @@ import React, { useEffect } from "react";
 export default function Cursor({ app }) {
   useEffect(() => {
     let ctx = gsap.context(() => {
+      const element = app.current;
       const hover = document.querySelectorAll("a");
 
-      // Listeners
-      document.body.addEventListener("mousemove", onMouseMove);
-      for (let i = 0; i < hover.length; i++) {
-        hover[i].addEventListener("mouseenter", onMouseHover);
-        hover[i].addEventListener("mouseleave", onMouseHoverOut);
-      }
-
-      function onMouseMove(e) {
+      const onMouseMove = (e) => {
         gsap.to(".cursor__ball--big", {
           duration: 0.7,
           x: e.clientX - 15,
           y: e.clientY - 15,
         });
         gsap.to(".cursor__ball--small", {
-          duration: 0.1,
+          duration: 0.05,
           x: e.clientX - 5,
-          y: e.clientY - 12,
+          y: e.clientY - 13,
         });
-      }
+      };
 
-      function onMouseHover() {
+      const onMouseEnter = () =>
         gsap.to(".cursor__ball--big", {
           duration: 0.3,
           scale: 4,
         });
-      }
-      function onMouseHoverOut() {
+
+      const onMouseLeave = () =>
         gsap.to(".cursor__ball--big", {
           duration: 0.3,
           scale: 1,
         });
+
+      // Add event listeners
+      element.addEventListener("mousemove", onMouseMove);
+      for (let i = 0; i < hover.length; i++) {
+        hover[i].addEventListener("mouseenter", onMouseEnter);
+        hover[i].addEventListener("mouseleave", onMouseLeave);
       }
     }, app);
     return () => ctx.revert();
