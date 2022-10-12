@@ -15,7 +15,7 @@ function Jumbotron() {
         ))}
       <section className="intro">
         <h2>I'm Sneha</h2>
-        <p>Frontend Web Developer</p>
+        <p>Web Developer</p>
       </section>
     </div>
   );

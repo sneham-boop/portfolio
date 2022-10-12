@@ -53,10 +53,10 @@
   h2 {
     font-weight: $extra-thin;
     font-size: $font-size-xl;
-    padding: 0;
     margin: 0;
   }
   p {
     font-size: $font-size-paragraphs;
+    text-align: right;
   }
 }

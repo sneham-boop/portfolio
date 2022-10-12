@@ -11,8 +11,8 @@ export default function Animate() {
       const element = jumbotronSmallBallsRef.current;
       mouseLeaveStatus &&
         gsap.to(element, {
-          y: "-1rem",
-          x: "-1rem",
+          y: "-0.2rem",
+          x: "-0.2rem",
           ease: "elastic.out(1, 0.3)",
           duration: 2,
         });
@@ -27,8 +27,8 @@ export default function Animate() {
     const element = jumbotronSmallBallsRef.current;
     const { currentTarget } = e;
     gsap.to(element, {
-      y: "1rem",
-      x: "1rem",
+      y: "0.2rem",
+      x: "0.2rem",
       ease: "elastic.out(1, 0.3)",
       duration: 2,
     });
