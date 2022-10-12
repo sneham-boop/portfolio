@@ -1,5 +1,7 @@
+@import '../../sass/global';
+
 .jumbotron {
-  background-color: black;
+  background-color: $background-color;
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -41,4 +43,20 @@
 
 .animate circle:not(:hover) {
   transition: 3s;
+}
+
+.intro {
+  position: absolute;
+  top: 40vh;
+  color: white;
+  padding: 2em;
+  h2 {
+    font-weight: $extra-thin;
+    font-size: $font-size-xl;
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    font-size: $font-size-paragraphs;
+  }
 }

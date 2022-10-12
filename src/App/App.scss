@@ -1,9 +1,11 @@
+@import '../App/sass/global';
+
 body {
-  background-color: black;
+  background-color: $background-color;
   cursor: none;
 }
 .main-container {
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Krub', sans-serif;
 }
 
 .material-symbols-rounded {
