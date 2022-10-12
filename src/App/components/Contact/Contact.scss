@@ -1,8 +1,15 @@
+@import '../../sass/global';
+
 #contact {
-  background-color: black;
-  color: white;
-  padding: 2em;
-  height: 100vh;
+  background-color: $background-color;
+  color: $text-dark-bg;
+  padding: $padding-full-vw;
+  width: $full-vw;
+  height: $full-vh;
+  h3 {
+    font-size: $font-size-xl;
+    font-weight: $extra-thin;
+  }
 }
 
 .contact-row {
@@ -10,10 +17,7 @@
   margin-bottom: auto;
 }
 
-#contact h3 {
-  font-family: "Secular One", sans-serif;
-  font-size: 80px;
-}
+#contact 
 
 .info-row {
   font-size: 25px;

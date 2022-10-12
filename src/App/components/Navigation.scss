@@ -19,6 +19,9 @@
     &:hover {
       color: $text-dark-bg;
     }
+    &:focus{
+      color: $text-dark-bg;
+    }
   }
   button {
     color: $text-dark-bg;
@@ -26,5 +29,8 @@
     &:focus {
       box-shadow: none;
     }
+  }
+  .nav-link.active {
+    color: $text-dark-bg;
   }
 }
