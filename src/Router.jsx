@@ -1,4 +1,7 @@
 import App from "./App";
+import Portfolio from "./App/components/Portfolio";
+import Play from "./App/components/Play";
+
 import {
   createRoutesFromElements,
   createBrowserRouter,
