@@ -1,33 +1,41 @@
+@import "../../sass/global";
+
 #about {
-  height: 100vh;
+  height: $full-vh;
   background-color: rgb(32, 32, 32);
-  padding: 2em;
+  padding: $padding-full-vw;
   padding-top: 25vh;
-}
-
-#about .card {
-  border: none;
-  background-color: rgb(32, 32, 32);
-  color: white;
-}
-
-#about .card-text {
-  font-size: 18px;
-}
-
-#about .icon {
-  background-color: rgb(32, 32, 32);
-  color: white;
-}
-
-#about .icon:hover {
-  /* background-color: white; */
-  /* color: #ffa200; */
-  color: #FFAD1F;
-  transition: 0.3s;
-}
-
-#about img {
-  width: 25rem;
-  border-radius: 50%;
+  h3 {
+    font-size: $font-size-xl;
+    font-weight: $extra-thin;
+  }
+  .about-text {
+    border: none;
+    background-color: rgb(32, 32, 32);
+    color: $text-dark-bg;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    p {
+      font-size: $font-size-paragraphs;
+      font-weight: $extra-thin;
+    }
+  }
+  .about-icons {
+    display: flex;
+    gap: 2em;
+    .icon {
+      background-color: rgb(32, 32, 32);
+      color: $text-dark-bg;
+      &:hover {
+        color: #ffad1f;
+        transition: 0.3s;
+      }
+    }
+  }
+  img {
+    width: 25rem;
+    border-radius: 50%;
+  }
 }

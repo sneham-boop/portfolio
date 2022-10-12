@@ -1,4 +1,4 @@
-@import '../sass/global';
+@import "../sass/global";
 
 .navigation {
   width: 100%;
@@ -13,15 +13,15 @@
     gap: 1em;
   }
   a {
-    color: white;
+    color: $text-dark-bg;
     font-size: 20px;
     font-weight: $extra-thin;
     &:hover {
-      color: white;
+      color: $text-dark-bg;
     }
   }
   button {
-    color: white;
+    color: $text-dark-bg;
     border: none;
     &:focus {
       box-shadow: none;

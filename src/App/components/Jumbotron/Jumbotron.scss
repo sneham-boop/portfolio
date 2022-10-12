@@ -1,9 +1,9 @@
-@import '../../sass/global';
+@import "../../sass/global";
 
 .jumbotron {
   background-color: $background-color;
-  height: 100vh;
-  width: 100vw;
+  height: $full-vh;
+  width: $full-vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(2rem, 1fr));
@@ -40,12 +40,11 @@
   }
 }
 
-
 .intro {
   position: absolute;
   top: 30vh;
-  color: white;
-  padding: 2em;
+  color: $text-dark-bg;
+  padding: $padding-full-vw;
   h2 {
     font-weight: $extra-thin;
     font-size: $font-size-xl;
