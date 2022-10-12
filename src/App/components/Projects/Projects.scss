@@ -1,10 +1,16 @@
+@import '../../sass/global';
+
 #projects {
+  background-color: $background-color;
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 #projects h3 {
-  font-family: "Secular One", sans-serif;
-  font-size: 80px;
+  font-size: $font-size-large;
+  font-weight: $extra-thin;
   color: white;
 }
 

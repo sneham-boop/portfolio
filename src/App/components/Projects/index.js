@@ -4,17 +4,15 @@ import Container from "react-bootstrap/Container";
 
 import "./Projects.scss";
 
-
 function Projects() {
   const projects = () => {
     return (
       <>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {Array(6)
+          .fill(true)
+          .map((_, i) => (
+            <Project />
+          ))}
       </>
     );
   };
