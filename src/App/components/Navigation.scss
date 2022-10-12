@@ -1,3 +1,5 @@
+@import '../sass/global';
+
 .navigation {
   width: 100%;
   padding-left: 1em;
@@ -13,7 +15,7 @@
   a {
     color: white;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: $extra-thin;
     &:hover {
       color: white;
     }

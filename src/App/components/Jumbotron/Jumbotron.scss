@@ -24,30 +24,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  circle {
+    opacity: 1;
+    fill: #c8e71800;
+    &:hover {
+      opacity: 1;
+    }
+    &:not(:hover) {
+      transition: 3s;
+    }
+  }
 }
 
-.animate svg {
-  width: 100%;
-  height: 100%;
-  // z-index: 800;
-}
-
-.animate circle {
-  opacity: 1;
-  fill: #c8e71800;
-}
-
-.animate circle:hover {
-  opacity: 1;
-}
-
-.animate circle:not(:hover) {
-  transition: 3s;
-}
 
 .intro {
   position: absolute;
-  top: 40vh;
+  top: 30vh;
   color: white;
   padding: 2em;
   h2 {

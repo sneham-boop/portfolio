@@ -2,16 +2,15 @@
 
 #projects {
   background-color: $background-color;
-  padding: 2em;
+  padding: $padding-full-vw;
   display: flex;
   flex-direction: column;
   gap: 2em;
-}
-
-#projects h3 {
-  font-size: $font-size-large;
-  font-weight: $extra-thin;
-  color: white;
+  h3 {
+    font-size: $font-size-large;
+    font-weight: $extra-thin;
+    color: white;
+  }
 }
 
 #projects-container {
@@ -26,9 +25,8 @@
   padding: 1em;
   border-radius: 0.375rem;
   border: 1px solid white;
-}
-
-.project img {
-  height: 60%;
-  width: 100%;
+  img {
+    height: 60%;
+    width: 100%;
+  }
 }
