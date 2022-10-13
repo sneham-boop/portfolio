@@ -1,24 +1,23 @@
 @import "../../sass/global";
 
 #about {
-  height: $full-vh;
+  height: $full-vh+10;
   background-color: rgb(32, 32, 32);
   padding: $padding-full-vw;
-  padding-top: 25vh;
   h3 {
-    font-size: $font-size-xl;
+    font-size: $font-size-xl - 10;
     font-weight: $extra-thin;
   }
   .about-text {
     border: none;
     background-color: rgb(32, 32, 32);
     color: $text-dark-bg;
-    width: 60vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     gap: 2em;
     p {
-      font-size: $font-size-paragraphs;
+      font-size: 18px;
       font-weight: $extra-thin;
     }
   }
