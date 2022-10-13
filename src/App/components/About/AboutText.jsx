@@ -8,13 +8,41 @@ function AboutText() {
       <div>
         <h3>About Me</h3>
         <p>
-          I am a full-stack web developer with a diverse background in
-          industrial automation and controls engineering. Programming has always
-          been the most engaging part of my career so far and I'm excited to
-          take a deeper dive into it through web development. I have a
-          preference for front-end development and enjoy the process of building
-          interactive applications with a clean UI. I am a lifelong learner and
-          passionate about solving problems through software development.
+          Hi, I'm Sneha. I am a full-stack web developer who loves to write,
+          adores good design and has a weakness for unfrosted vanilla cake. I
+          have a diverse background in industrial automation and electrical
+          engineering. In my career so far, programming was the part that made
+          me come alive and I decided it was time to dive into it headfirst. Web
+          development is exciting because there's always so much learn. The
+          prospect of helping build something that someone is going to interact
+          with directly is satisfying.
+        </p>
+        <p>
+          In my journey so far, I've loved exploring new concepts and
+          technologies but the most interesting part has been learning the ways
+          of a new programming language. I am an artist in my free time and
+          learning to code has felt a lot like making art. Anyone can do it, but
+          to do it well you need experience, practice, repetition and the
+          willingness to experiment. Only then will you truly learn the nature
+          of a medium and use it to your advantage. I picked Javascript as my
+          medium and its dynamic nature has been fascinating compared to the
+          other strictly typed languages like ladder logic or MATLAB that I was
+          used to.
+        </p>
+        <p>
+          I do not have a clear preference for frontend vs backend development
+          yet. As my projects will show, I enjoy both. However, I drool over
+          good design so I'm a tiny bit partial in that sense. 😉
+        </p>
+        <p>
+          Apart from my funky sense of humour and sparkling personality, I bring
+          many other things with me. I enjoy helping people succeed and solving
+          problems. A 12 year electrical engineering career has helped me build
+          strong analytical skills and over time it has molded my ability to see
+          a bigger picture. As my many work colleagues and friends will
+          attest, I am easy to work with, and who doesn't appreciate that? I'd
+          love to talk to you about what I've been upto so far and how I
+          could add value to your team.
         </p>
       </div>
       <div className="about-icons">
