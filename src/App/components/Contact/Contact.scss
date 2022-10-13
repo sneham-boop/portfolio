@@ -26,7 +26,7 @@
 }
 
 .contact-row {
-  margin-top: 25vh;
+  margin-top: 20vh;
   margin-bottom: auto;
 }
 
@@ -47,6 +47,7 @@
 #contact-submit {
   background-color: white;
   color: rgb(32, 32, 32);
+  border: none;
   &:hover {
     background-color: rgb(32, 32, 32);
     color: white;
