@@ -2,10 +2,10 @@ import React from "react";
 import "./Button.scss";
 
 function Button1(props) {
-  const { btnText } = props;
+  const { btnText, onClick, end } = props;
   return (
     <>
-      <button className="custButton" type="button">
+      <button className={`custButton ${end}`} type="button" onClick={onClick}>
         {btnText}
       </button>
     </>

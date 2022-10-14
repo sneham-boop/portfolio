@@ -1,11 +1,11 @@
 @import '../App/sass/global';
 
 #body {
-  cursor: none;
+  // cursor: none;
   background-color: $background-color;
   font-family: 'Krub', sans-serif;
-  a, button {
-    cursor: none;
+  a {
+    // cursor: none;
   }
 }
 

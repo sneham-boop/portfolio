@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+import Button1 from "../Button";
 import Stack from "react-bootstrap/Stack";
 import More from "./More";
 
@@ -17,11 +18,11 @@ function Project(props) {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Stack direction="horizontal" gap={3}>
-          <Button variant="primary">Github</Button>
-          <Button variant="primary">Live</Button>
+        <div className="project-buttons">
+          <Button1 btnText="GitHub" />
+          <Button1 btnText="Live" />
           <More detailDescs={detailDescs}/>
-        </Stack>
+        </div>
       </Card.Body>
     </Card>
   );

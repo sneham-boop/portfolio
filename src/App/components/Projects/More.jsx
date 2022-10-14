@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+import Button1 from "../Button";
 import Modal from "react-bootstrap/Modal";
+import CloseButton from "react-bootstrap/CloseButton";
 
 function More(props) {
   const [modalShow, setModalShow] = useState(false);
@@ -17,12 +19,12 @@ function More(props) {
     return detailTitles.map((d, i) => {
       return (
         <section key={i} className="project-detail">
-          <h3>{d}:</h3>
+          <h4>{d}:</h4>
           <p>
-            {detailDescs[i]} This app is inspired by dash. I am an artist in my spare time and
-            this application felt like something I would actually use. I loved
-            their clean and intuitive UI and so I took up the challenge to
-            create a mock based on some of their features.
+            {detailDescs[i]} This app is inspired by dash. I am an artist in my
+            spare time and this application felt like something I would actually
+            use. I loved their clean and intuitive UI and so I took up the
+            challenge to create a mock based on some of their features.
           </p>
         </section>
       );
@@ -30,27 +32,20 @@ function More(props) {
   };
   return (
     <>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-        More
-      </Button>
-
+      <Button1 end="button-end" btnText="More" onClick={() => setModalShow(true)} />
       <Modal
         {...props}
         size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
+        aria-labelledby="project-modal"
         centered
         show={modalShow}
         onHide={() => setModalShow(false)}
       >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            More about "{name}Colourly"
-          </Modal.Title>
+        <Modal.Header className="project-modal-header">
+          <Modal.Title id="project-modal">About "{name}Colourly"</Modal.Title>{" "}
+          <CloseButton variant="white" onClick={() => setModalShow(false)} />
         </Modal.Header>
-        <Modal.Body>{showDetail()}</Modal.Body>
-        <Modal.Footer>
-          <Button onClick={() => setModalShow(false)}>Close</Button>
-        </Modal.Footer>
+        <Modal.Body className="project-modal-body">{showDetail()}</Modal.Body>
       </Modal>
     </>
   );
