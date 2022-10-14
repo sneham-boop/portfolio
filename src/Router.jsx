@@ -1,5 +1,5 @@
 import App from "./App";
-import Portfolio from "./App/components/Portfolio";
+import Home from "./App/components/Home";
 import Play from "./App/components/Play";
 
 import {
@@ -11,7 +11,7 @@ import {
 export const Router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index element={<Portfolio />} />
+      <Route index element={<Home />} />
       <Route path="/play" element={<Play />} />
     </Route>
   )
