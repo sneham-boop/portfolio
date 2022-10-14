@@ -5,23 +5,27 @@ import Stack from "react-bootstrap/Stack";
 import More from "./More";
 
 function Project(props) {
-  const { detailDescs } = props;
+  const { name, description, details, github, live, media } = props;
+  const liveLink = live || "https://github.com/sneham-boop/colourly";
+  const mediaSrc =
+    media ||
+    "https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+  const githubLink = github || "https://github.com/sneham-boop/colourly";
+
+  const handleClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <Card className="project">
-      <Card.Img
-        variant="top"
-        src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      />
+      <Card.Img variant="top" src={mediaSrc} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>{description}</Card.Text>
         <div className="project-buttons">
-          <Button1 btnText="GitHub" />
-          <Button1 btnText="Live" />
-          <More detailDescs={detailDescs}/>
+          <Button1 btnText="GitHub" onClick={() => handleClick(githubLink)} />
+          <Button1 btnText="Live" onClick={() => handleClick(liveLink)} />
+          <More detailDescs={details} />
         </div>
       </Card.Body>
     </Card>

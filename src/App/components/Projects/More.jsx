@@ -30,9 +30,14 @@ function More(props) {
       );
     });
   };
+
+  const handleClick = () => {
+    setModalShow(true);
+  };
+  
   return (
     <>
-      <Button1 end="button-end" btnText="More" onClick={() => setModalShow(true)} />
+      <Button1 end="button-end" btnText="More" onClick={handleClick} />
       <Modal
         {...props}
         size="lg"

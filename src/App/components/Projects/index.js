@@ -17,7 +17,7 @@ function Projects() {
               key={i}
               name={name}
               description={description}
-              detailDescs={details}
+              details={details}
               github={github}
               live={live}
               media={media}
