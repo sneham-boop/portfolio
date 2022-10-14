@@ -1,11 +1,16 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
+import More from "./More";
 
-function Project() {
+function Project(props) {
+  const { detailDescs } = props;
   return (
     <Card className="project">
-      <Card.Img variant="top" src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+      <Card.Img
+        variant="top"
+        src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -13,8 +18,9 @@ function Project() {
           bulk of the card's content.
         </Card.Text>
         <Stack direction="horizontal" gap={3}>
-        <Button variant="primary">Github</Button>
-        <Button variant="primary">Live</Button>
+          <Button variant="primary">Github</Button>
+          <Button variant="primary">Live</Button>
+          <More detailDescs={detailDescs}/>
         </Stack>
       </Card.Body>
     </Card>

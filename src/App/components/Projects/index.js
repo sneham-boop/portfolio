@@ -5,13 +5,14 @@ import Container from "react-bootstrap/Container";
 import "./Projects.scss";
 
 function Projects() {
+  const detailDescs = ["a", "b", "c", "d", "e", "f"];
   const projects = () => {
     return (
       <>
         {Array(6)
           .fill(true)
           .map((_, i) => (
-            <Project />
+            <Project detailDescs={detailDescs} />
           ))}
       </>
     );
