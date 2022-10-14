@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Jumbotron from "../Jumbotron";
 import Projects from "../Projects";
 import Skills from "../Skills";

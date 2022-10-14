@@ -1,7 +1,5 @@
 import Card from "react-bootstrap/Card";
-// import Button from "react-bootstrap/Button";
 import Button1 from "../Button";
-import Stack from "react-bootstrap/Stack";
 import More from "./More";
 
 function Project(props) {
