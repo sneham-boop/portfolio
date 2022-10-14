@@ -51,7 +51,8 @@
     margin: 0;
   }
   p {
-    font-size: $font-size-paragraphs;
+    font-weight: $extra-thin;
+    font-size: $font-size-paragraphs+10;
     text-align: right;
   }
 }
