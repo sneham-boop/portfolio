@@ -61,40 +61,14 @@
   text-align: center;
 }
 
-// @media screen and (max-width: 1440px) {
-//   #projects {
-//     h3 {
-//       // color: red;
-//     }
-//   }
-// }
-
 @media screen and (max-width: 1400px) {
-  #projects {
-    h3 {
-      // color: rgb(255, 242, 0);
-    }
-  }
   #projects-container {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
   }
-  // .project {
-  //   .project-buttons {
-  //     display: grid;
-  //     grid-template-columns: repeat(4, 25%);
-  //     width: 100%;
-  //     justify-content: space-between;
-  //   }
-  // }
 }
 
 @media screen and (max-width: 990px) {
-  #projects {
-    h3 {
-      // color: rgb(108, 219, 34);
-    }
-  }
   #projects-container {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto;
