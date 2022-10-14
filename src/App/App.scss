@@ -4,6 +4,9 @@
   cursor: none;
   background-color: $background-color;
   font-family: 'Krub', sans-serif;
+  a, button {
+    cursor: none;
+  }
 }
 
 .material-symbols-rounded {
