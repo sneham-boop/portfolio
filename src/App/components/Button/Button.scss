@@ -1,0 +1,18 @@
+@import "../../sass/global";
+
+.custButton {
+  font-weight: $extra-thin;
+  background-color: rgb(231, 231, 231);
+
+  color: black;
+  height: 2em;
+  width: 4em;
+  border-radius: 0.375rem;
+  font-size: $font-size-paragraphs;
+  border: 1px solid black;
+  &:hover {
+    transition: 0.3s;
+    background-color: white;
+    font-weight: 500;
+  }
+}
