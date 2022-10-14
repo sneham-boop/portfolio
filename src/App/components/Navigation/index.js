@@ -13,13 +13,12 @@ function CollapsibleExample() {
       </Navbar.Toggle>
       <Navbar.Collapse className="justify-content-end" id="nav">
         <Nav>
-          <Nav.Link href="#projects">home</Nav.Link>
-          <Nav.Link href="#projects">projects</Nav.Link>
-          <Nav.Link href="#skills">skills</Nav.Link>
-          <Link className="nav-link" to="/play">play</Link>
-          <Nav.Link href="#about">about</Nav.Link>
-          <Nav.Link href="#contact">contact</Nav.Link>
-          <Nav.Link href="#resume">resume</Nav.Link>
+          <Link className="nav-link" to="/home">
+            home
+          </Link>
+          <Link className="nav-link" to="/play">
+            play
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

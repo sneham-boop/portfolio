@@ -12,6 +12,7 @@ export const Router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/play" element={<Play />} />
     </Route>
   )
