@@ -6,15 +6,24 @@ import projectsData from "./projectData";
 import "./Projects.scss";
 
 function Projects() {
-  const detailDescs = ["a", "b", "c", "d", "e", "f"];
   const projects = () => {
+    const projectArray = Object.values(projectsData);
     return (
       <>
-        {Array(6)
-          .fill(true)
-          .map((_, i) => (
-            <Project detailDescs={detailDescs} />
-          ))}
+        {projectArray.map((project, i) => {
+          const { name, description, details, github, live, media } = project;
+          return (
+            <Project
+              key={i}
+              name={name}
+              description={description}
+              detailDescs={details}
+              github={github}
+              live={live}
+              media={media}
+            />
+          );
+        })}
       </>
     );
   };
