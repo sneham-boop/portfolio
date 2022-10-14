@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import Container from "react-bootstrap/Container";
+import projectsData from "./projectData";
 
 import "./Projects.scss";
 
