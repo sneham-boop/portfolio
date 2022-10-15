@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ContactForm() {
   return ( 
-    <Form>
+    <Form className="contact-form">
       <FloatingLabel controlId="floatingInput" label="Name" className="mb-3">
         <Form.Control type="text" placeholder="Name" />
       </FloatingLabel>

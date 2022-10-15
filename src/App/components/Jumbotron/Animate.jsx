@@ -30,7 +30,7 @@ export default function Animate({ play }) {
   const onEnter = (e) => {
     const element = jumbotronSmallBallsRef.current;
     const { currentTarget } = e;
-    const move = [gsap.utils.random(-5, 5, 0.3), gsap.utils.random(-5, 5, 0.3)];
+    const move = [gsap.utils.random(-20, 5, 0.3), gsap.utils.random(-5, 5, 0.3)];
     gsap.to(element, {
       y: `${move[0]}rem`,
       x: `${move[1]}rem`,

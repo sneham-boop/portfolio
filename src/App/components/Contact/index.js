@@ -7,18 +7,13 @@ import Container from "react-bootstrap/Container";
 
 import "./Contact.scss";
 
-
 function Contact() {
   return (
     <Container id="contact" fluid>
-      <Row className="contact-row">
-        <Col xs={7}>
-          <ContactInfo />
-        </Col>
-        <Col>
-          <ContactForm />
-        </Col>
-      </Row>
+      <div className="contact-row">
+        <ContactInfo />
+        <ContactForm />
+      </div>
     </Container>
   );
 }
