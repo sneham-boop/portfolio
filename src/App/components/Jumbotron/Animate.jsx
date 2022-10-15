@@ -1,18 +1,22 @@
 import { gsap } from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 
-export default function Animate() {
+export default function Animate({ play }) {
   const [mouseLeaveStatus, setMouseLeaveStatus] = useState(false);
 
   const jumbotronSmallBallsRef = useRef();
 
   useEffect(() => {
     let ctx = gsap.context(() => {
+      const move = [
+        gsap.utils.random(-5, 5, 0.3),
+        gsap.utils.random(-5, 5, 0.3),
+      ];
       const element = jumbotronSmallBallsRef.current;
       mouseLeaveStatus &&
         gsap.to(element, {
-          y: "-0.2rem",
-          x: "-0.2rem",
+          y: `${move[0]}rem`,
+          x: `${move[1]}rem`,
           ease: "elastic.out(1, 0.3)",
           duration: 2,
         });
@@ -26,16 +30,17 @@ export default function Animate() {
   const onEnter = (e) => {
     const element = jumbotronSmallBallsRef.current;
     const { currentTarget } = e;
+    const move = [gsap.utils.random(-5, 5, 0.3), gsap.utils.random(-5, 5, 0.3)];
     gsap.to(element, {
-      y: "0.2rem",
-      x: "0.2rem",
+      y: `${move[0]}rem`,
+      x: `${move[1]}rem`,
       ease: "elastic.out(1, 0.3)",
       duration: 2,
     });
-    let tl = gsap.timeline({ repeat: 5, repeatDelay: 1 });
-    tl.to(currentTarget, { fill: "#fc7a57" })
-    .to(currentTarget, { fill: "#fc7a50" })
-    .to(currentTarget, { fill: "#fc7a10", fillOpacity: "0", duration: 1 });
+    let tl = gsap.timeline({ repeat: 10, repeatDelay: 2 });
+    tl.to(currentTarget, { fill: "#fc7a57", fillOpacity: "1" })
+      .to(currentTarget, { fill: "#fc7a50" })
+      .to(currentTarget, { fill: "#fc7a10", fillOpacity: "0", duration: 1 });
   };
 
   const onLeave = ({ currentTarget }) => {
@@ -45,7 +50,10 @@ export default function Animate() {
   };
 
   return (
-    <div className="animate" ref={jumbotronSmallBallsRef}>
+    <div
+      className={play ? "animate-play" : "animate"}
+      ref={jumbotronSmallBallsRef}
+    >
       <svg>
         <circle
           cx="1rem"

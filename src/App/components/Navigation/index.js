@@ -9,7 +9,7 @@ function CollapsibleExample() {
   return (
     <Navbar className="navigation" collapseOnSelect expand="lg">
       <Navbar.Toggle aria-controls="nav">
-        <span class="material-symbols-rounded">menu</span>
+        <span className="material-symbols-rounded">menu</span>
       </Navbar.Toggle>
       <Navbar.Collapse className="justify-content-end" id="nav">
         <Nav>
