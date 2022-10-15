@@ -1,9 +1,13 @@
 // Font
-$font-size-xl: 130px;
-$font-size-large: 50px;
-$font-size-p-lg: 20px;
-$font-size-p-sm: 17px;
-$font-size-small: 12px;
+// $font-size-h1: 100px;
+$font-size-h1: calc(25px + 5vw);
+$font-size-h2: calc(20px + 3vw);
+$font-size-h3: calc(18px + 2vw);
+$font-size-h4: calc(15px + 1vw);
+$font-size-p-lg: calc(18px + 0.8vw);
+$font-size-p-m: calc(15px + 0.4vw);
+$font-size-p-sm: calc(12px + 0.3vw);
+$font-size-p-xs: calc(10px + 0.3vw);
 $extra-thin: 200;
 $medium: 500;
 $bold: 800;
@@ -11,6 +15,7 @@ $bold: 800;
 // Colors
 $background-color: black;
 $text-dark-bg: white;
+$text-light-bg: black;
 
 // Padding
 $padding-full-vw: 2em;

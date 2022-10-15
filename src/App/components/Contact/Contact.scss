@@ -7,7 +7,7 @@
   width: $full-vw;
   height: $full-vh;
   h3 {
-    font-size: $font-size-xl;
+    font-size: $font-size-h2;
     font-weight: $extra-thin;
   }
   label {
@@ -26,13 +26,13 @@
 }
 
 .contact-row {
-  margin-top: 20vh;
+  margin-top: 40vh;
   margin-bottom: auto;
 }
 
 .info-row {
-  font-size: 25px;
-  font-weight: 200;
+  font-size: $font-size-p-m;
+  font-weight: $extra-thin;
 }
 
 .form-floating textarea[placeholder="Message"] {

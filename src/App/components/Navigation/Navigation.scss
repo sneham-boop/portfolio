@@ -13,14 +13,16 @@
     gap: 1em;
   }
   a {
-    color: $text-dark-bg;
-    font-size: 20px;
+    background-color: rgb(240, 248, 255);
+    border-radius: 0.5rem;
+    color: $text-light-bg;
+    font-size: $font-size-p-sm;
     font-weight: $extra-thin;
     &:hover {
-      color: $text-dark-bg;
+      color: $text-light-bg;
     }
     &:focus{
-      color: $text-dark-bg;
+      color: $text-light-bg;
     }
   }
   button {

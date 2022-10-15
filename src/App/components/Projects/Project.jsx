@@ -7,7 +7,7 @@ function Project(props) {
   const liveLink = live || "https://github.com/sneham-boop/colourly";
   const mediaSrc =
     media ||
-    "https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+    "https://images.pexels.com/photos/57565/pexels-photo-57565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
   const githubLink = github || "https://github.com/sneham-boop/colourly";
 
   const handleClick = (link) => {
