@@ -5,12 +5,12 @@
   padding: $padding-full-vw;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
   * {
     cursor: default;
   }
   h3 {
-    font-size: $font-size-large;
+    font-size: $font-size-xl;
     font-weight: $extra-thin;
     color: white;
   }
