@@ -8,7 +8,7 @@ function Jumbotron() {
 
   return (
     <div className="jumbotron">
-      {Array(1200)
+      {Array(607)
         .fill(true)
         .map((_, i) => (
           <Animate key={i} color={color} setColor={setColor} />
