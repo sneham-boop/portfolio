@@ -20,36 +20,36 @@ const projectsData = {
       "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
   },
   2: {
-    name: "Colourly",
+    name: "Worry Free Parking",
     description:
-      "Colourly is a simple full-stack application inspired by the amazing tool created by Coolers. It allows users to create their own colour palettes, see what others have created, save their favourites, delete pelettes, etc.",
+      "Parky allows users to save their favourite parking spaces and rate them. Locations can be opened directly in google maps to allow navigation to take over.",
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,
     media: null,
   },
   3: {
-    name: "Colourly",
+    name: "ArtRoute",
     description:
-      "Colourly is a simple full-stack application inspired by the amazing tool created by Coolers. It allows users to create their own colour palettes, see what others have created, save their favourites, delete pelettes, etc.",
+      "Artists and craftspersons can use this application to plan and share their upcoming art drives. They can also manage their show setup list and enlist other artists for help. Visitors can pick out art drives to visit in their neighbourhood and plan a route. ",
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,
     media: null,
   },
   4: {
-    name: "Colourly",
+    name: "Remi",
     description:
-      "Colourly is a simple full-stack application inspired by the amazing tool created by Coolers. It allows users to create their own colour palettes, see what others have created, save their favourites, delete pelettes, etc.",
+      "Remi automatically categorizes items based on OpenAI's algorithm and multiple reminders may be added to each item on the list and an urgency level may be set. A colleague/friend can be added for further accountability of tasks.",
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,
     media: null,
   },
   5: {
-    name: "Colourly",
+    name: "Mento",
     description:
-      "Colourly is a simple full-stack application inspired by the amazing tool created by Coolers. It allows users to create their own colour palettes, see what others have created, save their favourites, delete pelettes, etc.",
+      "Get matched with our mentors based on your interests and goals.",
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,
