@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ContactInfo() {
   return (
-    <section>
+    <section className="contact-info">
       <h3 className="mb-3">Get in touch with me</h3>
       <div>
         <InfoRow icon={"call"} info={"(905)-867-8896"} />

@@ -9,12 +9,10 @@ import "./Contact.scss";
 
 function Contact() {
   return (
-    <Container id="contact" fluid>
-      <div className="contact-row">
-        <ContactInfo />
-        <ContactForm />
-      </div>
-    </Container>
+    <div id="contact" className="contact-row">
+      <ContactInfo />
+      <ContactForm />
+    </div>
   );
 }
 

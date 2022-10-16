@@ -10,13 +10,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function ContactForm() {
   return ( 
     <Form className="contact-form">
-      <FloatingLabel controlId="floatingInput" label="Name" className="mb-3">
+      <FloatingLabel controlId="name" label="Name" className="mb-3">
         <Form.Control type="text" placeholder="Name" />
       </FloatingLabel>
       <Row>
         <Col xs={7}>
           <FloatingLabel
-            controlId="floatingInput"
+            controlId="email"
             label="Email"
             className="mb-3"
           >
@@ -25,7 +25,7 @@ function ContactForm() {
         </Col>
         <Col>
           <FloatingLabel
-            controlId="floatingInput"
+            controlId="subject"
             label="Subject"
             className="mb-3"
           >
@@ -34,7 +34,7 @@ function ContactForm() {
         </Col>
       </Row>
 
-      <FloatingLabel controlId="floatingInput" label="Message" className="mb-3">
+      <FloatingLabel controlId="message" label="Message" className="mb-3">
         <Form.Control as="textarea" type="text" placeholder="Message" />
       </FloatingLabel>
 
