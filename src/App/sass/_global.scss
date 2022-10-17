@@ -1,5 +1,6 @@
 // Font
 // $font-size-h1: 100px;
+
 $font-size-h1: calc(25px + 5vw);
 $font-size-h2: calc(20px + 3vw);
 $font-size-h3: calc(18px + 2vw);
@@ -13,7 +14,14 @@ $medium: 500;
 $bold: 800;
 
 // Colors
-$background-color: black;
+$background-color: rgba(0, 0, 0);
+.dark {
+  $background-color: rgb(0, 0, 0);
+}
+
+.light {
+  $background-color: rgb(240, 231, 231);
+}
 $text-dark-bg: white;
 $text-light-bg: black;
 
