@@ -1,13 +1,15 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import DarkMode from "../DarkMode";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navigation.scss";
 
-function CollapsibleExample() {
+function Navigation() {
   return (
     <Navbar className="navigation" collapseOnSelect expand="sm">
+      <DarkMode/>
       <Navbar.Toggle aria-controls="nav">
         <span className="material-symbols-rounded">menu</span>
       </Navbar.Toggle>
@@ -25,4 +27,4 @@ function CollapsibleExample() {
   );
 }
 
-export default CollapsibleExample;
+export default Navigation;
