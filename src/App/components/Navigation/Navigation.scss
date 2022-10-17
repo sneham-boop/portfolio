@@ -13,16 +13,20 @@
     gap: 1em;
   }
   a {
-    background-color: rgb(240, 248, 255);
+    // background-color: rgb(240, 248, 255);
     border-radius: 0.5rem;
-    color: $text-light-bg;
+    // color: $text-light-bg;
+    background-color: rgb(23, 23, 23);
+      color: $text-dark-bg;
     font-size: $font-size-p-sm;
     font-weight: $extra-thin;
     &:hover {
-      color: $text-light-bg;
+      // color: $text-light-bg;
+      color: $text-dark-bg;
     }
-    &:focus{
-      color: $text-light-bg;
+    &:focus {
+      // color: $text-light-bg;
+      color: $text-dark-bg;
     }
   }
   button {
@@ -34,5 +38,24 @@
   }
   .nav-link.active {
     color: $text-dark-bg;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .navigation {
+    background-color: rgb(9, 9, 9);
+    a {
+      background-color: rgb(23, 23, 23);
+      color: $text-dark-bg;
+      font-size: $font-size-p-m;
+      padding: 0.5em;
+      text-align: right;
+      &:hover {
+        color: $text-dark-bg;
+      }
+      &:focus {
+        color: $text-dark-bg;
+      }
+    }
   }
 }

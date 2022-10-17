@@ -7,7 +7,7 @@ import "./Navigation.scss";
 
 function CollapsibleExample() {
   return (
-    <Navbar className="navigation" collapseOnSelect expand="lg">
+    <Navbar className="navigation" collapseOnSelect expand="sm">
       <Navbar.Toggle aria-controls="nav">
         <span className="material-symbols-rounded">menu</span>
       </Navbar.Toggle>
