@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.1",
+    "classnames": "^2.3.2",
     "gsap": "^3.11.3",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
