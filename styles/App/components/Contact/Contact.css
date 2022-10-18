@@ -1,0 +1,57 @@
+#contact {
+  background-color: black;
+  color: white;
+  padding: 2em;
+  height: 100vh;
+}
+
+.contact-row {
+  margin-top: 25vh;
+  margin-bottom: auto;
+}
+
+#contact h3 {
+  font-family: "Secular One", sans-serif;
+  font-size: 80px;
+}
+
+.info-row {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+#contact label {
+  color: white;
+}
+
+#contact input,
+.form-floating textarea[placeholder=Message] {
+  background-color: rgb(32, 32, 32);
+  border: none;
+}
+
+#contact input:hover,
+.form-floating textarea[placeholder=Message]:hover {
+  background-color: rgb(45, 45, 45);
+}
+
+#contact input:focus {
+  background-color: rgb(32, 32, 32);
+}
+
+#contact-submit {
+  background-color: white;
+  color: rgb(32, 32, 32);
+}
+
+#contact-submit:hover {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  border: none;
+}
+
+.form-floating textarea[placeholder=Message] {
+  height: 10em;
+}
+
+/*# sourceMappingURL=Contact.css.map */

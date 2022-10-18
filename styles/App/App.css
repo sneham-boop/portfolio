@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+.main-container {
+  font-family: "Archivo", sans-serif;
+}
+
+.material-symbols-rounded {
+  font-size: 2rem;
+}
+
+.material-symbols-rounded:hover {
+  font-variation-settings: "FILL" 1;
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,62 @@
+#skills {
+  height: 100vh;
+  background-color: black;
+  padding: 2em;
+}
+
+#skills h3 {
+  font-family: "Secular One", sans-serif;
+  font-size: 80px;
+  color: white;
+  margin-bottom: 1em;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 3em;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+#skills img {
+  background-color: white;
+}
+
+.skill {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: fit-content;
+  position: relative;
+}
+
+.skill:hover {
+  /* animation-name: example;
+  animation-duration: 1s;
+  animation-timing-function: ease; */
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.skill:not(:hover) {
+  transition: 0.4s;
+  transform: scale(1);
+}
+
+@keyframes example {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/*# sourceMappingURL=Skills.css.map */
