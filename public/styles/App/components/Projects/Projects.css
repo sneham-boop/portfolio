@@ -1,0 +1,30 @@
+#projects {
+  padding: 2em;
+}
+
+#projects h3 {
+  font-family: "Secular One", sans-serif;
+  font-size: 80px;
+  color: white;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: auto auto;
+  gap: 2em;
+}
+
+.project {
+  /* color: white; */
+  padding: 1em;
+  border-radius: 0.375rem;
+  border: 1px solid white;
+}
+
+.project img {
+  height: 60%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=Projects.css.map */

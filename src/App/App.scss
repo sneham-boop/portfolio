@@ -1,0 +1,13 @@
+@import "../App/sass/global";
+
+#body {
+  background-color: $background-color;
+  font-family: "Krub", sans-serif;
+}
+
+.material-symbols-rounded {
+  font-size: 2rem;
+  &:hover {
+    font-variation-settings: "FILL" 1;
+  }
+}

@@ -1,0 +1,55 @@
+#dark-mode {
+  position: relative;
+  // background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#switch {
+  width: 60px;
+  height: 30px;
+
+  // border: 1px solid #ffffff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &:hover {
+    cursor: pointer;
+  }
+  &.dark {
+    background-color: rgb(53 23 184);
+  }
+  &.light {
+    background-color: #c8e718;
+  }
+}
+#toggler {
+  margin: 4%;
+  height: 23px;
+  width: 23px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+  border-radius: 23px;
+  position: relative;
+  &.light {
+    left: 30px;
+  }
+  .material-symbols-rounded {
+    font-size: 1.3rem;
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+    position: relative;
+
+    z-index: 2;
+    &.night {
+      top: 0px;
+      left: 1px;
+    }
+    &.day {
+      top: 0px;
+      left: 0px;
+    }
+  }
+}
+

@@ -1,0 +1,41 @@
+.jumbotron {
+  /* background: linear-gradient(0deg, rgba(158,239,241,1) 0%, rgba(227,207,130,1) 100%); */
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.animate {
+  border-radius: 50%;
+}
+
+.animate:hover {
+  background-color: rgb(55, 55, 55);
+  transition: 1s;
+}
+
+.animate:not(:hover) {
+  background-color: black;
+  transition: 1s;
+}
+
+@keyframes fade-this {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: black;
+  }
+}
+@keyframes show-this {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: gray;
+  }
+}
+
+/*# sourceMappingURL=Jumbotron.css.map */

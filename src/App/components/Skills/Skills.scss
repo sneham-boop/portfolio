@@ -1,0 +1,87 @@
+@import "../../sass/global";
+
+#skills {
+  height: $full-vh;
+  background-color: $background-color;
+  padding: $padding-full-vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  h3 {
+    font-size: $font-size-h3;
+    font-weight: $extra-thin;
+    color: $text-dark-bg;
+  }
+  ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(5, auto);
+    gap: 3em;
+    padding-left: 0px;
+    list-style-type: none;
+  }
+  img {
+    background-color: white;
+  }
+}
+
+.skill {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: fit-content;
+  position: relative;
+  &:hover {
+    /* animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: ease; */
+    transition: 0.4s;
+    transform: scale(1.2);
+  }
+  &:not(:hover) {
+    transition: 0.4s;
+    transform: scale(1);
+  }
+}
+
+@keyframes example {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  #skills {
+    ul {
+      grid-template-columns: repeat(5, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #skills {
+    height: 100%;
+    ul {
+      grid-template-columns: repeat(4, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #skills {
+    ul {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+}
