@@ -5,10 +5,11 @@ import Play from "./App/components/Play";
 import {
   createRoutesFromElements,
   createBrowserRouter,
+  createHashRouter,
   Route,
 } from "react-router-dom";
 
-export const Router = createBrowserRouter(
+export const Router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
