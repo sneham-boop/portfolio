@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "src/App/components/Jumbotron/Jumbotron.scss";
+import "./Jumbotron.scss";
 import Animate from "./Animate";
 
 function Jumbotron() {

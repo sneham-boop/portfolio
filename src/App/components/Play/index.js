@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Animate from "../Jumbotron/Animate";
 import Cursor from "../Cursor";
-import "src/App/components/Play/Play.scss";
+import "./Play.scss";
 
 function Play() {
   const app = useRef();

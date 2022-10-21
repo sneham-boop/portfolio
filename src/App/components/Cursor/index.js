@@ -1,4 +1,4 @@
-import "src/App/components/Cursor/Cursor.scss";
+import "./Cursor.scss";
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
 

@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import DarkMode from "../DarkMode";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "src/App/components/Navigation/Navigation.scss";
+import "./Navigation.scss";
 
 function Navigation() {
   return (

@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
 import AboutText from "./AboutText";
 import photo from "../images/headshot.JPG";
-import "src/App/components/About/About.scss";
+import "./About.scss";
 
 function About() {
   return (
