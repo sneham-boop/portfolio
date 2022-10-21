@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { modeContext } from "../../../providers/ModeProvider";
-import "./DarkMode.scss";
+import "src/App/components/DarkMode/DarkMode.scss";
 
 function DarkMode() {
   const { dark, setDark, modeStyle } = useContext(modeContext);

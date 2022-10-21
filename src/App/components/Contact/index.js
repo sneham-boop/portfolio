@@ -2,7 +2,7 @@ import React from "react";
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";
 
-import "./Contact.scss";
+import "src/App/components/Contact/Contact.scss";
 
 function Contact() {
   return (
