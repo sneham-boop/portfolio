@@ -3,7 +3,7 @@ import Project from "./Project";
 import Container from "react-bootstrap/Container";
 import projectsData from "./projectData";
 
-import "src/App/components/Projects/Projects.scss";
+import "./Projects.scss";
 
 function Projects() {
   const projects = () => {
