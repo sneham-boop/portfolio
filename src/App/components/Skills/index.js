@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Icons from "./Icons";
 
-import "src/App/components/Skills/Skills.scss";
+import "./Skills.scss";
 
 
 function Skills() {
