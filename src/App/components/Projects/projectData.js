@@ -14,8 +14,8 @@ const projectsData = {
     description:
       "weRun is a single page application where users can find running events near them or create new running events for others to join. The goal of this app is to make running more fun and bring together the runners community by having them join events in an interactive way.",
     details: ["a", "b", "c", "d", "e", "f"],
-    github: "https://github.com/mariannebourcier/werun",
-    live: null,
+    github: "https://github.com/sneham-boop/werun",
+    live: "https://werun-app.netlify.app",
     media:
       "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
   },
