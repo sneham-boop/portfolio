@@ -2,7 +2,7 @@
 
 #skills {
   height: $full-vh;
-  background-color: $background-color;
+  // background-color: $background-color;
   padding: $padding-full-vw;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   h3 {
     font-size: $font-size-h3;
     font-weight: $extra-thin;
-    color: $text-dark-bg;
+    // color: $text-dark-bg;
   }
   ul {
     width: 100%;

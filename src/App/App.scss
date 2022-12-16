@@ -1,8 +1,20 @@
 @import "../App/sass/global";
 
-#body {
-  background-color: $background-color;
-  font-family: $outfit-font-family
+// #body {
+//   background-color: $background-color;
+//   font-family: $outfit-font-family
+// }
+
+.main-container {
+  font-family: $outfit-font-family;
+  &.dark {
+    background-color: $dark-background-color;
+    color: $text-dark-bg;
+  }
+  &.light {
+    background-color: $light-background-color;
+    color: $text-light-bg;
+  }
 }
 
 .material-symbols-rounded {

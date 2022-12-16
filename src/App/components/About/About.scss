@@ -2,7 +2,7 @@
 
 #about {
   // height: $full-vh+10;
-  background-color: rgb(32, 32, 32);
+  // background-color: rgb(32, 32, 32);
   padding: $padding-full-vw;
   padding-bottom: 5em;
   display: flex;
@@ -14,8 +14,8 @@
   }
   .about-text {
     border: none;
-    background-color: rgb(32, 32, 32);
-    color: $text-dark-bg;
+    // background-color: rgb(32, 32, 32);
+    // color: $text-dark-bg;
     width: 65vw;
     display: flex;
     flex-direction: column;
@@ -29,8 +29,8 @@
     display: flex;
     gap: 2em;
     .icon {
-      background-color: rgb(32, 32, 32);
-      color: $text-dark-bg;
+      // background-color: rgb(32, 32, 32);
+      // color: $text-dark-bg;
       &:hover {
         color: #ffad1f;
         transition: 0.3s;

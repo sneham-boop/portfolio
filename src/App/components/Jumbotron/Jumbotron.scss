@@ -1,7 +1,7 @@
 @import "../../sass/global";
 
 .jumbotron {
-  background-color: $background-color;
+  // background-color: $background-color;
   height: $full-vh;
   width: $full-vw;
   display: grid;
@@ -45,7 +45,7 @@
 .intro {
   position: absolute;
   top: 30vh;
-  color: $text-dark-bg;
+  // color: $text-dark-bg;
   padding: $padding-full-vw;
   :first-child {
     text-align: left;

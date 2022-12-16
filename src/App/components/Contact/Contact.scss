@@ -1,8 +1,8 @@
 @import "../../sass/global";
 
 #contact {
-  background-color: $background-color;
-  color: $text-dark-bg;
+  // background-color: $background-color;
+  // color: $text-dark-bg;
   padding: $padding-full-vw;
   width: $full-vw;
   height: $full-vh;
@@ -25,6 +25,7 @@
       font-size: $font-size-h2;
       font-weight: $extra-thin;
       width: 24rem;
+      color: white;
     }
     div {
       width: 24rem;
@@ -38,6 +39,7 @@
         gap: 1em;
         font-size: $font-size-p-m;
         font-weight: $extra-thin;
+        color: white;
       }
     }
   }
