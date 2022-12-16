@@ -42,7 +42,7 @@ const projectsData = {
     description:
       "Remi automatically categorizes items based on OpenAI's algorithm and multiple reminders may be added to each item on the list and an urgency level may be set. A colleague/friend can be added for further accountability of tasks.",
     details: ["a", "b", "c", "d", "e", "f"],
-    github: "https://github.com/sneham-boop/colourly",
+    github: "https://github.com/sneham-boop/remi",
     live: null,
     media: null,
   },

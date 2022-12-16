@@ -14,8 +14,9 @@ function Jumbotron() {
           <Animate key={i} color={color} setColor={setColor} />
         ))}
       <section className="intro">
-        <h2>I'm Sneha</h2>
-        <p>Web Developer</p>
+        <p>Hello, I am</p>
+        <h2>Sneha Mahajan.</h2>
+        <p>Your next jr. creative web developer.</p>
       </section>
     </div>
   );

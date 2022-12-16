@@ -47,12 +47,17 @@
   top: 30vh;
   color: $text-dark-bg;
   padding: $padding-full-vw;
+  :first-child {
+    text-align: left;
+    margin: 0;
+  }
   h2 {
-    font-weight: $extra-thin;
+    font-weight: $bold;
     font-size: $font-size-h1;
     margin: 0;
   }
   p {
+    font-family: $work-font-family;
     font-weight: $extra-thin;
     font-size: $font-size-p-lg;
     text-align: right;
