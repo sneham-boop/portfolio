@@ -1,10 +1,10 @@
 import App from "./App";
 import Home from "./App/components/Home";
 import Play from "./App/components/Play";
+import Resume from "./App/components/Resume";
 
 import {
   createRoutesFromElements,
-  createBrowserRouter,
   createHashRouter,
   Route,
 } from "react-router-dom";
@@ -14,6 +14,7 @@ export const Router = createHashRouter(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/resume" element={<Resume />} />
       <Route path="/play" element={<Play />} />
     </Route>
   )

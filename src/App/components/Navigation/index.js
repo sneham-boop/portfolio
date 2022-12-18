@@ -16,10 +16,13 @@ function Navigation() {
       <Navbar.Collapse className="justify-content-end" id="nav">
         <Nav>
           <Link className="nav-link" to="/home">
-            home
+            Home
+          </Link>
+          <Link className="nav-link" to="/resume">
+            Resume
           </Link>
           <Link className="nav-link" to="/play">
-            play
+            Play
           </Link>
         </Nav>
       </Navbar.Collapse>
