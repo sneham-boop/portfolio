@@ -53,19 +53,25 @@
     font-weight: $extra-thin;
   }
   h2 {
+    position: relative;
     font-weight: $bold;
     font-size: $font-size-h1;
     margin: 0;
+    z-index: 2;
   }
   p {
     font-family: $work-font-family;
     font-weight: $extra-thin;
     // font-weight: $bold;
     font-size: $font-size-p-lg;
+    position: relative;
+    z-index: 2;
   }
 }
 
 .brief-intro {
+  position: relative;
+  z-index: 2;
   width: $full-vw;
   font-family: $work-font-family;
   font-weight: $extra-thin;
