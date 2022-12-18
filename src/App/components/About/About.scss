@@ -10,18 +10,20 @@
   align-items: center;
   h3 {
     font-size: $font-size-h3;
-    font-weight: $extra-thin;
+    font-weight: $bold;
+    font-family: $work-font-family;
   }
   .about-text {
     border: none;
     // background-color: rgb(32, 32, 32);
     // color: $text-dark-bg;
+    font-family: $work-font-family;
     width: 65vw;
     display: flex;
     flex-direction: column;
     gap: 2em;
     p {
-      font-size: $font-size-p-sm;
+      font-size: $font-size-p-m;
       font-weight: $extra-thin;
     }
   }
