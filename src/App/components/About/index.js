@@ -7,10 +7,7 @@ import "./About.scss";
 function About() {
   return (
     <Container id="about" fluid>
-      <Stack direction="horizontal" gap={5}>
         <AboutText />
-        <img src={photo} alt="Sneha" />
-      </Stack>
     </Container>
   );
 }

@@ -11,11 +11,10 @@ function Home(props) {
   return (
     <div className="main-container">
       <Jumbotron />
+      <About />
       <Projects />
       <Skills />
-      <About />
       <Contact />
-
     </div>
   );
 }
