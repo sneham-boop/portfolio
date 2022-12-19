@@ -9,24 +9,26 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  background-color: rgba(16, 16, 16, 0.02);
   div {
     gap: 1em;
   }
   a {
-    // background-color: rgb(240, 248, 255);
     border-radius: 0.5rem;
-    // color: $text-light-bg;
-    background-color: rgb(23, 23, 23);
-      color: $text-dark-bg;
-    font-size: $font-size-p-sm;
+    color: $text-light-bg;
+    font-family: $work-font-family;
+    font-size: $font-size-p-m;
     font-weight: $extra-thin;
+    padding: 0;
     &:hover {
-      // color: $text-light-bg;
-      color: $text-dark-bg;
+      color: $text-light-bg;
+      font-weight: $thin;
+      text-decoration: overline 1px;
     }
     &:focus {
-      // color: $text-light-bg;
-      color: $text-dark-bg;
+      color: $text-light-bg;
+      font-weight: $thin;
+      text-decoration: overline 1px;
     }
   }
   button {

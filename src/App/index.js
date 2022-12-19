@@ -3,7 +3,6 @@ import { modeContext } from "../providers/ModeProvider";
 import "./App.scss";
 import { Outlet } from "react-router-dom";
 import Navigation from "./components/Navigation";
-
 import classNames from "classnames";
 
 function App() {

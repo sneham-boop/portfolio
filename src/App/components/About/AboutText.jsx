@@ -1,4 +1,5 @@
 import Icon from "./Icon";
+import Button1 from "../Button";
 
 function AboutText() {
   const showIcons = () => {
@@ -15,10 +16,18 @@ function AboutText() {
       </div>
     );
   };
+
+  const handleScroll = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="about-text">
-      <div>
-        <h3>About Me</h3>
+      {/* <div> */}
+        <h2>ABOUT ME</h2>
         <p>
           As a lifelong engineer, I'm keen on all things visual and interactive.
           And cake. I also love cake.
@@ -59,8 +68,9 @@ function AboutText() {
           skills. I'd love to talk to you about what I'm currently working on
           and how I could add value to your team. Contact me below!
         </p>
-      </div>
-      {showIcons()}
+      {/* </div> */}
+      {/* {showIcons()} */}
+      <Button1 btnText="Contact Me" onClick={()=>handleScroll()} custom="about-contact-btn"/>
     </section>
   );
 }
