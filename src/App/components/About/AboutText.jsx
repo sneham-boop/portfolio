@@ -26,7 +26,7 @@ function AboutText() {
         <p>
           My first taste of web development was in 2020 when I created a basic
           WIX website to sell my art. As an engineer & artist who loves breaking
-          and rebuilding things, the possibility of building something beautiful
+          and rebuilding things, the possibility of creating something beautiful
           and functional, that people could interact with directly was intensely
           fulfilling. I could sense I had to explore this thought more when I
           was way more interested in people having a good experience on my

@@ -37,15 +37,15 @@ export default function Animate({ play }) {
       ease: "elastic.out(1, 0.3)",
       duration: 2,
     });
-    let tl = gsap.timeline({ repeat: 10, repeatDelay: 2 });
-    tl.to(currentTarget, { fill: "#fc7a57", fillOpacity: "1" })
-      .to(currentTarget, { fill: "#fc7a50" })
-      .to(currentTarget, { fill: "#fc7a10", fillOpacity: "0", duration: 1 });
+    let tl = gsap.timeline({ repeat: 10, repeatDelay: 1 });
+    tl.to(currentTarget, { fill: "#ff7b00", fillOpacity: "1" })
+      .to(currentTarget, { fill: "#bfd200", fillOpacity: "0.5" })
+      .to(currentTarget, { fill: "#ffff3f", fillOpacity: "0", duration: 1 });
   };
 
   const onLeave = ({ currentTarget }) => {
     setMouseLeaveStatus(true);
-    gsap.to(currentTarget, { fill: "#ffdd1300" });
+    gsap.to(currentTarget, { fill: "#ff7b00" });
     // setMouseLeaveStatus(false);
   };
 
