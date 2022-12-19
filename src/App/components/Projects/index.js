@@ -15,6 +15,7 @@ function Projects() {
           return (
             <Project
               key={i}
+              num={i}
               name={name}
               description={description}
               details={details}
@@ -29,8 +30,8 @@ function Projects() {
   };
   return (
     <Container id="projects" fluid>
-      <h3>Projects</h3>
-      <Container id="projects-container">{projects()}</Container>
+      <h2>PROJECTS</h2>
+      <div id="projects-container">{projects()}</div>
     </Container>
   );
 }

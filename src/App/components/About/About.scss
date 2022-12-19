@@ -1,8 +1,6 @@
 @import "../../sass/global";
 
 #about {
-  // height: $full-vh+10;
-  // background-color: rgb(32, 32, 32);
   padding: $padding-full-vw;
   padding-bottom: 5em;
   display: flex;
@@ -17,8 +15,6 @@
   }
   .about-text {
     border: none;
-    // background-color: rgb(32, 32, 32);
-    // color: $text-dark-bg;
     font-family: $work-font-family;
     width: 65vw;
     display: flex;

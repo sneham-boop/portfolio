@@ -2,17 +2,19 @@
 
 #skills {
   height: $full-vh;
-  // background-color: $background-color;
   padding: $padding-full-vw;
   display: flex;
   flex-direction: column;
   gap: 4em;
   justify-content: flex-start;
   align-items: flex-start;
-  h3 {
-    font-size: $font-size-h3;
-    font-weight: $extra-thin;
-    // color: $text-dark-bg;
+  h2 {
+    width: 100%;
+    color: #929292;
+    font-size: $font-size-h2;
+    font-weight: $extra-bold;
+    font-family: $work-font-family;
+    text-align: center;
   }
   ul {
     width: 100%;

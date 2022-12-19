@@ -20,9 +20,9 @@ const projectsData = {
       "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
   },
   2: {
-    name: "Worry Free Parking",
+    name: "ParkEAT",
     description:
-      "Parky allows users to save their favourite parking spaces and rate them. Locations can be opened directly in google maps to allow navigation to take over.",
+      "ParkEAT allows users to save their favourite parking spaces and rate them. Locations can be opened directly in google maps to allow navigation to take over.",
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,

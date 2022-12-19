@@ -2,7 +2,7 @@
 
 .button1-style {
   font-weight: $extra-thin;
-  background-color: #dfe0db;
+  // background-color: #dfe0db;
   // color: black;
   height: 2em;
   min-width: 4.5em;
@@ -12,7 +12,6 @@
   &:hover {
     transition: 0.3s;
     background-color: white;
-    font-weight: 500;
   }
 }
 

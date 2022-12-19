@@ -3,7 +3,7 @@ import Button1 from "../Button";
 import More from "./More";
 
 function Project(props) {
-  const { name, description, details, github, live, media } = props;
+  const { num, name, description, details, github, live, media } = props;
   const liveLink = live || "https://github.com/sneham-boop/colourly";
   const mediaSrc =
     media ||
@@ -15,18 +15,31 @@ function Project(props) {
   };
 
   return (
-    <Card className="project">
-      <Card.Img variant="top" src={mediaSrc} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <div className="project-buttons">
-          <Button1 btnText="GitHub" onClick={() => handleClick(githubLink)} />
-          <Button1 btnText="Live" onClick={() => handleClick(liveLink)} />
-          <More detailDescs={details} />
+    <>
+      <section className="project">
+        <p className="project-num">{num+1}</p>
+        <div className="project-info">
+          <div>
+            <h3>{name}</h3>
+            <p>{description}</p>
+          </div>
+          <div className="project-buttons">
+            <Button1
+              btnText="GitHub "
+              icon="fa-brands fa-github"
+              onClick={() => handleClick(githubLink)}
+            />
+            <Button1
+              btnText="Live "
+              icon="fa-solid fa-laptop"
+              onClick={() => handleClick(liveLink)}
+            />
+            <More detailDescs={details} name={name} />
+          </div>
         </div>
-      </Card.Body>
-    </Card>
+        <img className="project-img" src={mediaSrc}></img>
+      </section>
+    </>
   );
 }
 

@@ -37,7 +37,7 @@ function More(props) {
   
   return (
     <>
-      <Button1 end="button-end" btnText="More" onClick={handleClick} />
+      <Button1 end="button-end" btnText="About " icon="fa-solid fa-circle-info" onClick={handleClick} />
       <Modal
         {...props}
         size="lg"
@@ -47,7 +47,7 @@ function More(props) {
         onHide={() => setModalShow(false)}
       >
         <Modal.Header className="project-modal-header">
-          <Modal.Title id="project-modal">About "{name}Colourly"</Modal.Title>{" "}
+          <Modal.Title id="project-modal">About "{name}"</Modal.Title>{" "}
           <CloseButton variant="white" onClick={() => setModalShow(false)} />
         </Modal.Header>
         <Modal.Body className="project-modal-body">{showDetail()}</Modal.Body>

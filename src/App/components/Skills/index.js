@@ -7,7 +7,7 @@ import "./Skills.scss";
 function Skills() {
   return (
     <Container id="skills" fluid>
-      <h3>Skills</h3>
+      <h2>SKILLS</h2>
       <ul>
         <Icons />
       </ul>

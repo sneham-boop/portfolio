@@ -26,7 +26,7 @@ function AboutText() {
 
   return (
     <section className="about-text">
-      {/* <div> */}
+      <div>
         <h2>ABOUT ME</h2>
         <p>
           As a lifelong engineer, I'm keen on all things visual and interactive.
@@ -68,7 +68,7 @@ function AboutText() {
           skills. I'd love to talk to you about what I'm currently working on
           and how I could add value to your team. Contact me below!
         </p>
-      {/* </div> */}
+      </div>
       {/* {showIcons()} */}
       <Button1 btnText="Contact Me" onClick={()=>handleScroll()} custom="about-contact-btn"/>
     </section>
