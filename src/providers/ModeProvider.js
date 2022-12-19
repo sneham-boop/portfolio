@@ -3,8 +3,8 @@ import React, { useState, useEffect, createContext } from "react";
 export const modeContext = createContext();
 
 export default function DataProvider(props) {
-  const [dark, setDark] = useState(true);
-  const [modeStyle, setModeStyle] = useState("dark");
+  const [dark, setDark] = useState(false);
+  const [modeStyle, setModeStyle] = useState("light");
 
   useEffect(() => {
     dark ? setModeStyle("dark") : setModeStyle("light");
