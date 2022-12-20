@@ -7,13 +7,14 @@ $mode: "light";
   @if $mode== "light" {
     background-color: $light-background-color;
     color: $text-light-bg;
+    transition: 0.2s;
     a {
       color: $text-light-bg;
       text-decoration: none;
     }
     .animate-play circle {
       fill: #bfd200;
-      opacity: 0.5;
+      // opacity: 0.5;
     }
     #about h2,
     #projects h2,
@@ -23,7 +24,7 @@ $mode: "light";
       font-weight: $extra-bold;
       font-family: $work-font-family;
       text-align: center;
-      color: #929292;
+      color: $text-light-bg;
     }
     .project {
       background-color: white;
@@ -34,12 +35,13 @@ $mode: "light";
   } @else {
     background-color: $dark-background-color;
     color: $text-dark-bg;
+    transition: 0.2s;
     a {
       color: $text-dark-bg;
       text-decoration: none;
     }
     .animate-play circle {
-      opacity: 0.4;
+      // opacity: 0.4;
       fill: #fdc3d2;
     }
     #about h2,

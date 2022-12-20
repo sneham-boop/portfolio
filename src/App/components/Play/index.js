@@ -7,6 +7,9 @@ function Play() {
   const app = useRef();
   return (
     <div className="play" ref={app}>
+      <p>
+        Move around your cursor
+      </p>
       <Cursor app={app} />
       {Array(800)
         .fill(true)
