@@ -8,13 +8,11 @@ function Play() {
   return (
     <div className="play" ref={app}>
       <Cursor app={app} />
-      {/* <div> */}
-      {Array(6000)
+      {Array(800)
         .fill(true)
         .map((_, i) => (
           <Animate play={true} key={i} />
         ))}
-      {/* </div> */}
     </div>
   );
 }

@@ -4,12 +4,32 @@
 $mode: "light";
 
 @mixin mode-colors($mode) {
-  @if $mode=="light" {
+  @if $mode== "light" {
     background-color: $light-background-color;
     color: $text-light-bg;
     a {
       color: $text-light-bg;
       text-decoration: none;
+    }
+    .animate-play circle {
+      fill: #bfd200;
+      opacity: 0.5;
+    }
+    #about h2,
+    #projects h2,
+    #skills h2,
+    #contact h2 {
+      font-size: $font-size-h2;
+      font-weight: $extra-bold;
+      font-family: $work-font-family;
+      text-align: center;
+      color: #929292;
+    }
+    .project {
+      background-color: white;
+      .project-num {
+        color: #eaece3;
+      }
     }
   } @else {
     background-color: $dark-background-color;
@@ -17,6 +37,26 @@ $mode: "light";
     a {
       color: $text-dark-bg;
       text-decoration: none;
+    }
+    .animate-play circle {
+      opacity: 0.4;
+      fill: #fdc3d2;
+    }
+    #about h2,
+    #projects h2,
+    #skills h2,
+    #contact h2 {
+      font-size: $font-size-h2;
+      font-weight: $extra-bold;
+      font-family: $work-font-family;
+      text-align: center;
+      color: $text-dark-bg;
+    }
+    .project {
+      background-color: #101010;
+      .project-num {
+        color: $dark-background-color;
+      }
     }
   }
 }

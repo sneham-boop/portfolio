@@ -1,15 +1,13 @@
 @import "../../sass/global.module";
 
+
 .play {
   cursor: none;
-  background-color: $background-color;
   height: $full-vh;
   width: $full-vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(2rem, 1fr));
-  // grid-template-columns: repeat(32, 2rem);
-  // grid-template-rows: repeat(19, 2rem);
   grid-gap: 1rem;
   overflow: hidden;
   > div {

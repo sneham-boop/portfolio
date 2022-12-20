@@ -10,13 +10,6 @@
   * {
     cursor: default;
   }
-  h2 {
-    color: #929292;
-    font-size: $font-size-h2;
-    font-weight: $extra-bold;
-    font-family: $work-font-family;
-    text-align: center;
-  }
 }
 
 #projects-container {
@@ -33,7 +26,6 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   gap: 2em;
-  background-color: white;
   border-radius: 1rem;
   padding: 2em;
   .project-num {
@@ -42,7 +34,7 @@
     // right: -100px;
     font-size: 300px;
     font-weight: $extra-bold;
-    color: #eaece3;
+    // color: #eaece3;
     opacity: 0;
     z-index: 0;
   }
