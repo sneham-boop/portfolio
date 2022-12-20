@@ -1,6 +1,7 @@
 @import "../../sass/global";
 
 #projects {
+  position: relative;
   margin-top: 2em;
   padding: $padding-full-vw;
   display: flex;
@@ -38,7 +39,8 @@
   .project-num {
     position: absolute;
     top: -30%;
-    font-size: 400px;
+    right: -100px;
+    font-size: 300px;
     font-weight: $extra-bold;
     color: #eaece3;
     opacity: 0.4;

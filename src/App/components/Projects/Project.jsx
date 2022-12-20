@@ -1,9 +1,13 @@
-import Card from "react-bootstrap/Card";
+import React, { useEffect, useRef } from "react";
 import Button1 from "../Button";
 import More from "./More";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Project(props) {
   const { num, name, description, details, github, live, media } = props;
+  const projectNumRef = useRef();
   const liveLink = live || "https://github.com/sneham-boop/colourly";
   const mediaSrc =
     media ||
@@ -14,10 +18,34 @@ function Project(props) {
     window.open(link, "_blank");
   };
 
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin();
+      gsap.to(`#project-${num + 1} .project-num `, {
+        scrollTrigger: {
+          trigger: `#project-${num + 1}`,
+          start: "top bottom",
+          endTrigger: `#project-${num + 2}`,
+          end: "top bottom",
+          // markers: true,
+          scrub: 5,
+          toggleActions: "restart pause reverse pause",
+        },
+        x: -100,
+        duration: 1,
+      });
+    });
+    return () => {
+      ctx.revert();
+    };
+  });
+
   return (
     <>
-      <section className="project">
-        <p className="project-num">{num+1}</p>
+      <section id={`project-${num + 1}`} className="project">
+        <p className="project-num" ref={projectNumRef}>
+          {num + 1}
+        </p>
         <div className="project-info">
           <div>
             <h3>{name}</h3>
@@ -37,7 +65,7 @@ function Project(props) {
             <More detailDescs={details} name={name} />
           </div>
         </div>
-        <img className="project-img" src={mediaSrc}></img>
+        <img className="project-img" src={mediaSrc} alt="Live project looks like this"></img>
       </section>
     </>
   );
