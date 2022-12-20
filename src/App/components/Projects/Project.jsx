@@ -33,7 +33,7 @@ function Project(props) {
         },
         x: -50,
         duration: 1,
-        opacity: 0.8
+        opacity: 0.8,
       });
     });
     return () => {
@@ -66,7 +66,11 @@ function Project(props) {
             <More detailDescs={details} name={name} />
           </div>
         </div>
-        <img className="project-img" src={mediaSrc} alt="Live project looks like this"></img>
+        <img
+          className="project-img"
+          src={mediaSrc}
+          alt="Live project looks like this"
+        ></img>
       </section>
     </>
   );

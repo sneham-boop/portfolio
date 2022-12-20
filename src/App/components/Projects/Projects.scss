@@ -7,9 +7,6 @@
   display: flex;
   flex-direction: column;
   gap: 3em;
-  * {
-    cursor: default;
-  }
 }
 
 #projects-container {
@@ -67,8 +64,8 @@
 }
 
 .modal-content {
-  color: white;
-  background-color: rgb(28, 28, 28);
+  // color: white;
+  // background-color: rgb(28, 28, 28);
   font-weight: $extra-thin;
   // border: 1px solid rgb(72, 72, 72);
 }
