@@ -1,4 +1,4 @@
-@import "../../sass/global";
+@import "../../sass/global.module";
 
 .navigation {
   width: 100%;
@@ -9,24 +9,24 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  background-color: $light-background-color;
+  &.dark {
+    @include mode-colors("dark");
+  }
+  &.light {
+    @include mode-colors("light");
+  }
   div {
     gap: 1em;
   }
   a {
-    border-radius: 0.5rem;
-    color: $text-light-bg;
     font-family: $work-font-family;
     font-size: $font-size-p-m;
     font-weight: $extra-thin;
     padding: 0;
     &:hover {
-      color: $text-light-bg;
-      // font-weight: $thin;
       text-decoration: overline 1px;
     }
     &:focus {
-      color: $text-light-bg;
       font-weight: $thin;
       text-decoration: overline 1px;
     }
@@ -56,21 +56,21 @@
   }
 }
 
-@media screen and (max-width: 575px) {
-  .navigation {
-    // background-color: rgb(9, 9, 9);
-    a {
-      // background-color: rgb(23, 23, 23);
-      // color: $text-dark-bg;
-      font-size: $font-size-p-m;
-      padding: 0.5em;
-      text-align: right;
-      &:hover {
-        color: $text-dark-bg;
-      }
-      &:focus {
-        color: $text-dark-bg;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 575px) {
+//   .navigation {
+//     // background-color: rgb(9, 9, 9);
+//     a {
+//       // background-color: rgb(23, 23, 23);
+//       // color: $text-dark-bg;
+//       font-size: $font-size-p-m;
+//       padding: 0.5em;
+//       text-align: right;
+//       &:hover {
+//         color: $text-dark-bg;
+//       }
+//       &:focus {
+//         color: $text-dark-bg;
+//       }
+//     }
+//   }
+// }

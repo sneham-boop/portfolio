@@ -1,4 +1,4 @@
-@import "../App/sass/global";
+@import "../App/sass/global.module";
 
 #body {
   background-color: $background-color;
@@ -7,12 +7,10 @@
 .main-container {
   font-family: $outfit-font-family;
   &.dark {
-    background-color: $dark-background-color;
-    color: $text-dark-bg;
+    @include mode-colors("dark");
   }
   &.light {
-    background-color: $light-background-color;
-    color: $text-light-bg;
+    @include mode-colors("light");
   }
 }
 
