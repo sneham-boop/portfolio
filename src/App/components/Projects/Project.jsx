@@ -24,15 +24,16 @@ function Project(props) {
       gsap.to(`#project-${num + 1} .project-num `, {
         scrollTrigger: {
           trigger: `#project-${num + 1}`,
-          start: "top bottom",
-          endTrigger: `#project-${num + 2}`,
-          end: "top bottom",
-          // markers: true,
-          scrub: 5,
+          start: "top 50%+=300px",
+          endTrigger: `#project-${num + 1}`,
+          end: "top 50%-=200px",
+          markers: true,
+          scrub: 2,
           toggleActions: "restart pause reverse pause",
         },
-        x: -100,
+        x: -50,
         duration: 1,
+        opacity: 0.8
       });
     });
     return () => {

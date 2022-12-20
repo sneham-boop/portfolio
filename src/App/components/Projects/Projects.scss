@@ -38,12 +38,12 @@
   padding: 2em;
   .project-num {
     position: absolute;
-    top: -30%;
-    right: -100px;
+    top: -20%;
+    // right: -100px;
     font-size: 300px;
     font-weight: $extra-bold;
     color: #eaece3;
-    opacity: 0.4;
+    opacity: 0;
     z-index: 0;
   }
   img {
