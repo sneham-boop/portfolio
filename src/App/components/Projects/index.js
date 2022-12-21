@@ -45,7 +45,7 @@ function Projects() {
           scrub: 1,
           snap: 1 / (projects.length - 1),
           end: () => "+=200+=" + document.querySelector("#projects").offsetWidth,
-          markers: true,
+          // markers: true,
         },
       });
     });
