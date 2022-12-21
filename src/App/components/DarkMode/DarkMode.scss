@@ -1,5 +1,7 @@
 #dark-mode {
-  position: relative;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
   display: flex;
   align-items: center;
   justify-content: flex-start;
