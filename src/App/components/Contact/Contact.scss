@@ -38,6 +38,18 @@
     .contact-email {
       font-weight: $bold;
     }
+    .icons {
+      width: 40%;
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4em;
+      i:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 

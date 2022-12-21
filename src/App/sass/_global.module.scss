@@ -36,6 +36,9 @@ $mode: "light";
       background-color: $dark-background-color;
       color: $text-dark-bg;
     }
+    .contact-info i:hover {
+      color: fade-out($color: $text-light-bg, $amount: 0.2)
+    }
   } @else {
     background-color: $dark-background-color;
     color: $text-dark-bg;
@@ -67,6 +70,9 @@ $mode: "light";
     .skill-name {
       background-color: $light-background-color;
       color: $text-light-bg;
+    }
+    .contact-info i:hover {
+      color: fade-out($color: $text-dark-bg, $amount: 0.2)
     }
   }
 }
