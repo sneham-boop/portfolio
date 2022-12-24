@@ -44,7 +44,8 @@ function Projects() {
           pin: true,
           scrub: 1,
           snap: 1 / (projects.length - 1),
-          end: () => "+=200+=" + document.querySelector("#projects").offsetWidth,
+          end: () =>
+            "+=200+=" + document.querySelector("#projects").offsetWidth,
           // markers: true,
         },
       });
@@ -59,6 +60,10 @@ function Projects() {
     <Container id="projects" fluid>
       <h2>PROJECTS</h2>
       <div id="projects-container">{projects()}</div>
+      <div id="keep-scrolling-text">
+        <p>KEEP SCROLLING DOWN</p>
+        <i className="down-arrow"></i>
+      </div>
     </Container>
   );
 }
