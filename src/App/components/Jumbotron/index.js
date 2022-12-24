@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect  } from "react";
+import { useState, useContext, useEffect } from "react";
 import "./Jumbotron.scss";
 import Animate from "./Animate";
 import { modeContext } from "../../../providers/ModeProvider";
@@ -18,7 +18,7 @@ function Jumbotron() {
         full: "#072ac8",
         medium: "#ffba08",
         low: "#07a0c3",
-      })
+      });
     }
   }, [dark]);
 
@@ -42,7 +42,12 @@ function Jumbotron() {
       {Array(550)
         .fill(true)
         .map((_, i) => (
-          <Animate key={i} color={color} setColor={setColor} ballColor={ballColor} />
+          <Animate
+            key={i}
+            color={color}
+            setColor={setColor}
+            ballColor={ballColor}
+          />
         ))}
     </div>
   );
