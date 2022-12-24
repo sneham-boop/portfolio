@@ -19,19 +19,6 @@
       text-align: center;
     }
   }
-  .about-icons {
-    display: flex;
-    gap: 2em;
-    .icon {
-      // background-color: rgb(32, 32, 32);
-      // color: $text-dark-bg;
-      &:hover {
-        color: #ffad1f;
-        transition: 0.3s;
-        cursor: pointer;
-      }
-    }
-  }
   img {
     width: 25rem;
     border-radius: 50%;
