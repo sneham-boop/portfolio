@@ -12,6 +12,9 @@ $mode: "light";
       color: $text-light-bg;
       text-decoration: none;
     }
+    .navigation .material-symbols-rounded {
+      color: $text-light-bg;
+    }
     .animate-play circle {
       fill: #bfd200;
       // opacity: 0.5;
@@ -46,6 +49,9 @@ $mode: "light";
     a {
       color: $text-dark-bg;
       text-decoration: none;
+    }
+    .navigation .material-symbols-rounded {
+      color: $text-dark-bg;
     }
     .animate-play circle {
       // opacity: 0.4;

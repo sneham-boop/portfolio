@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import classNames from "classnames";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,6 +11,7 @@ import "./Navigation.scss";
 
 function Navigation() {
   const { modeStyle } = useContext(modeContext);
+  const [menuIcon, setMenuIcon] = useState("menu");
   const linkStyle = classNames(modeStyle);
 
   const handleScroll = () => {
@@ -19,6 +20,11 @@ function Navigation() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleClick = () => {
+    menuIcon === "menu" ? setMenuIcon("close") : setMenuIcon("menu");
+  };
+  
   return (
     <Navbar
       className={classNames("navigation", modeStyle)}
@@ -30,7 +36,12 @@ function Navigation() {
       </Link>
       <DarkMode />
       <Navbar.Toggle aria-controls="nav">
-        <span className="material-symbols-rounded">menu</span>
+        <span
+          className="material-symbols-rounded"
+          onClick={() => handleClick()}
+        >
+          {menuIcon}
+        </span>
       </Navbar.Toggle>
       <Navbar.Collapse className="justify-content-end" id="nav">
         <Nav>
