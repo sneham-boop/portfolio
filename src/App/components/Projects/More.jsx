@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-// import Button from "react-bootstrap/Button";
+import React, { useState, useContext } from "react";
 import Button1 from "../Button";
 import Modal from "react-bootstrap/Modal";
-import CloseButton from "react-bootstrap/CloseButton";
+import classNames from "classnames";
+import { modeContext } from "../../../providers/ModeProvider";
+
 
 function More(props) {
   const [modalShow, setModalShow] = useState(false);
+  const { modeStyle } = useContext(modeContext);
   const { name, detailDescs } = props;
   const detailTitles = [
     "Idea",
@@ -34,21 +36,27 @@ function More(props) {
   const handleClick = () => {
     setModalShow(true);
   };
-  
+
   return (
     <>
-      <Button1 end="button-end" btnText="About " icon="fa-solid fa-circle-info" onClick={handleClick} />
+      <Button1
+        end="button-end"
+        btnText="About "
+        icon="fa-solid fa-circle-info"
+        onClick={handleClick}
+      />
       <Modal
         {...props}
         size="lg"
         aria-labelledby="project-modal"
+        contentClassName={classNames("project-modal", modeStyle)}
         centered
         show={modalShow}
         onHide={() => setModalShow(false)}
       >
         <Modal.Header className="project-modal-header">
-          <Modal.Title id="project-modal">About "{name}"</Modal.Title>{" "}
-          <CloseButton variant="white" onClick={() => setModalShow(false)} />
+          <Modal.Title id="project-modal">About "{name}"</Modal.Title>
+          <span className="material-symbols-rounded" onClick={() => setModalShow(false)}>close</span>
         </Modal.Header>
         <Modal.Body className="project-modal-body">{showDetail()}</Modal.Body>
       </Modal>

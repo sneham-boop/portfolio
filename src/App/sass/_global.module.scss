@@ -29,12 +29,6 @@ $mode: "light";
       text-align: center;
       color: $text-light-bg;
     }
-    .project {
-      // background-color: white;
-      .project-num {
-        color: #eaece3;
-      }
-    }
     .skill-name {
       background-color: $dark-background-color;
       color: $text-dark-bg;
@@ -66,12 +60,6 @@ $mode: "light";
       font-family: $work-font-family;
       text-align: center;
       color: $text-dark-bg;
-    }
-    .project {
-      // background-color: #101010;
-      .project-num {
-        color: $dark-background-color;
-      }
     }
     .skill-name {
       background-color: $light-background-color;

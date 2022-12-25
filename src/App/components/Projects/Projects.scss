@@ -90,12 +90,22 @@
   }
 }
 
-.modal-content {
+.project-modal {
   font-weight: $extra-thin;
+  &.dark {
+    @include mode-colors("dark");
+  }
+  &.light {
+    @include mode-colors("light");
+  }
+  .material-symbols-rounded {
+    font-variation-settings: "FILL" 0, "wght" 100, "GRAD" -25, "opsz" 48;
+    cursor: pointer;
+  }
 }
 
 .project-modal-header {
-  border-bottom: 1px solid rgb(57, 57, 57);
+  border-bottom: 1px solid;
   .modal-title {
     font-weight: $extra-thin;
     width: 100%;
@@ -116,7 +126,7 @@
       border: none;
       margin: 1em;
       width: 100%;
-      justify-content:flex-start;
+      justify-content: flex-start;
       gap: 1em;
       h3 {
         font-size: $font-size-h1;
@@ -125,7 +135,6 @@
         border-radius: 0.25rem;
         width: 100%;
       }
-      
     }
     #keep-scrolling-text {
       bottom: 30px;
