@@ -77,7 +77,7 @@
     }
     img {
       border-radius: 1rem;
-      width: 80%;
+      width: 70%;
       height: auto;
       align-self: center;
     }
@@ -125,9 +125,11 @@
     .project-info {
       border: none;
       margin: 1em;
-      width: 100%;
+      padding: 0 2em;
+      width: 70%;
       justify-content: flex-start;
       gap: 1em;
+      transition: 0.3s;
       h3 {
         font-size: $font-size-h1;
       }
@@ -145,6 +147,18 @@
       }
       to {
         bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    .project-info {
+      width: 90%;
+      transition: 0.3s;
+      h3 {
+        font-size: $font-size-h2;
       }
     }
   }

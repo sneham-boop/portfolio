@@ -16,6 +16,7 @@
     gap: 5em;
     padding-left: 0px;
     list-style-type: none;
+    transition: 0.3s;
   }
   img {
     background-color: white;
@@ -39,17 +40,11 @@
     border-radius: 1em;
   }
   &:hover {
-    // transition: 0.4s;
-    // transform: scale(1.2);
     .skill-name {
       visibility: visible;
       opacity: 1;
       transition: 0.4s;
     }
-  }
-  &:not(:hover) {
-    transition: 0.4s;
-    transform: scale(1);
   }
 }
 
@@ -66,6 +61,7 @@
     height: 100%;
     ul {
       grid-template-columns: repeat(4, auto);
+      transition: 0.3s;
     }
   }
 }
@@ -74,6 +70,11 @@
   #skills {
     ul {
       grid-template-columns: repeat(3, auto);
+      gap: 1em;
     }
+  }
+  .skill {
+    transform: scale(0.9);
+    transition: 0.3s;
   }
 }
