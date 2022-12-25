@@ -19,8 +19,18 @@
       text-align: center;
     }
   }
-  img {
-    width: 25rem;
-    border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    .about-text {
+      width: 80vw;
+      transition: 0.3s;
+      p {
+        font-size: $font-size-p-m;
+        text-align: justify;
+        transition: 0.3s;
+      }
+    }
   }
 }
