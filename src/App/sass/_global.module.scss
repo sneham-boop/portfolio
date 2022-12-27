@@ -12,6 +12,10 @@ $mode: "light";
       color: $text-light-bg;
       text-decoration: none;
     }
+    button {
+      background-color: $light-background-color;
+      color: $text-light-bg;
+    }
     .navigation .material-symbols-rounded {
       color: $text-light-bg;
     }
@@ -48,6 +52,10 @@ $mode: "light";
     a {
       color: $text-dark-bg;
       text-decoration: none;
+    }
+    button {
+      background-color: $dark-background-color;
+      color: $text-dark-bg;
     }
     .navigation .material-symbols-rounded {
       color: $text-dark-bg;

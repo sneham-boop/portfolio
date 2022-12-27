@@ -1,35 +1,66 @@
 @import "../../sass/global.module";
 
 .button1-style {
-  font-weight: $extra-thin;
-  // background-color: #dfe0db;
-  // color: black;
+  font-weight: $thin;
   height: 2em;
   min-width: 4.5em;
   border-radius: 0.375rem;
   font-size: $font-size-p-sm;
-  border: 1px solid black;
+  border: 1px solid;
+  text-align: center;
   &:hover {
     transition: 0.3s;
-    background-color: white;
     cursor: pointer;
   }
 }
 
-.button-end {
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-
 .about-contact-btn {
-  border: none;
-  font-size: $font-size-p-lg;
+  border: 1px solid;
+  font-size: $font-size-p-m;
+  font-weight: $extra-bold;
   width: 8em;
   align-self: center;
+  transition: 0.3s;
   &:hover {
     transition: 0.3s;
-    font-weight: 200;
-    font-size: $font-size-p-lg;
-    background-color: #eaece3;
+    border-radius: 2rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .button1-style {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    box-shadow : 0 0 2px lightgrey;
+    font-size: $font-size-p-m;
+    transition: 0.3s;
+    &:hover {
+      box-shadow : 0 0 6px rgb(190, 190, 190);
+    }
+    i {
+      width: 100%;
+      font-size: 1.5em;
+    }
+  }
+}
+
+// @media screen and (max-width: 410px) {
+//   .button1-style {
+//     width: 60px;
+//     height: 60px;
+//     border: none;
+//     border-radius: 50%;
+//     box-shadow : 0 0 2px lightgrey;
+//     font-size: $font-size-p-sm;
+//     transition: 0.3s;
+//     &:hover {
+//       box-shadow : 0 0 6px rgb(190, 190, 190);
+//     }
+//     i {
+//       // width: 100%;
+//       font-size: 1em;
+//     }
+//   }
+// }
