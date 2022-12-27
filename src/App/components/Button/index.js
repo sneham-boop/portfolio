@@ -10,7 +10,7 @@ function Button1(props) {
         type="button"
         onClick={onClick}
       >
-        {btnText}
+        <span>{btnText}</span>
         {icon && <i className={icon} />}
       </button>
     </>

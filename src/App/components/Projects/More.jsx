@@ -41,7 +41,7 @@ function More(props) {
     <>
       <Button1
         end="button-end"
-        btnText="About "
+        btnText="About"
         icon="fa-solid fa-circle-info"
         onClick={handleClick}
       />

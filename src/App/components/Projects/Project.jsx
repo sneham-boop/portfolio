@@ -31,12 +31,12 @@ function Project(props) {
           </div>
           <div className="project-buttons">
             <Button1
-              btnText="GitHub "
+              btnText="GitHub"
               icon="fa-brands fa-github"
               onClick={() => handleClick(githubLink)}
             />
             <Button1
-              btnText="Live "
+              btnText="Live"
               icon="fa-solid fa-laptop"
               onClick={() => handleClick(liveLink)}
             />

@@ -1,66 +1,45 @@
 @import "../../sass/global.module";
 
 .button1-style {
-  font-weight: $thin;
-  height: 2em;
-  min-width: 4.5em;
-  border-radius: 0.375rem;
+  min-width: 4em;
+  padding: 0.3em 0.5em;
+  font-family: $work-font-family;
   font-size: $font-size-p-sm;
+  font-weight: $extra-thin;
   border: 1px solid;
-  text-align: center;
+  border-radius: 0.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  transition: width 0.3s, border-radius 0.3s;
   &:hover {
-    transition: 0.3s;
     cursor: pointer;
+    border-radius: 1rem;
   }
 }
 
 .about-contact-btn {
+  height: 2em;
   border: 1px solid;
   font-size: $font-size-p-m;
   font-weight: $extra-bold;
   width: 8em;
   align-self: center;
-  transition: 0.3s;
+  transition: border-radius 0.3s;
   &:hover {
-    transition: 0.3s;
     border-radius: 2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .button1-style {
-    width: 80px;
-    height: 80px;
-    border: none;
-    border-radius: 50%;
-    box-shadow : 0 0 2px lightgrey;
+    flex-direction: column-reverse;
+    gap: 0.1em;
     font-size: $font-size-p-m;
-    transition: 0.3s;
-    &:hover {
-      box-shadow : 0 0 6px rgb(190, 190, 190);
-    }
     i {
-      width: 100%;
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
   }
 }
-
-// @media screen and (max-width: 410px) {
-//   .button1-style {
-//     width: 60px;
-//     height: 60px;
-//     border: none;
-//     border-radius: 50%;
-//     box-shadow : 0 0 2px lightgrey;
-//     font-size: $font-size-p-sm;
-//     transition: 0.3s;
-//     &:hover {
-//       box-shadow : 0 0 6px rgb(190, 190, 190);
-//     }
-//     i {
-//       // width: 100%;
-//       font-size: 1em;
-//     }
-//   }
-// }
