@@ -10,7 +10,7 @@ function ShowIcons() {
       <div className="social-icons">
         {Object.keys(links).map((icon, i) => (
           <a href={links[icon]} target="_blank" rel="noreferrer">
-            <i className={`${icon} fa-3x`} />
+            <i className={`${icon} icons`} />
           </a>
         ))}
       </div>
