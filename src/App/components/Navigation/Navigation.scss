@@ -63,21 +63,12 @@
   }
 }
 
-// @media screen and (max-width: 575px) {
-//   .navigation {
-//     // background-color: rgb(9, 9, 9);
-//     a {
-//       // background-color: rgb(23, 23, 23);
-//       // color: $text-dark-bg;
-//       font-size: $font-size-p-m;
-//       padding: 0.5em;
-//       text-align: right;
-//       &:hover {
-//         color: $text-dark-bg;
-//       }
-//       &:focus {
-//         color: $text-dark-bg;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 575px) {
+ #logo {
+  font-size: $font-size-h3;
+  padding: 0;
+ }
+ .navbar-toggler {
+  padding: 0;
+ }
+}
