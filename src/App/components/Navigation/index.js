@@ -6,6 +6,7 @@ import DarkMode from "../DarkMode";
 import { modeContext } from "../../../providers/ModeProvider";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
+import pdf from "../../documents/resume-sneha.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navigation.scss";
 
@@ -24,7 +25,7 @@ function Navigation() {
   const handleClick = () => {
     menuIcon === "menu" ? setMenuIcon("close") : setMenuIcon("menu");
   };
-  
+
   return (
     <Navbar
       className={classNames("navigation", modeStyle)}
@@ -45,16 +46,19 @@ function Navigation() {
       </Navbar.Toggle>
       <Navbar.Collapse className="justify-content-end" id="nav">
         <Nav>
-          <Link className={linkStyle} to="/resume">
+          {/* <Link className={linkStyle} to="/resume">
             Resume
-          </Link>
-          <Link
+          </Link> */}
+          <a className={linkStyle} href={pdf} target="_blank" rel="noreferrer">
+            Resume
+          </a>
+          {/* <Link
             className={linkStyle}
             onClick={() => handleScroll()}
             to="/contact"
           >
             Contact
-          </Link>
+          </Link> */}
           <Link className={linkStyle} to="/play">
             Play
           </Link>
