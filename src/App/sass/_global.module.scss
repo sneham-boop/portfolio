@@ -33,8 +33,13 @@ $mode: "light";
       background-color: $dark-background-color;
       color: $text-dark-bg;
     }
-    .contact-info i:hover {
-      color: fade-out($color: $text-light-bg, $amount: 0.2)
+    #contact .contact-info {
+      .socials {
+        background-color: #eaeaea;
+      }
+      i:hover {
+        color: fade-out($color: $text-light-bg, $amount: 0.2);
+      }
     }
   } @else {
     background-color: $dark-background-color;
@@ -65,8 +70,13 @@ $mode: "light";
       background-color: $light-background-color;
       color: $text-light-bg;
     }
-    .contact-info i:hover {
-      color: fade-out($color: $text-dark-bg, $amount: 0.2)
+    #contact .contact-info {
+      .socials {
+        background-color: lighten($color: $dark-background-color, $amount: 1);
+      }
+      i:hover {
+        color: fade-out($color: $text-dark-bg, $amount: 0.3);
+      }
     }
   }
 }

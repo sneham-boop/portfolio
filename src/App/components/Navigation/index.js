@@ -15,12 +15,12 @@ function Navigation() {
   const [menuIcon, setMenuIcon] = useState("menu");
   const linkStyle = classNames(modeStyle);
 
-  const handleScroll = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const handleScroll = () => {
+  //   const element = document.getElementById("contact");
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   const handleClick = () => {
     menuIcon === "menu" ? setMenuIcon("close") : setMenuIcon("menu");
