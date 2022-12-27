@@ -17,16 +17,18 @@ function Project(props) {
   return (
     <>
       <section id={`project-${num + 1}`} className="project">
-        <div className="project-info">
+        <div className="project-title">
           <h3>
             {num + 1}. {name}
           </h3>
-          <img
-            className="project-img"
-            src={mediaSrc}
-            alt="Live project looks like this"
-          />
-          <p>{description}</p>
+          <div className="info-container">
+            <img
+              className="project-img"
+              src={mediaSrc}
+              alt="Live project looks like this"
+            />
+            <p className="project-info">{description}</p>
+          </div>
           <div className="project-buttons">
             <Button1
               btnText="GitHub "

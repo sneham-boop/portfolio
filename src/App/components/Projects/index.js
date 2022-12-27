@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Project from "./Project";
 import Container from "react-bootstrap/Container";
 import projectsData from "./projectData";
@@ -32,38 +32,21 @@ function Projects() {
     );
   };
 
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      const projects = gsap.utils.toArray(".project");
-
-      gsap.to(projects, {
-        xPercent: -100 * (projects.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#projects",
-          pin: true,
-          scrub: 1,
-          snap: 1 / (projects.length - 1),
-          end: () =>
-            "+=200+=" + document.querySelector("#projects").offsetWidth,
-          // markers: true,
-        },
-      });
-    });
-
-    return () => {
-      ctx.revert();
-    };
-  });
-
   return (
     <Container id="projects" fluid>
       <h2>PROJECTS</h2>
+      <p className="project-text">
+        I've learnt new skills with each of these projects. With each one,
+        whether it was something related to better code organization or live
+        deployment, I've tried to carry forward the skills gained. The about
+        section in each talks about the project idea, challenges I ran into and
+        what all I would improve if I did these projects again.
+      </p>
+      <p className="project-text">
+        If you are interested in deploying a project on your own local machine, head over to
+        the GitHub link. There are extensive instructions for each project.
+      </p>
       <div id="projects-container">{projects()}</div>
-      <div id="keep-scrolling-text">
-        <p>KEEP SCROLLING DOWN</p>
-        <i className="down-arrow"></i>
-      </div>
     </Container>
   );
 }
