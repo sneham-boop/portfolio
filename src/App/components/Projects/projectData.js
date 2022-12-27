@@ -26,7 +26,8 @@ const projectsData = {
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,
-    media: null,
+    media:
+    "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
   },
   3: {
     name: "ArtRoute",
@@ -35,7 +36,8 @@ const projectsData = {
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,
-    media: null,
+    media:
+    "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
   },
   4: {
     name: "Remi",
@@ -44,7 +46,8 @@ const projectsData = {
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/remi",
     live: null,
-    media: null,
+    media:
+    "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
   },
   5: {
     name: "Mento",
@@ -53,7 +56,8 @@ const projectsData = {
     details: ["a", "b", "c", "d", "e", "f"],
     github: "https://github.com/sneham-boop/colourly",
     live: null,
-    media: null,
+    media:
+    "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
   },
 };
 
