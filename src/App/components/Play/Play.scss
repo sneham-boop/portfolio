@@ -1,9 +1,8 @@
 @import "../../sass/global.module";
 
-
 .play {
   cursor: none;
-  height: $full-vh;
+  height: $full-vh+20;
   width: $full-vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
@@ -21,25 +20,24 @@
     }
   }
   p {
-    position: relative;
+    position: absolute;
     width: 100vw;
     text-align: center;
     top: 25vh;
     font-size: $font-size-h2;
-    font-weight: $extra-bold;
+    font-weight: $extra-thin;
     font-family: $work-font-family;
-    animation: disappear 10s forwards;
-    z-index: 2;
+    animation: wiggle 2s alternate-reverse infinite ease-in-out;
+    z-index: 0;
   }
 }
 
-@keyframes disappear {
+@keyframes wiggle {
   from {
-    opacity: 1;
+    top: 25%;
   }
   to {
-    opacity: 0.3;
-    z-index: 0;
+    top: 28%;
   }
 }
 

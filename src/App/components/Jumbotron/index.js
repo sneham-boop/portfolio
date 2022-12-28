@@ -4,7 +4,6 @@ import Animate from "./Animate";
 import { modeContext } from "../../../providers/ModeProvider";
 
 function Jumbotron() {
-  const [color, setColor] = useState("#00000000");
   const { dark } = useContext(modeContext);
   const [ballColor, setBallColor] = useState({
     full: "#ff7b00",
@@ -44,8 +43,6 @@ function Jumbotron() {
         .map((_, i) => (
           <Animate
             key={i}
-            color={color}
-            setColor={setColor}
             ballColor={ballColor}
           />
         ))}
