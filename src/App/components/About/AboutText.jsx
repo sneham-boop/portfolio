@@ -1,4 +1,5 @@
 import Button1 from "../Button";
+import Emoji from "../Emoji";
 
 function AboutText() {
   const handleScroll = () => {
@@ -55,7 +56,7 @@ function AboutText() {
         </p>
         <p>
           And...as my colleagues and friends will attest, I am easy to work with
-          and who doesn't appreciate that? 😉
+          and who doesn't appreciate that? <Emoji symbol="😉" label="wink" />
         </p>
         <p>
           I'm now looking for a full-time role where I can share my programming
