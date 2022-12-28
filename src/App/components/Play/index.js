@@ -1,11 +1,9 @@
-import React, { useRef, useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { modeContext } from "../../../providers/ModeProvider";
 import Animate from "../Jumbotron/Animate";
-import Cursor from "../Cursor";
 import "./Play.scss";
 
 function Play() {
-  const app = useRef();
   const { dark } = useContext(modeContext);
   const [ballColor, setBallColor] = useState({
     full: "#ff7b00",
@@ -24,11 +22,10 @@ function Play() {
   }, [dark]);
 
   return (
-    <div className="play" ref={app}>
+    <div className="play">
       <p>
         Move around your cursor
       </p>
-      <Cursor app={app} />
       {Array(800)
         .fill(true)
         .map((_, i) => (

@@ -10,7 +10,7 @@ export default function Cursor({ app }) {
 
       const onMouseMove = (e) => {
         gsap.to(".cursor__ball--big", {
-          duration: 0.7,
+          duration: 1,
           x: e.clientX - 16,
           y: e.clientY - 16,
         });

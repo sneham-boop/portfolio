@@ -107,6 +107,7 @@
 
 .project-modal {
   font-weight: $extra-thin;
+  cursor: auto;
   &.dark {
     @include mode-colors("dark");
   }

@@ -40,7 +40,7 @@ function Project(props) {
               icon="fa-solid fa-laptop"
               onClick={() => handleClick(liveLink)}
             />
-            <More detailDescs={details} name={name} />
+            <More detaildescs={details} name={name} />
           </div>
         </div>
       </section>
