@@ -4,12 +4,7 @@ import More from "./More";
 
 function Project(props) {
   const { num, name, description, details, github, live, media } = props;
-  // const liveLink = live || "https://github.com/sneham-boop/colourly";
-  // const mediaSrc =
-    // media ||
-    // "https://images.pexels.com/photos/57565/pexels-photo-57565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
-  // const githubLink = github || "https://github.com/sneham-boop/colourly";
-
+  
   const handleClick = (link) => {
     window.open(link, "_blank");
   };
@@ -30,11 +25,11 @@ function Project(props) {
             <p className="project-info">{description}</p>
           </div>
           <div className="project-buttons">
-            <Button1
+            {github && <Button1
               btnText="GitHub"
               icon="fa-brands fa-github"
               onClick={() => handleClick(github)}
-            />
+            />}
             {live && <Button1
               btnText="Live"
               icon="fa-solid fa-laptop"

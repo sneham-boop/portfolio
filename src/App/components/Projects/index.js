@@ -3,10 +3,6 @@ import Project from "./Project";
 import Container from "react-bootstrap/Container";
 import projectsData from "./projectData";
 import "./Projects.scss";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
   const projects = () => {

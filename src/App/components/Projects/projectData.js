@@ -5,7 +5,7 @@ const projectsData = {
       "Colourly is a simple full-stack application inspired by the amazing tool created by Coolers. It allows users to create their own colour palettes, see what others have created, save their favourites, delete pelettes, etc.",
     details: [
       "This app is inspired by Coolers. I am an artist in my spare time and this application felt like something I would actually use. I loved their clean and intuitive UI and so I took up the challenge to create a mock based on some of their features.",
-      "Adding additional data points as an after thought makes a huge impact on the amount of rework. I had to restructure the database, queries and re-think the movement of data as Colourly developed multiple times. Learning from this experience, I appreciate the importance of structuring data well and in advance.", 
+      "Adding additional data points as an after thought makes a huge impact on the amount of rework. I had to restructure the database, queries and re-think the movement of data as Colourly developed multiple times. Learning from this experience, I appreciate the importance of structuring data well and in advance.",
       "Currently, this project requires to be locally deployed on your machine to be able to be tested. I have included detailed instructions on the github page for deploying the front-end and back-end of this project locally on your machine. It will cost nothing but you will need to have some web-development experience to be able to try it. Once set up, you can use either of the test accounts I've set up or create your own account to test the app.",
       "Giving thought to the movement and structure of data through the application prior to jumping straight into development is important. Also, I would use a front-end framework such as React to better control state within the application. Right, now application state not managed centrally and there is no single source of truth.",
       "I am currently working on deploying this application so that it can be experienced without having to deploy it yourself. It would also be nice to have more ways to modify colours on the create page. Also, it would be helpful to have more detail for each colour, such as a name, their RGB / HSL values.",
@@ -33,6 +33,21 @@ const projectsData = {
     live: "https://werun-app.netlify.app",
     media:
       "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
+  },
+  2: {
+    name: "Pristine Roboweld",
+    description:
+      "This website was developed for a metal fabrication business in Nashik, MH, India. It is owned by my brother and we worked as a team to create something that would be cost effective and easy for him to maintain by himself as well as reflective of what Pristine Roboweld, his company, stands for.",
+    details: [
+      "I took on this project to get an experience of working with an actual customer, even though, it is my own brother in this case!",
+      "Working with family has its own challenges, as we all know! I learnt that asking clear and direct questions was critical to getting my brother to think about what he wanted Pristine's brand to reflect.",
+      "Head over to the live website link to take a peek at how this project looks live.",
+      "Although, WIX ended up our platform of choice ultimately, if I had to do this project over again, I may have programmed this application myself. However, the self sufficiency aspect of that decision would still have proved a hurdle, since, WIX is definitely easier for my brother to maintain on his own, vs relying on my for development support.",
+      "Currently, I am working on incorporating the new brand colours and logo into Pristine's other marketing material such as their company profile and business cards.",
+      "Family and friends tested this website thoroughly and my brother and I worked as a team to resolve any issues that came up. Making this website responsive was one of the challenges we had to overcome since WIX only allows a limited number of changes with the plan we could afford.",
+    ],
+    live: "https://www.pristineroboweld.com/",
+    media: `${process.env.PUBLIC_URL}/Pristine_Roboweld.png`,
   },
   // 2: {
   //   name: "ParkEAT",

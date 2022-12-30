@@ -23,10 +23,7 @@ function More(props) {
         <section key={i} className="project-detail">
           <h4>{d}:</h4>
           <p>
-            {detaildescs[i]} This app is inspired by dash. I am an artist in my
-            spare time and this application felt like something I would actually
-            use. I loved their clean and intuitive UI and so I took up the
-            challenge to create a mock based on some of their features.
+            {detaildescs[i]}
           </p>
         </section>
       );

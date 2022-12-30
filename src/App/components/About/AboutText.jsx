@@ -26,7 +26,7 @@ function AboutText() {
           to explore this further when I was way more invested in people having
           a better experience on my website, than purchasing my art. I focussed
           on a few months of self-learning and then I went all in. In Oct 2022,
-          I completed a Diploma in Full-Stack Web Development through{" "}
+          I completed a Diploma in Full-Stack Web Development through
           <a href="https://www.lighthouselabs.ca/">Lighthouse Labs</a> in
           Canada.
         </p>
