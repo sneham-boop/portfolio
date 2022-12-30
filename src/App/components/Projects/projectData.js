@@ -49,16 +49,40 @@ const projectsData = {
     live: "https://www.pristineroboweld.com/",
     media: `${process.env.PUBLIC_URL}/Pristine_Roboweld.png`,
   },
-  // 2: {
-  //   name: "ParkEAT",
-  //   description:
-  //     "ParkEAT allows users to save their favourite parking spaces and rate them. Locations can be opened directly in google maps to allow navigation to take over.",
-  //   details: ["a", "b", "c", "d", "e", "f"],
-  //   github: "https://github.com/sneham-boop/colourly",
-  //   live: null,
-  //   media:
-  //   "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
-  // },
+  3: {
+    name: "Interview Scheduler",
+    description:
+      "Interview Scheduler is single page ReactJS app. It uses the scheduler-api as its API server to allow for state persistence. Check out the GitHub link. I have included a few additional steps to help with any setbacks I faced during local deployment. This application also supports testing via the Jest, Storybook and Cypress frameworks. Testing via the Cypress framework requires an additional database to be setup and instructions are included below.",
+    details: [
+      "This was my first ReactJS app and a huge shift from jQuery and EJS, which is what I was learning right before this. I remember feeling blown away by all the possibilities.",
+      "One main challenge was to learn how state management and prop drilling works in React. I was quite pleased to learn about the useContext hook after passing props down to multiple levels and getting thoroughly confused by what I was naming them by the end it of all. It was almost like the Rumors game I played as a child.",
+      "You will have to deploy this app locally on your machine to be able to test this.",
+      "I would use the useContext hook and the browsers local storage for data persistence instead of passing all the data to each and every component. Prop drilling has definitely made this app more complex than it needed to be.",
+      "It would be helpful to have user authentication on this applicaton. Also, I would love to spend some time and deploy this app.",
+      "Me and my mentor were the only testers for this application. Cypress and Jest were used.",
+    ],
+    github: "https://github.com/sneham-boop/scheduler",
+    live: null,
+    media:
+      "https://github.com/sneham-boop/scheduler/blob/master/documents/images/Main_page.png?raw=true",
+  },
+  4: {
+    name: "ParkEAT",
+    description:
+      "An app that allows users to search and save popular eating spots near safe and reliable parking spaces in Toronto. This app is currently under construction. However, I have enabled auto-deployment on Netlify so you can click the live link to see the progress. Ask me more about how I thought of this app idea!",
+    details: [
+      "Ask me! ;) ",
+      "I'm applying all the skills I've learnt so far and learning some more along the way. Currently learning how to use NoSQL databases, since I'll be using MongoDB for this app.",
+      "Currently not ready for testing, but you you can check out the live link!",
+      "Still working on this one - so no regrets yet.",
+      "I'm hoping to incorporate some sort of sentiment analysis API for scoring parking spaces on safety, reliability and fun factor.",
+      "Only manual testing so far.",
+    ],
+    github: "https://github.com/sneham-boop/park-and-eat",
+    live: "https://parkeat.netlify.app/",
+    media:
+      "https://images.pexels.com/photos/5775059/pexels-photo-5775059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
   // 3: {
   //   name: "ArtRoute",
   //   description:
