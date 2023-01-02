@@ -1,22 +1,95 @@
 @import "../../sass/global.module";
 
 #about {
-  padding: $padding-full-vw;
+  width: 100vw;
+  padding: $padding-full-vw + 5;
   padding-bottom: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2em;
+  font-family: $work-font-family;
+  p {
+    font-size: $font-size-p-m;
+    font-weight: $extra-thin;
+    text-align: start;
+  }
+  a {
+    border-bottom: 1px solid;
+  }
   .about-text {
-    border: none;
-    font-family: $work-font-family;
-    width: 65vw;
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    p {
-      font-size: $font-size-p-m;
-      font-weight: $extra-thin;
+    align-items: center;
+    gap: 5em;
+    h2 {
+      width: 100%;
       text-align: center;
+    }
+  }
+  .about-section {
+    display: flex;
+  }
+  .section-1 {
+    flex-direction: row;
+    gap: 5em;
+    img {
+      // aspect-ratio: 792/594;
+      width: 50%;
+      height: auto;
+      border-radius: 0.375rem;
+    }
+  }
+  .section-2 {
+    flex-direction: row;
+    gap: 5em;
+    .section-2-text {
+      width: 50%;
+    }
+    .section-2-pretty {
+      padding: 0.5em;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px;
+      // display: grid;
+      // grid-template-columns: repeat(auto-fill, 1rem);
+      // grid-template-rows: repeat(auto-fill, 1rem);
+      // gap: 5px;
+      overflow: hidden;
+      position: relative;
+      .pretty-line {
+        height: 1rem;
+        width: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .section-3 {
+    flex-direction: row;
+    gap: 5em;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 10em;
+    p {
+      padding: 0.5em 1em;
+      border-radius: 0.375rem;
+      font-size: $font-size-p-lg;
+      width: 50%;
+      font-weight: $thin;
+      text-align: center;
+    }
+    div {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

@@ -56,7 +56,16 @@ $mode: "light";
       fill: #bfd200;
       // opacity: 0.5;
     }
-    #about h2,
+    #about h2 {
+      font-size: $font-size-h2;
+      font-weight: $extra-bold;
+      font-family: $work-font-family;
+      color: $text-light-bg;
+    }
+    .section-3 p {
+      color: fade-out($color: $text-light-bg, $amount: 0.2);
+      background-color: #eaeaea;
+    }
     #skills h2,
     #contact h2 {
       font-size: $font-size-h2;
@@ -104,7 +113,16 @@ $mode: "light";
       // opacity: 0.4;
       fill: #fdc3d2;
     }
-    #about h2,
+    #about h2 {
+      font-size: $font-size-h2;
+      font-weight: $extra-bold;
+      font-family: $work-font-family;
+      color: $text-dark-bg;
+    }
+    .section-3 p {
+      color: fade-out($color: $text-dark-bg, $amount: 0.2);
+      background-color: lighten($color: $dark-background-color, $amount: 1);
+    }
     #skills h2,
     #contact h2 {
       font-size: $font-size-h2;

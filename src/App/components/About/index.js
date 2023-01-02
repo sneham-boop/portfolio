@@ -1,14 +1,18 @@
-import Container from "react-bootstrap/Container";
-import Stack from "react-bootstrap/Stack";
-import AboutText from "./AboutText";
-import photo from "../images/headshot.JPG";
 import "./About.scss";
+import Section1 from "./Section1";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
 
 function About() {
   return (
-    <Container id="about" fluid>
-        <AboutText />
-    </Container>
+    <section id="about">
+      <div className="about-text">
+        <h2>ABOUT ME</h2>
+        <Section1 />
+        <Section2 />
+        <Section3 />
+      </div>
+    </section>
   );
 }
 

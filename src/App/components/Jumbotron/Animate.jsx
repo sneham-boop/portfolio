@@ -55,7 +55,6 @@ export default function Animate({ play, ballColor }) {
   return (
     <div
       className={play ? "animate-play" : "animate"}
-      // className="animate-play animate"
       ref={jumbotronSmallBallsRef}
     >
       <svg>
