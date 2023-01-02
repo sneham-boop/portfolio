@@ -35,20 +35,20 @@ function Section2() {
             toggleActions: "restart pause reverse pause",
           },
           scale: 1,
-          opacity: 0.2
+          opacity: 0.2,
         });
         tl.to(ball, {
           fill: ballColor.full,
           scale: 1.25,
           ease: "none",
           duration: 2,
-          opacity: 0.4
+          opacity: 0.4,
         })
           .to(ball, {
             fill: ballColor.medium,
             scale: 1.5,
             duration: 2,
-            opacity: 0.7
+            opacity: 0.7,
           })
           .to(ball, { fill: ballColor.low, scale: 2, duration: 2, opacity: 1 });
       });
@@ -93,32 +93,24 @@ function Section2() {
       </div>
       <div className="section-2-text">
         <p>
-          Since bootcamp, I've learnt many new skills. What has been
-          particularly exciting is plain old CSS and what all magic can be done
-          with it to liven up a simple website. I've also learnt a little more
-          about NoSQL databases, I plan to integrate MongoDB into my current
-          project about finding fun eating spots near dependable parking
-          locations in Toronto. Ask me more about this when we chat!
+          When I am not working, you will find me being goofy or hiking with my
+          8 year old dog. I have a little home studio in which I love making
+          art. I also enjoy being involved in our local community art events.
         </p>
         <p>
-          When I am not working, you will find me being goofy with my doggo,
-          involved in local community art events or making art in my little home
-          studio, listening to music, reading or hiking with my doggo and
-          husband in the beautiful Niagara escarpment area.
+          Besides a funky sense of humour and sparkling personality, I bring a
+          barrage of other qualities. I genuinely enjoy helping other people
+          succeed and after getting to the end of a project you will find me
+          documenting and sharing my experiences with others. My GitHub page is
+          an example of this. After every project, I've written up extensive
+          instructions for anyone interested in learning more.
         </p>
         <p>
-          Besides my funky sense of humour and sparkling personality, I bring a
-          barrage of other qualities with me. I genuinely enjoy helping people
-          succeed. After getting to the end of a project involving complex
-          problems, you will find me documenting and sharing my experiences with
-          others. An experience in electrical engineering and automation has
-          toughened my analytical and problem solving skills. Tell me something
-          can't be done and you'll find me knee deep in trying to find a
-          solution.
-        </p>
-        <p>
-          And...as my colleagues and friends will attest, I am easy to work with
-          and who doesn't appreciate that? <Emoji symbol="😉" label="wink" />
+          An experience in electrical engineering and automation has toughened
+          my analytical and problem solving skills. Tell me something can't be
+          done and you'll find me knee deep in trying to find a solution. And…as
+          my friends and colleagues will attest, I am easy to work with and who
+          doesn't appreciate that? <Emoji symbol="😉" label="wink" />
         </p>
       </div>
     </div>

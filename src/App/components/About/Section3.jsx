@@ -10,17 +10,16 @@ function Section3() {
   return (
     <div className="about-section section-3">
       <p>
-        I'm now looking for a full-time role where I can share my programming
-        skills. I'd love to talk to you about what I'm currently working on and
-        how I could add value to your team.
+        I'm currently looking for my next role. I'd love to talk to you more
+        about the problem you are trying to solve and how I may be able to help.
       </p>
-      <div>
+      {/* <div>
         <Button1
           btnText="Contact Me"
           onClick={() => handleScroll()}
           custom="about-contact-btn"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
