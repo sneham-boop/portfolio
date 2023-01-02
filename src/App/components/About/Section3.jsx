@@ -1,12 +1,12 @@
-import Button1 from "../Button";
+// import Button1 from "../Button";
 
 function Section3() {
-  const handleScroll = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const handleScroll = () => {
+  //   const element = document.getElementById("contact");
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
   return (
     <div className="about-section section-3">
       <p>
