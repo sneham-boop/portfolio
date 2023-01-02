@@ -32,15 +32,10 @@ function Projects() {
     <Container id="projects" fluid>
       <h2>PROJECTS</h2>
       <p className="project-text">
-        I've learnt new skills with each of these projects. With each one,
-        whether it was something related to better code organization or live
-        deployment, I've tried to carry forward the skills gained. The about
-        section in each talks about the project idea, challenges I ran into and
-        what all I would improve if I did these projects again.
-      </p>
-      <p className="project-text">
-        If you are interested in deploying a project on your own local machine, head over to
-        the GitHub link. There are extensive instructions for each project.
+        Whether it was better coding practices, code organization or backend
+        deployment, I've tried to carry forward the skills gained with each of
+        these projects. Interested in deploying a project on your own local
+        machine? Head over to the GitHub link. There are detailed instructions.
       </p>
       <div id="projects-container">{projects()}</div>
     </Container>
