@@ -1,5 +1,22 @@
 const projectsData = {
   0: {
+    name: "weBike",
+    description:
+      "weBike is a single page application where users can find biking events near them or create new biking events for others to join. The goal of this app is to make biking more fun and bring together the biking community by having them join events in an interactive way.",
+    details: [
+      "weBike is based on my finals project, weRun, for the Lighthouse Labs web development bootcamp. I wanted to add more features to the app and put my own little twist to it! My husband and his close friend, both work at Trek and hearing all the biking stories from them gave me the idea that it will be fun to change over this app to track biking events instead of running events.",
+      "I learnt that clear communication was a key element while working together on the same codebase. Merge conflicts were common and overtime my teammate and I learnt to resolve them more efficiently. Also, working on each others code allowed us to better understand eachothers coding habits and minimize bugs as a result.",
+      "You can log in as one of the test users (email: jane@jane.com, password: password) or create your own account.",
+      "I had to redo a big part of the database and server related code during deployment and next time I will better plan my initial actions to allow for a more seemless deployment experience.",
+      "I would love to add a chat feature for planners and runners to communicate with eachother about event changes.",
+      "I had my friends and colleagues test this app and used their input to improve the apps responsiveness on various devices.",
+    ],
+    github: "https://github.com/sneham-boop/werun",
+    live: "https://werun-app.netlify.app",
+    media:
+      "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
+  },
+  3: {
     name: "Colourly",
     description:
       "Colourly is a simple full-stack application inspired by the amazing tool created by Coolers. It allows users to create their own colour palettes, see what others have created, save their favourites, delete pelettes, etc.",
@@ -17,23 +34,6 @@ const projectsData = {
       "https://github.com/sneham-boop/colourly/raw/main/docs/images/homepage.png",
     inspiredBy: "https://coolors.co/palettes/trending",
   },
-  1: {
-    name: "weBike",
-    description:
-      "weBike is a single page application where users can find biking events near them or create new biking events for others to join. The goal of this app is to make biking more fun and bring together the biking community by having them join events in an interactive way.",
-    details: [
-      "weBike is based on my finals project, weRun, for the Lighthouse Labs web development bootcamp. I wanted to add more features to the app and put my own little twist to it! My husband and his close friend, both work at Trek and hearing all the biking stories from them gave me the idea that it will be fun to change over this app to track biking events instead of running events.",
-      "I learnt that clear communication was a key element while working together on the same codebase. Merge conflicts were common and overtime my teammate and I learnt to resolve them more efficiently. Also, working on each others code allowed us to better understand eachothers coding habits and minimize bugs as a result.",
-      "You can log in as one of the test users (email: jane@jane.com, password: password) or create your own account.",
-      "I had to redo a big part of the database and server related code during deployment and next time I will better plan my initial actions to allow for a more seemless deployment experience.",
-      "I would love to add a chat feature for planners and runners to communicate with eachother about event changes.",
-      "I had my friends and colleagues test this app and used their input to improve the apps responsiveness on various devices.",
-    ],
-    github: "https://github.com/sneham-boop/werun",
-    live: "https://werun-app.netlify.app",
-    media:
-      "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
-  },
   2: {
     name: "Pristine Roboweld",
     description:
@@ -49,7 +49,7 @@ const projectsData = {
     live: "https://www.pristineroboweld.com/",
     media: `${process.env.PUBLIC_URL}/Pristine_Roboweld.png`,
   },
-  3: {
+  1: {
     name: "Interview Scheduler",
     description:
       "Interview Scheduler is single page ReactJS app. It uses the scheduler-api as its API server to allow for state persistence. Check out the GitHub link. I have included a few additional steps to help with any setbacks I faced during local deployment. This application also supports testing via the Jest, Storybook and Cypress frameworks. Testing via the Cypress framework requires an additional database to be setup and instructions are included below.",
