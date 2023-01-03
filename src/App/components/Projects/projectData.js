@@ -2,7 +2,7 @@ const projectsData = {
   0: {
     name: "weHike",
     description:
-      "An app where users can find hiking events near them or create new events for others to join.",
+      "An app where users can find hiking events near them or create new events for others to join. I often go hiking with my dog and wish there was a way to involve other people or plan new hiking routes together.",
     details: [
       "weHike is based on was my finals project weRun. My partner Marianne and I finished weRun (link) prior to the demo day and then I ended up adding a few more features to the app and put my own little twist to it! I often go hiking with my dog and wish there was a way to involve other people or plan new hiking routes together.",
       "Clear communication was critical while working together on the same codebase. Marianne and I often worked on both backend/frontend together and merge conflicts were common. Overtime we learnt to resolve them more efficiently. Also, working on each others code allowed us to better understand our coding habits and minimize bugs.",
