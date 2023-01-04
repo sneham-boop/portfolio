@@ -52,7 +52,7 @@ const projectsData = {
   1: {
     name: "Interview Scheduler",
     description:
-      "Interview Scheduler is single page ReactJS app. It uses the scheduler-api as its API server to allow for state persistence. Check out the GitHub link. I have included a few additional steps to help with any setbacks I faced during local deployment. This application also supports testing via the Jest, Storybook and Cypress frameworks. Testing via the Cypress framework requires an additional database to be setup and instructions are included below.",
+      "Interview Scheduler is single page ReactJS app that allows users to schedule interviews for the week. It uses the scheduler-api as its API server to allow for state persistence. Check out the GitHub link. I have included a few additional steps to help with any setbacks I faced during local deployment. This application also supports testing via the Jest, Storybook and Cypress frameworks. Testing via the Cypress framework requires an additional database to be setup and instructions are included below.",
     details: [
       "This was my first ReactJS app and a huge shift from jQuery and EJS, which is what I was learning right before this. I remember feeling blown away by all the possibilities.",
       "One main challenge was to learn how state management and prop drilling works in React. I was quite pleased to learn about the useContext hook after passing props down to multiple levels and getting thoroughly confused by what I was naming them by the end it of all. It was almost like the Rumors game I played as a child.",
