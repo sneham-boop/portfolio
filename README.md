@@ -15,7 +15,7 @@ It was created with ReactJS, SASS, React Router. I've experimented a bit with us
 ## App screen capture
 
 This screen capture shows the homepage for my portfolio.
-![](public/images/PortfolioScreenCapture_AdobeExpress.gif)
+![](public/images/Homepage.gif)
 
 ## Tech Stack / Dependencies
 
