@@ -15,7 +15,7 @@ It was created with ReactJS, SASS, React Router. I've experimented a bit with us
 ## App screen capture
 
 This screen capture shows the homepage for my portfolio.
-<video width="100%" height="auto">
+<video width="100%" height="auto" controls>
   <source src="public/images/PortfolioScreenCapture.mov" type="video/mp4">
 </video>
    <!-- <video src="public/images/PortfolioScreenCapture.mov" width="100%" alt="Homepage"> -->
