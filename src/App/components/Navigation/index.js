@@ -7,7 +7,7 @@ import { modeContext } from "../../../providers/ModeProvider";
 import Logo from "./Logo";
 
 import { Link } from "react-router-dom";
-import pdf from "../../documents/resume-sneha.pdf";
+import pdf from "../../documents/Resume.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navigation.scss";
 

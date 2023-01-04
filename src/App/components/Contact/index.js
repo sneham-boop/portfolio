@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 import ShowIcons from "./ShowIcons";
-import pdf from "../../documents/resume-sneha.pdf";
+import pdf from "../../documents/Resume.pdf";
 
 function Contact() {
   return (
