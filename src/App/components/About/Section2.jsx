@@ -31,8 +31,8 @@ function Section2() {
         let tl = gsap.timeline({
           scrollTrigger: {
             trigger: ball,
-            scrub: 3,
-            toggleActions: "restart pause reverse pause",
+            scrub: 10,
+            toggleActions: "restart pause reverse reset",
           },
           scale: 1,
           opacity: 0.2,
@@ -41,16 +41,16 @@ function Section2() {
           fill: ballColor.full,
           scale: 1.25,
           ease: "none",
-          duration: 2,
+          // duration: 2,
           opacity: 0.4,
         })
           .to(ball, {
             fill: ballColor.medium,
             scale: 1.5,
-            duration: 2,
+            // duration: 2,
             opacity: 0.7,
           })
-          .to(ball, { fill: ballColor.low, scale: 2, duration: 2, opacity: 1 });
+          .to(ball, { fill: ballColor.low, scale: 2, opacity: 1 });
       });
 
       // let tl = gsap.timeline({
@@ -85,11 +85,12 @@ function Section2() {
   return (
     <div className="about-section section-2">
       <div className="section-2-pretty">
-        {Array(1150)
+        {/* {Array(1150)
           .fill(true)
           .map((_, i) => (
             <PrettySVG key={i} id={i} />
-          ))}
+          ))} */}
+          <PrettySVG/>
       </div>
       <div className="section-2-text">
         <p>
