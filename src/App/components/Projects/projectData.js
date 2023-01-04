@@ -83,6 +83,21 @@ const projectsData = {
     media:
       "https://images.pexels.com/photos/5775059/pexels-photo-5775059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
+   5: {
+    name: "Visual Artist - Art Shop/Blog",
+    description:
+      "I designed this website to sell art and share my thoughts on creativity. It started a few awkwardly placed images and grew into a desire to learn the nuts and bolts of web development. I keep iterating the design and this is the 4th or 5th live version.",
+      details: [
+      "The idea came from simple over abundance of art that was accumulating in my little home studio. I wanted to try and sell it!",
+      "I chose WIX as the CMS platform early on and it's been a process to learn what all can be customized and what not. Now, having learnt how to make websites literally from scratch, I'd love to dig into their Velo/developer mode a little more.",
+      "Check out the live link. This is a functional e-commerce website where I sell art.",
+      "I'd probably not pay for a custom email address if I'd known about email aliases. This one isn't really related to web development. It just stung to know I could've gotten away without the extra email fees!",
+      "One of my goals is to code this whole website myself. E-commerce store and everything.",
+      "This is has been my most tested website. After getting input from my fellow testers, I re-designed the website to use more of the space on the screen. I've also since added multiple forms to grab data from visitors interested in subscribing to my newsletter.",
+    ],
+    github: null,
+    live: "https://www.snehakm.com/",
+    media:`${process.env.PUBLIC_URL}/VisualArtistPage.png` },
   // 3: {
   //   name: "ArtRoute",
   //   description:
