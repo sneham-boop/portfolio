@@ -2,7 +2,9 @@
 
 This is my portfolio showing the applications/projects I have worked on so far. 
 
-It was created with ReactJS, SASS, React Router. I've experimented a bit with using [GSAP](https://github.com/greensock/GSAP) for animation and simple visual effects.  
+It was created with ReactJS, SASS, React Router. useContext hook was used for implementing dark/light modes. I used gitHub pages deploy this website, which was made infinitely simpler via the gh-pages package.
+
+I've also experimented a bit with using [GSAP](https://github.com/greensock/GSAP) for animation and simple visual effects.  
 
 ### Live link: [Sneha Mahajan](https://snehakmahajan.com/)
 
@@ -30,6 +32,13 @@ This screen capture shows the homepage for my portfolio.
 - react-router-dom
 - react-scripts
 - sass
+
+## Learning Experiences
+
+- The power of modular components combined with SASS.
+- The power of continuous deployment - something I'd love to explore further.
+- Loved learning how powerful a library like gsap can be. There's much to explore here.
+- Re-using code
 
 ## Future Features
 
