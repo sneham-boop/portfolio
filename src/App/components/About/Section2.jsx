@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
-import { modeContext } from "../../../providers/ModeProvider";
+// import { modeContext } from "../../../providers/ModeProvider";
 import Emoji from "../Emoji";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -8,44 +8,45 @@ import PrettySVG from "./PrettySVG";
 gsap.registerPlugin(ScrollTrigger);
 
 function Section2() {
-  const { modeStyle } = useContext(modeContext);
-  const [ballColor, setBallColor] = useState({
-    full: "#030E11",
-    medium: "#0F4757",
-    low: "#1B819D",
-  });
-
+  // Only trigger after this component has loaded.
   useEffect(() => {
-    if (modeStyle === "dark") {
-      setBallColor({
-        full: "#030E11",
-        medium: "#0F4757",
-        low: "#1B819D",
-      });
-    }
-  }, [modeStyle]);
+    gsap.defaults({ ease: "back" });
+    gsap.set(".pretty-line", { y: 100 });
 
-  gsap.defaults({ ease: "back" });
-  gsap.set(".pretty-line", { y: 100 });
+    ScrollTrigger.batch(".pretty-line", {
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          opacity: 0.8,
+          y: 0,
+          stagger: { each: 0.15, grid: [1, 3] },
+          overwrite: true,
+        }),
+      onLeave: (batch) =>
+        gsap.set(batch, {
+          opacity: 0,
+          y: -100,
+          overwrite: true,
+        }),
+      onEnterBack: (batch) =>
+        gsap.to(batch, {
+          opacity: 0.8,
+          y: 0,
+          stagger: 0.15,
+          overwrite: true,
+        }),
+      onLeaveBack: (batch) =>
+        gsap.set(batch, {
+          opacity: 0,
+          y: 100,
+          overwrite: true,
+        }),
+    });
 
-  ScrollTrigger.batch(".pretty-line", {
-    onEnter: (batch) =>
-      gsap.to(batch, {
-        opacity: 0.5,
-        y: 0,
-        stagger: { each: 0.15, grid: [1, 3] },
-        overwrite: true,
-      }),
-    onLeave: (batch) => gsap.set(batch, { opacity: 0, y: -100, overwrite: true }),
-    onEnterBack: (batch) =>
-      gsap.to(batch, { opacity: 0.5, y: 0, stagger: 0.15, overwrite: true }),
-    onLeaveBack: (batch) =>
-      gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-  });
+    ScrollTrigger.addEventListener("refreshInit", () =>
+      gsap.set(".pretty-line", { y: 0 })
+    );
+  }, []);
 
-  ScrollTrigger.addEventListener("refreshInit", () =>
-    gsap.set(".pretty-line", { y: 0 })
-  );
   return (
     <div className="about-section section-2">
       <div className="section-2-pretty">
