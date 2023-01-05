@@ -7,12 +7,11 @@ import { modeContext } from "../../../providers/ModeProvider";
 import Logo from "./Logo";
 // import Resume from "../Resume";
 import { Link } from "react-router-dom";
-import pdf from "../../documents/Resume.pdf";
+// import pdf from "../../documents/Resume.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navigation.scss";
 
 function Navigation() {
-  
   const { modeStyle } = useContext(modeContext);
   const [menuIcon, setMenuIcon] = useState("menu");
   const linkStyle = classNames(modeStyle);
@@ -34,7 +33,6 @@ function Navigation() {
         className={classNames("navigation", modeStyle)}
         collapseOnSelect
         expand="sm"
-        
       >
         <Link className={linkStyle} to="/home">
           <Logo />
@@ -51,8 +49,8 @@ function Navigation() {
         <Navbar.Collapse className="justify-content-end" id="nav">
           <Nav>
             <Link className={linkStyle} to="/resume">
-            Resume
-          </Link>
+              Resume
+            </Link>
             {/* <a
               className={linkStyle}
               href={pdf}
@@ -74,7 +72,6 @@ function Navigation() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      
     </>
   );
 }

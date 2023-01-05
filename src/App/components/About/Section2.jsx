@@ -1,5 +1,4 @@
-import React, { useState, useContext, useEffect, useRef } from "react";
-// import { modeContext } from "../../../providers/ModeProvider";
+import React, { useEffect } from "react";
 import Emoji from "../Emoji";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
