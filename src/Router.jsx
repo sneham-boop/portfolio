@@ -22,8 +22,8 @@ export const Router = createHashRouter(
         {/* <Route path="resume" element={<Resume />} />
         <Route path="play" element={<Play />} /> */}
       </Route>
-      <Route path="/" element={<App />}>
-        <Route path="resume" element={<Resume />} />
+      <Route path="" element={<App />}>
+        <Route path="snehakmahajan.com/resume" element={<Resume />} />
       </Route>
       <Route path="/" element={<App />}>
         <Route path="play" element={<Play />} />
