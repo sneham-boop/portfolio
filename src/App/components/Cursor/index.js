@@ -1,8 +1,15 @@
 import "./Cursor.scss";
 import { gsap } from "gsap";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 
 export default function Cursor({ app }) {
+  const [mobile, setMobile] = useState("");
+
+  useEffect(() => {
+    isMobile ? setMobile(true) : setMobile(false);
+  }, []);
+
   useEffect(() => {
     let ctx = gsap.context(() => {
       const element = app.current;
@@ -44,19 +51,21 @@ export default function Cursor({ app }) {
   });
   return (
     <>
-      <div className="cursor">
-        <div className="cursor__ball cursor__ball--big ">
-          <svg height="2rem" width="2rem">
-            <circle cx="1rem" cy="1rem" r="1rem" strokeWidth="0"></circle>
-          </svg>
-        </div>
+      {!mobile && (
+        <div className="cursor">
+          <div className="cursor__ball cursor__ball--big ">
+            <svg height="2rem" width="2rem">
+              <circle cx="1rem" cy="1rem" r="1rem" strokeWidth="0"></circle>
+            </svg>
+          </div>
 
-        <div className="cursor__ball cursor__ball--small">
-          <svg height="10" width="10">
-            <circle cx="5" cy="5" r="5" strokeWidth="0"></circle>
-          </svg>
+          <div className="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+              <circle cx="5" cy="5" r="5" strokeWidth="0"></circle>
+            </svg>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }

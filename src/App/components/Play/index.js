@@ -2,14 +2,21 @@ import React, { useState, useContext, useEffect } from "react";
 import { modeContext } from "../../../providers/ModeProvider";
 import Animate from "../Jumbotron/Animate";
 import "./Play.scss";
+import { isMobile } from "react-device-detect";
 
 function Play() {
+  const [text, setText] = useState("");
   const { modeStyle } = useContext(modeContext);
   const [ballColor, setBallColor] = useState({
     full: "#ff7b00",
     medium: "#bfd200",
     low: "#ffff3f",
   });
+
+  useEffect(() => {
+    isMobile ? setText("Tap these dots.") : setText("Move around your cursor.");
+
+  }, []);
 
   useEffect(() => {
     if (modeStyle === "dark") {
@@ -24,7 +31,7 @@ function Play() {
   return (
     <div className="play">
       <p>
-        Move around your cursor
+        {text}
       </p>
       {Array(800)
         .fill(true)
