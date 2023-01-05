@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import { modeContext } from "../../../providers/ModeProvider";
 import Emoji from "../Emoji";
 import { gsap } from "gsap";
@@ -24,73 +24,112 @@ function Section2() {
       });
     }
   }, [dark]);
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      const balls = gsap.utils.toArray(".pretty-line");
-      balls.forEach((ball) => {
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ball,
-            scrub: 10,
-            toggleActions: "restart pause reverse reset",
-          },
-          scale: 1,
-          opacity: 0.2,
-        });
-        tl.to(ball, {
-          fill: ballColor.full,
-          scale: 1.25,
-          ease: "none",
-          // duration: 2,
-          opacity: 0.4,
-        })
-          .to(ball, {
-            fill: ballColor.medium,
-            scale: 1.5,
-            // duration: 2,
-            opacity: 0.7,
-          })
-          .to(ball, { fill: ballColor.low, scale: 2, opacity: 1 });
-      });
 
-      // let tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: `#about img`,
-      //     start: "top 25%",
-      //     endTrigger: `#about`,
-      //     end: "bottom bottom",
-      //     markers: true,
-      //     scrub: 3,
-      //     toggleActions: "restart pause reverse pause",
-      //   },
-      //   scale: 1,
-      // });
-      // tl.to(`.pretty-line`, {
-      //   fill: ballColor.full,
-      //   scale: 1.25,
-      //   ease: "none",
-      //   duration: 5,
-      // })
-      //   .to(`.pretty-line`, {
-      //     fill: ballColor.medium,
-      //     scale: 1.5,
-      //     duration: 5,
-      //   })
-      //   .to(`.pretty-line`, { fill: ballColor.low, scale: 2, duration: 5 });
-    });
-    return () => {
-      ctx.revert();
-    };
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     const balls = gsap.utils.toArray(".pretty-svg");
+  //     balls.forEach((ball) => {
+  //       let tl = gsap.timeline({
+  //         scrollTrigger: {
+  //           trigger: ball,
+  //           scrub: 10,
+  //           toggleActions: "restart pause reverse reset",
+  //         },
+  //         scale: 1,
+  //         opacity: 0.2,
+  //       });
+  //       tl.to(ball, {
+  //         fill: ballColor.full,
+  //         scale: 1.25,
+  //         ease: "none",
+  //         // duration: 2,
+  //         opacity: 0.4,
+  //       })
+  //         .to(ball, {
+  //           fill: ballColor.medium,
+  //           scale: 1.5,
+  //           // duration: 2,
+  //           opacity: 0.7,
+  //         })
+  //         .to(ball, { fill: ballColor.low, scale: 2, opacity: 1 });
+  //     });
+
+  //     // let tl = gsap.timeline({
+  //     //   scrollTrigger: {
+  //     //     trigger: `#about img`,
+  //     //     start: "top 25%",
+  //     //     endTrigger: `#about`,
+  //     //     end: "bottom bottom",
+  //     //     markers: true,
+  //     //     scrub: 3,
+  //     //     toggleActions: "restart pause reverse pause",
+  //     //   },
+  //     //   scale: 1,
+  //     // });
+  //     // tl.to(`.pretty-line`, {
+  //     //   fill: ballColor.full,
+  //     //   scale: 1.25,
+  //     //   ease: "none",
+  //     //   duration: 5,
+  //     // })
+  //     //   .to(`.pretty-line`, {
+  //     //     fill: ballColor.medium,
+  //     //     scale: 1.5,
+  //     //     duration: 5,
+  //     //   })
+  //     //   .to(`.pretty-line`, { fill: ballColor.low, scale: 2, duration: 5 });
+  //   });
+  //   return () => {
+  //     ctx.revert();
+  //   };
+  // }, [window.scrollY]);
+
+  // ScrollTrigger.batch(".pretty-line", {
+  //   interval: 0.3,
+  //   batchMax: 10,
+  //   onEnter: (elements, triggers) => {
+  //     gsap.to(elements, {autoAlpha: 1, stagger: 0.3});
+  //     console.log(elements.length, "elements entered");
+  //   },
+  //   onEnterBack: (elements, triggers) => {
+  //     gsap.to(elements, {autoAlpha: 1, stagger: 0.3});
+  //     console.log(elements.length, "elements entered");
+  //   },
+  //   onLeave: (elements, triggers) => {
+  //     gsap.to(elements, {opacity: 0, stagger: 0.3});
+  //     console.log(elements.length, "elements left");
+  //   },
+  //   onLeaveBack: (elements, triggers) => {
+  //     gsap.to(elements, {opacity: 0, stagger: 0.3});
+  //     console.log(elements.length, "elements left");
+  //   }
+  // });
+
+  gsap.defaults({ ease: "power3" });
+  gsap.set(".pretty-line", { y: 100 });
+
+  ScrollTrigger.batch(".pretty-line", {
+    onEnter: (batch) =>
+      gsap.to(batch, {
+        opacity: 0.5,
+        y: 0,
+        stagger: { each: 0.15, grid: [1, 3] },
+        overwrite: true,
+      }),
+    onLeave: (batch) => gsap.set(batch, { opacity: 0, y: -100, overwrite: true }),
+    onEnterBack: (batch) =>
+      gsap.to(batch, { opacity: 0.5, y: 0, stagger: 0.15, overwrite: true }),
+    onLeaveBack: (batch) =>
+      gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
   });
+
+  ScrollTrigger.addEventListener("refreshInit", () =>
+    gsap.set(".pretty-line", { y: 0 })
+  );
   return (
     <div className="about-section section-2">
       <div className="section-2-pretty">
-        {/* {Array(1150)
-          .fill(true)
-          .map((_, i) => (
-            <PrettySVG key={i} id={i} />
-          ))} */}
-          <PrettySVG/>
+        <PrettySVG />
       </div>
       <div className="section-2-text">
         <p>
