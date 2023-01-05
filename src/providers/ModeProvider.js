@@ -1,13 +1,23 @@
 import React, { useState, useEffect, createContext } from "react";
+import useLocalStorage from "../App/hooks/useLocalStorage";
 
 export const modeContext = createContext();
 
 export default function DataProvider(props) {
-  const [dark, setDark] = useState(false);
-  const [modeStyle, setModeStyle] = useState("light");
+  const { getLocalStorage, setLocalStorage } = useLocalStorage();
+  const [dark, setDark] = useState((getLocalStorage("snehaPortMode") === "dark") || false);
+  const [modeStyle, setModeStyle] = useState(getLocalStorage("snehaPortMode") || "light");
 
   useEffect(() => {
-    dark ? setModeStyle("dark") : setModeStyle("light");
+    if(dark) {
+      setModeStyle("dark");
+      setLocalStorage("snehaPortMode", "dark");
+    } 
+    else {
+      setModeStyle("light");
+      setLocalStorage("snehaPortMode", "light");
+    }
+    
   }, [dark]);
 
 
