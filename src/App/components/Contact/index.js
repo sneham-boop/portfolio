@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.scss";
 import ShowIcons from "./ShowIcons";
 import pdf from "../../documents/Resume.pdf";
 
 function Contact() {
+  // useEffect(()=>{
+  //   console.log("Contact component was loaded.")
+  // },[]);
   return (
     <div id="contact">
       <section className="contact-intro">

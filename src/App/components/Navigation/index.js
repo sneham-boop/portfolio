@@ -16,12 +16,19 @@ function Navigation() {
   const [menuIcon, setMenuIcon] = useState("menu");
   const linkStyle = classNames(modeStyle);
 
-  // const handleScroll = () => {
-  //   const element = document.getElementById("contact");
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
+  // Use setTimeout to allow contact component to load before scrolling it into view.
+  const handleScroll = async () => {
+    setTimeout(() => {
+      const element = document.getElementById("contact");
+
+      if (element) {
+        console.log("Found contact component.");
+        element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.log("No luck finding contact component.");
+      }
+    }, 100);
+  };
 
   const handleClick = () => {
     menuIcon === "menu" ? setMenuIcon("close") : setMenuIcon("menu");
@@ -34,7 +41,7 @@ function Navigation() {
         collapseOnSelect
         expand="sm"
       >
-        <Link className={linkStyle} to="/home">
+        <Link className={linkStyle} to="/">
           <Logo />
         </Link>
         <DarkMode />
@@ -59,13 +66,13 @@ function Navigation() {
             >
               Resume
             </a> */}
-            {/* <Link
-            className={linkStyle}
-            onClick={() => handleScroll()}
-            to="/contact"
-          >
-            Contact
-          </Link> */}
+            <Link
+              className={linkStyle}
+              onClick={() => handleScroll()}
+              to="/home/contact"
+            >
+              Contact
+            </Link>
             <Link className={linkStyle} to="/play">
               Play
             </Link>
