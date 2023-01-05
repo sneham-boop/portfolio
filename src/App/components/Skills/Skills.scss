@@ -68,6 +68,7 @@
 
 @media screen and (max-width: 620px) {
   #skills {
+    margin-top: 3em;
     ul {
       grid-template-columns: repeat(3, auto);
       gap: 1em;
