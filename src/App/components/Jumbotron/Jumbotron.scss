@@ -1,12 +1,9 @@
 @import "../../sass/global.module";
 
 .jumbotron {
-  // background-color: $background-color;
   height: $full-vh + 20;
   width: $full-vw;
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
-  // grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
   grid-template-columns: repeat(32, 2rem);
   grid-template-rows: repeat(17, 2rem);
   grid-gap: 1rem;
@@ -44,7 +41,7 @@
 
 .intro {
   position: absolute;
-  top: 30vh;
+  top: 25vh;
   // color: $text-dark-bg;
   padding: $padding-full-vw;
   text-align: center;
@@ -69,67 +66,6 @@
   }
 }
 
-.brief-intro {
-  position: relative;
-  z-index: 2;
-  width: $full-vw;
-  font-family: $work-font-family;
-  font-weight: $extra-thin;
-  // font-weight: $bold;
-  font-size: $font-size-p-lg;
-  text-align: center;
-  // padding: $padding-full-vw;
-  .brief-0 {
-    width: $full-vw;
-    position: absolute;
-    top: 130vh;
-    font-size: 1.4em;
-  }
-  .brief-1 {
-    width: $full-vw;
-    position: absolute;
-    top: 230vh;
-    font-size: 1.4em;
-  }
-  .brief-2 {
-    width: $full-vw;
-    position: absolute;
-    top: 330vh;
-    font-size: 1.4em;
-  }
-  .brief-3 {
-    width: $full-vw;
-    position: absolute;
-    top: 430vh;
-    font-size: 1.4em;
-  }
-  .brief-4 {
-    width: $full-vw;
-    position: absolute;
-    top: 530vh;
-    font-size: 1.4em;
-  }
-  .brief-5 {
-    width: $full-vw;
-    position: absolute;
-    top: 630vh;
-    font-size: 1.4em;
-  }
-  .brief-6 {
-    width: $full-vw;
-    position: absolute;
-    top: 730vh;
-    font-size: 1.6em;
-  }
-  .brief-7 {
-    width: $full-vw;
-    position: absolute;
-    top: 830vh;
-    font-size: 2.5em;
-    font-weight: $bold;
-  }
-}
-
 #arrow-clicker {
   position: relative;
   animation: moveupdown 1s infinite alternate-reverse ease-in-out;
@@ -137,7 +73,7 @@
   width: 100%;
   p {
     position: relative;
-    top: 47px;
+    top: 6vh;
     font-size: $font-size-p-sm;
     font-weight: $bold;
   }
@@ -153,12 +89,11 @@
   -webkit-transform: rotate(45deg);
 }
 
-
 @keyframes moveupdown {
   from {
-    top: 100px;
+    top: 3vh;
   }
   to {
-    top: 80px;
+    top: 1vh;
   }
 }
