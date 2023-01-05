@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import DarkMode from "../DarkMode";
 import { modeContext } from "../../../providers/ModeProvider";
 import Logo from "./Logo";
-
+// import Resume from "../Resume";
 import { Link } from "react-router-dom";
 import pdf from "../../documents/Resume.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -50,17 +50,17 @@ function Navigation() {
         </Navbar.Toggle>
         <Navbar.Collapse className="justify-content-end" id="nav">
           <Nav>
-            {/* <Link className={linkStyle} to="/resume">
+            <Link className={linkStyle} to="/resume">
             Resume
-          </Link> */}
-            <a
+          </Link>
+            {/* <a
               className={linkStyle}
               href={pdf}
               target="_blank"
               rel="noreferrer"
             >
               Resume
-            </a>
+            </a> */}
             {/* <Link
             className={linkStyle}
             onClick={() => handleScroll()}
