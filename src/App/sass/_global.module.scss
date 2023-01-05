@@ -10,7 +10,7 @@ $font-size-p-lg: calc(18px + 0.8vw);
 $font-size-p-m: calc(15px + 0.5vw);
 $font-size-p-sm: calc(12px + 0.3vw);
 $font-size-p-xs: calc(10px + 0.3vw);
-$extra-thin: 200;
+$extra-thin: 300;
 $thin: 300;
 $medium: 500;
 $bold: 800;
@@ -132,7 +132,7 @@ $mode: "light";
     }
     .section-3 p {
       color: fade-out($color: $text-dark-bg, $amount: 0.2);
-      background-color: lighten($color: $dark-background-color, $amount: 1);
+      background-color: lighten($color: $dark-background-color, $amount: 3);
     }
     #skills h2,
     #contact h2 {

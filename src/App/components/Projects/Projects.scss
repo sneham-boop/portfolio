@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1155px) {
   .project {
     width: 60vw;
   }
@@ -157,10 +157,17 @@
       width: 100%;
     }
   }
+  #projects-container {
+      margin-top: 0;
+      row-gap: 3em;
+  }
   #projects .project {
     margin: 1em;
     .project-title {
       align-items: center;
+      h3 {
+        font-size: $font-size-h3;
+      }
       .info-container {
         display: flex;
         flex-direction: column;

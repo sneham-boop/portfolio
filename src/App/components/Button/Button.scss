@@ -5,7 +5,7 @@
   padding: 0.3em 0.5em;
   font-family: $work-font-family;
   font-size: $font-size-p-sm;
-  font-weight: $extra-thin;
+  font-weight: $thin;
   border: 1px solid;
   border-radius: 0.375rem;
   display: flex;
@@ -33,13 +33,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .button1-style {
-    flex-direction: column-reverse;
-    gap: 0.1em;
-    font-size: $font-size-p-m;
-    i {
-      font-size: 1.2em;
-    }
-  }
-}
+// @media screen and (max-width: 600px) {
+//   .button1-style {
+//     flex-direction: column-reverse;
+//     gap: 0.1em;
+//     font-size: $font-size-p-m;
+//     i {
+//       font-size: 1.2em;
+//     }
+//   }
+// }
