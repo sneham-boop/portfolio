@@ -62,6 +62,11 @@ $mode: "light";
       font-family: $work-font-family;
       color: $text-light-bg;
     }
+    #about {
+      circle {
+        fill: $text-light-bg;
+      }
+    }
     .section-3 p {
       color: fade-out($color: $text-light-bg, $amount: 0.2);
       background-color: #eaeaea;
@@ -118,6 +123,12 @@ $mode: "light";
       font-weight: $extra-bold;
       font-family: $work-font-family;
       color: $text-dark-bg;
+
+    }
+    #about {
+      circle {
+        fill: $text-dark-bg;
+      }
     }
     .section-3 p {
       color: fade-out($color: $text-dark-bg, $amount: 0.2);
