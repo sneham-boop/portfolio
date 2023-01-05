@@ -80,10 +80,10 @@ const projectsData = {
     ],
     github: "https://github.com/sneham-boop/park-and-eat",
     live: "https://parkeat.netlify.app/",
-    media:
-      "https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
-   5: {
-    name: "Visual Artist - Art Shop & Blog",
+    media: `${process.env.PUBLIC_URL}/ParkEat.png`,
+  },
+    5: {
+    name: "Art Shop & Blog",
     description:
       "I designed this website to sell art and share my thoughts on creativity. It started a few awkwardly placed images and grew into a desire to learn the nuts and bolts of web development. I keep iterating the design and this is the 4th or 5th live version.",
       details: [
