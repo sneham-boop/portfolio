@@ -4,7 +4,7 @@ import Animate from "./Animate";
 import { modeContext } from "../../../providers/ModeProvider";
 
 function Jumbotron() {
-  const { dark } = useContext(modeContext);
+  const { modeStyle } = useContext(modeContext);
   const [ballColor, setBallColor] = useState({
     full: "#ff7b00",
     medium: "#bfd200",
@@ -12,14 +12,14 @@ function Jumbotron() {
   });
 
   useEffect(() => {
-    if (!dark) {
+    if (modeStyle === "light") {
       setBallColor({
         full: "#072ac8",
         medium: "#ffba08",
         low: "#07a0c3",
       });
     }
-  }, [dark]);
+  }, [modeStyle]);
 
   const handleScroll = () => {
     const element = document.getElementById("about");

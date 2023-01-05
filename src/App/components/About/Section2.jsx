@@ -8,7 +8,7 @@ import PrettySVG from "./PrettySVG";
 gsap.registerPlugin(ScrollTrigger);
 
 function Section2() {
-  const { dark } = useContext(modeContext);
+  const { modeStyle } = useContext(modeContext);
   const [ballColor, setBallColor] = useState({
     full: "#030E11",
     medium: "#0F4757",
@@ -16,14 +16,14 @@ function Section2() {
   });
 
   useEffect(() => {
-    if (!dark) {
+    if (modeStyle === "dark") {
       setBallColor({
         full: "#030E11",
         medium: "#0F4757",
         low: "#1B819D",
       });
     }
-  }, [dark]);
+  }, [modeStyle]);
 
   gsap.defaults({ ease: "back" });
   gsap.set(".pretty-line", { y: 100 });

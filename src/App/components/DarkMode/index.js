@@ -3,10 +3,12 @@ import { modeContext } from "../../../providers/ModeProvider";
 import "./DarkMode.scss";
 
 function DarkMode() {
-  const { dark, setDark, modeStyle } = useContext(modeContext);
+  const { modeStyle, setModeStyle } = useContext(modeContext);
 
   const toggleMode = () => {
-    setDark((prev) => !prev);
+    setModeStyle((prev) => {
+     return prev === "dark" ? "light" : "dark";
+    });
   };
 
   return (
@@ -14,10 +16,12 @@ function DarkMode() {
       <div id="dark-mode">
         <div id="switch" onClick={toggleMode} className={modeStyle}>
           <div id="toggler" className={modeStyle}>
-            {dark && (
+            {modeStyle === "dark" && (
               <span className="night material-symbols-rounded">mode_night</span>
             )}
-            {!dark && <span className="day material-symbols-rounded">sunny</span>}
+            {modeStyle === "light" && (
+              <span className="day material-symbols-rounded">sunny</span>
+            )}
           </div>
         </div>
       </div>

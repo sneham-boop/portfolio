@@ -4,7 +4,7 @@ import Animate from "../Jumbotron/Animate";
 import "./Play.scss";
 
 function Play() {
-  const { dark } = useContext(modeContext);
+  const { modeStyle } = useContext(modeContext);
   const [ballColor, setBallColor] = useState({
     full: "#ff7b00",
     medium: "#bfd200",
@@ -12,14 +12,14 @@ function Play() {
   });
 
   useEffect(() => {
-    if (!dark) {
+    if (modeStyle === "dark") {
       setBallColor({
         full: "#072ac8",
         medium: "#ffba08",
         low: "#07a0c3",
       });
     }
-  }, [dark]);
+  }, [modeStyle]);
 
   return (
     <div className="play">

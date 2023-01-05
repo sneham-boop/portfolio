@@ -5,26 +5,20 @@ export const modeContext = createContext();
 
 export default function DataProvider(props) {
   const { getLocalStorage, setLocalStorage } = useLocalStorage();
-  const [dark, setDark] = useState((getLocalStorage("snehaPortMode") === "dark") || false);
-  const [modeStyle, setModeStyle] = useState(getLocalStorage("snehaPortMode") || "light");
+
+  const [modeStyle, setModeStyle] = useState(
+    getLocalStorage("snehaPortMode") || "light"
+  );
 
   useEffect(() => {
-    if(dark) {
-      setModeStyle("dark");
-      setLocalStorage("snehaPortMode", "dark");
-    } 
-    else {
-      setModeStyle("light");
-      setLocalStorage("snehaPortMode", "light");
-    }
-    
-  }, [dark]);
-
+    modeStyle === "dark"
+      ? setLocalStorage("snehaPortMode", "dark")
+      : setLocalStorage("snehaPortMode", "light");
+  }, [modeStyle, setLocalStorage]);
 
   const data = {
-    dark,
-    setDark,
-    modeStyle
+    modeStyle,
+    setModeStyle,
   };
   return (
     <modeContext.Provider value={data}>{props.children}</modeContext.Provider>
