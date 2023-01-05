@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Contact.scss";
 import ShowIcons from "./ShowIcons";
-import pdf from "../../documents/Resume.pdf";
+import { Link } from "react-router-dom";
+// import pdf from "../../documents/Resume.pdf";
 
 function Contact() {
-  // useEffect(()=>{
-  //   console.log("Contact component was loaded.")
-  // },[]);
   return (
     <div id="contact">
       <section className="contact-intro">
@@ -17,9 +15,16 @@ function Contact() {
         </p>
       </section>
       <section className="contact-info">
-        <a className="resume-link" href={pdf} target="_blank" rel="noreferrer">
-          Download Resume
-        </a>
+        <Link to="/resume" className="resume-link">
+          {/* <a */}
+            {/* // className="resume-link"
+            // href={pdf}
+            // target="_blank"
+            // rel="noreferrer" */}
+          {/* > */}
+            Download Resume
+          {/* </a> */}
+        </Link>
         <div>
           <span className="contact-email">Email: </span>
           <span>hello@snehakm.com</span>
