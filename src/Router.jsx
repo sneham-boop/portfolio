@@ -6,11 +6,11 @@ import Resume from "./App/components/Resume";
 
 import {
   createRoutesFromElements,
-  createBrowserRouter,
+  createHashRouter,
   Route,
 } from "react-router-dom";
 
-export const Router = createBrowserRouter(
+export const Router = createHashRouter(
   createRoutesFromElements(
     <>
       <Route path="*" element={<App />} />
