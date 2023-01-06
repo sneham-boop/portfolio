@@ -16,10 +16,10 @@ function App() {
   return (
     <div className={classNames("main-container", modeStyle)} ref={app}>
       <Navigation />
-      {/* <Outlet /> */}
+      <Outlet />
       <>
         {/* <Route path="/" element={<App />}> */}
-        <Routes>
+        {/* <Routes>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="home" element={<Home />}>
@@ -27,7 +27,7 @@ function App() {
           </Route>
           <Route path="resume" element={<Resume />} />
           <Route path="play" element={<Play />} />
-        </Routes>
+        </Routes> */}
         {/* </Route> */}
       </>
       <Cursor app={app} />
