@@ -6,28 +6,29 @@ import Resume from "./App/components/Resume";
 
 import {
   createRoutesFromElements,
-  createHashRouter,
+  createBrowserRouter,
   Route,
 } from "react-router-dom";
 
-export const Router = createHashRouter(
+export const Router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="*" element={<App />} />
+      {/* <Route path="*" element={<App />} /> */}
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
+        <Route path="home" element={<Home />}/>
         <Route path="home" element={<Home />}>
           <Route path="contact" element={<Contact />} />
         </Route>
-        {/* <Route path="resume" element={<Resume />} />
-        <Route path="play" element={<Play />} /> */}
+        <Route path="resume" element={<Resume />} />
+        <Route path="play" element={<Play />} />
       </Route>
-      <Route path="" element={<App />}>
-        <Route path="snehakmahajan.com/resume" element={<Resume />} />
+      {/* <Route path="/" element={<App />}>
+        <Route path="resume" element={<Resume />} />
       </Route>
       <Route path="/" element={<App />}>
         <Route path="play" element={<Play />} />
-      </Route>
+      </Route> */}
     </>
   )
 );
