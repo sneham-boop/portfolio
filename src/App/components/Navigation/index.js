@@ -55,7 +55,7 @@ function Navigation() {
         </Navbar.Toggle>
         <Navbar.Collapse className="justify-content-end" id="nav">
           <Nav>
-            <Link className={linkStyle} to="/resume">
+            <Link className={linkStyle} to="resume">
               {/* <a className={linkStyle} href="/resume" target="_blank" rel="noreferrer"> */}
                 Resume
               {/* </a> */}
