@@ -51,7 +51,7 @@
   .section-2 {
     flex-direction: row;
     gap: 3em;
-    max-height: 100vh;
+    max-height: 110vh;
     .section-2-text {
       width: 50%;
     }
@@ -107,6 +107,9 @@
       .img-container {
         width: 60%;
       }
+    }
+    .section-2 .section-2-text {
+      height: fit-content;
     }
   }
 }

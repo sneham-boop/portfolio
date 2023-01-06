@@ -1,7 +1,7 @@
 function PrettySVG() {
   return (
     <>
-      {Array(304)
+      {Array(380)
         .fill(true)
         .map((_, i) => (
           <div className="pretty-line" key={i}>
