@@ -88,8 +88,13 @@ $mode: "light";
       }
     }
     .skill-name {
-      background-color: $dark-background-color;
-      color: $text-dark-bg;
+      // background-color: $dark-background-color;
+      // color: $text-dark-bg;
+    }
+    .skill {
+      // background-color: $dark-background-color;
+      color: $text-light-bg;
+      filter: contrast(0) brightness(0.5);
     }
     #contact .contact-info {
       .socials {
@@ -151,8 +156,12 @@ $mode: "light";
       }
     }
     .skill-name {
-      background-color: $light-background-color;
-      color: $text-light-bg;
+      // background-color: $light-background-color;
+      // color: $text-light-bg;
+    }
+    .skill {
+      filter: contrast(0) brightness(2);
+      color: $text-dark-bg;
     }
     #contact .contact-info {
       .socials {

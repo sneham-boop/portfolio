@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto auto;
-    gap: 5em;
+    gap: 4em;
     padding-left: 0px;
     list-style-type: none;
     transition: 0.3s;
@@ -23,7 +23,7 @@
   }
 }
 
-.skill {
+#skills .skill {
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -31,15 +31,15 @@
   gap: 1em;
   width: fit-content;
   position: relative;
+  transition: filter 0.4s;
   .skill-name {
     font-size: $font-size-p-sm;
     font-weight: $extra-thin;
-    visibility: hidden;
-    opacity: 0;
+    font-family: $work-font-family;
     padding: 0.1em 0.5em;
-    border-radius: 1em;
   }
   &:hover {
+    filter: none;
     .skill-name {
       visibility: visible;
       opacity: 1;
@@ -60,7 +60,7 @@
   #skills {
     height: 100%;
     ul {
-      grid-template-columns: repeat(4, auto);
+      grid-template-columns: repeat(4, 1fr);
       transition: 0.3s;
     }
   }
@@ -70,7 +70,7 @@
   #skills {
     margin-top: 3em;
     ul {
-      grid-template-columns: repeat(3, auto);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1em;
     }
   }
