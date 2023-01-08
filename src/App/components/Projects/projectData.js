@@ -47,14 +47,14 @@ const projectsData = {
   2: {
     name: "Pristine Roboweld",
     description:
-      "This website was developed for a metal fabrication business in Nashik, MH, India. It is owned by my brother and we worked as a team to create something that would be cost effective and easy for him to maintain by himself as well as reflective of what Pristine Roboweld, his company, stands for.",
+      "This website was developed for a metal fabrication business in Nashik, MH, India, my hometown. It is owned by my dad & brother and we worked as a team to create something that would be cost effective and easy for them to maintain by themselves, as well as reflective of what Pristine Roboweld stands for.",
     details: [
-      "I took on this project to get an experience of working with an actual customer, even though, it is my own brother in this case!",
-      "Working with family has its own challenges, as we all know! I learnt that asking clear and direct questions was critical to getting my brother to think about what he wanted Pristine's brand to reflect.",
+      "I took on this project to get an experience of working with an actual customer, even though, it was my own dad & brother in this case!",
+      "I learnt that asking clear and direct questions was critical to getting my customer to think about what they wanted Pristine's brand to reflect.",
       "Head over to the live website link to take a peek at how this project looks live.",
-      "Although, WIX ended up our platform of choice ultimately, if I had to do this project over again, I may have programmed this application myself. However, the self sufficiency aspect of that decision would still have proved a hurdle, since, WIX is definitely easier for my brother to maintain on his own, vs relying on my for development support.",
+      "Although, WIX ended up as our platform of choice, if I had to do this project all over again, I may have programmed this application myself. However, the self sufficiency aspect of that decision would still have proved a hurdle, since, something like WIX is definitely easier for my brother to maintain on his own, vs relying on me 100% for development/design support.",
       "Currently, I am working on incorporating the new brand colours and logo into Pristine's other marketing material such as their company profile and business cards.",
-      "Family and friends tested this website thoroughly and my brother and I worked as a team to resolve any issues that came up. Making this website responsive was one of the challenges we had to overcome since WIX only allows a limited number of changes with the plan we could afford.",
+      "Family and friends tested this website thoroughly and my brother and I worked as a team to resolve any issues that came up. Making this website responsive was one of the challenges we had to overcome since WIX only allows a limited type of changes with the website. I couldn't really use any special CSS magic! Their Velo platform may allow more flexibility though. I have yet to explore that.",
     ],
     live: "https://www.pristineroboweld.com/",
     media: `${process.env.PUBLIC_URL}/Pristine_Roboweld.png`,
