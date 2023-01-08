@@ -1,3 +1,5 @@
+import Icons from "../Skills/Icons";
+
 const projectsData = {
   0: {
     name: "weHike",
@@ -15,6 +17,10 @@ const projectsData = {
     live: "https://wehike-app.netlify.app/",
     media:
       "https://github.com/sneham-boop/wehike/raw/main/docs/images/Home.png",
+    stack: () => {
+      const icons = ["react", "css", "canva", "node", "ex", "psql"];
+      return <Icons size={30} iconNames={icons} descShowFlag={false} />;
+    },
   },
   3: {
     name: "Colourly",
@@ -33,6 +39,10 @@ const projectsData = {
     media:
       "https://github.com/sneham-boop/colourly/raw/main/docs/images/homepage.png",
     inspiredBy: "https://coolors.co/palettes/trending",
+    stack: () => {
+      const icons = ["html", "css", "js", "jq", "ex", "node", "psql"];
+      return <Icons size={30} iconNames={icons} descShowFlag={false} />;
+    },
   },
   2: {
     name: "Pristine Roboweld",
@@ -48,6 +58,10 @@ const projectsData = {
     ],
     live: "https://www.pristineroboweld.com/",
     media: `${process.env.PUBLIC_URL}/Pristine_Roboweld.png`,
+    stack: () => {
+      const icons = ["canva", "wix"];
+      return <Icons size={30} iconNames={icons} descShowFlag={false} />;
+    },
   },
   1: {
     name: "Interview Scheduler",
@@ -65,6 +79,10 @@ const projectsData = {
     live: null,
     media:
       "https://github.com/sneham-boop/scheduler/blob/master/documents/images/Main_page.png?raw=true",
+    stack: () => {
+      const icons = ["react", "sass", "postman", "node", "psql"];
+      return <Icons size={30} iconNames={icons} descShowFlag={false} />;
+    },
   },
   4: {
     name: "ParkEAT",
@@ -81,12 +99,16 @@ const projectsData = {
     github: "https://github.com/sneham-boop/park-and-eat",
     live: "https://parkeat.netlify.app/",
     media: `${process.env.PUBLIC_URL}/ParkEat.png`,
+    stack: () => {
+      const icons = ["react", "sass", "mongo", "greensock"];
+      return <Icons size={30} iconNames={icons} descShowFlag={false} />;
+    },
   },
-    5: {
+  5: {
     name: "Art Shop & Blog",
     description:
       "I designed this website to sell art and share my thoughts on creativity. It started a few awkwardly placed images and grew into a desire to learn the nuts and bolts of web development. I keep iterating the design and this is the 4th or 5th live version.",
-      details: [
+    details: [
       "The idea came from simple over abundance of art that was accumulating in my little home studio. I wanted to try and sell it!",
       "I chose WIX as the CMS platform early on and it's been a process to learn what all can be customized and what not. Now, having learnt how to make websites literally from scratch, I'd love to dig into their Velo/developer mode a little more.",
       "Check out the live link. This is a functional e-commerce website where I sell art.",
@@ -96,7 +118,13 @@ const projectsData = {
     ],
     github: null,
     live: "https://www.snehakm.com/",
-    media:`${process.env.PUBLIC_URL}/VisualArtistPage.png` },
+    media: `${process.env.PUBLIC_URL}/VisualArtistPage.png`,
+    stack: () => {
+      const icons = ["wix", "canva"];
+      return <Icons size={30} iconNames={icons} descShowFlag={false}/>;
+    },
+  },
+
   // 3: {
   //   name: "ArtRoute",
   //   description:

@@ -74,6 +74,10 @@
         height: 100%;
         width: 100%;
         padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         font-family: $work-font-family;
         font-size: $font-size-p-m;
         font-weight: $extra-thin;
@@ -82,6 +86,15 @@
         transition: position 0.3s;
         top: 0;
         z-index: 0;
+        .tech-stack {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 1em;
+        }
       }
     }
 
@@ -159,8 +172,8 @@
     }
   }
   #projects-container {
-      margin-top: 0;
-      row-gap: 3em;
+    margin-top: 0;
+    row-gap: 3em;
   }
   #projects .project {
     margin: 1em;

@@ -7,10 +7,11 @@ import "./Projects.scss";
 function Projects() {
   const projects = () => {
     const projectArray = Object.values(projectsData);
+    
     return (
       <>
         {projectArray.map((project, i) => {
-          const { name, description, details, github, live, media } = project;
+          const { name, description, details, github, live, media, stack } = project;
           return (
             <Project
               key={i}
@@ -21,6 +22,7 @@ function Projects() {
               github={github}
               live={live}
               media={media}
+              stack={stack}
             />
           );
         })}

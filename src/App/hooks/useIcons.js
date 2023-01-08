@@ -20,6 +20,8 @@ import {
   Googlemaps,
   Canva,
   Git,
+  Wix,
+  Greensock
 } from "@icons-pack/react-simple-icons";
 
 export const IconsInfoObject = {
@@ -41,7 +43,9 @@ export const IconsInfoObject = {
   maps: { slug: Googlemaps, text: "Google Maps API", color: "#4285F4" },
   git: { slug: Git, text: "Git & GitHub", color: "#F05032" },
   canva: { slug: Canva, text: "Canva", color: "#00C4CC" },
+  wix: { slug: Wix, text: "WIX CMS", color: "#0C6EFC" },
   jest: { slug: Jest, text: "Jest", color: "#C21325" },
   cypress: { slug: Cypress, text: "Cypress", color: "#17202C" },
   storybook: { slug: Storybook, text: "Storybook", color: "#FF4785" },
+  greensock: { slug: Greensock, text:"Greensock / GSAP", color: "#88CE02"}
 };

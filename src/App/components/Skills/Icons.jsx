@@ -7,7 +7,7 @@ export default function Icons({
   iconNames = Object.keys(IconsInfoObject),
 }) {
   const iconsComponentArray = iconNames.map((key, index) => {
-    const { slug: IconComponent, color, text } = IconsInfoObject[key];
+    const { slug: IconComponent, color, text } = IconsInfoObject[key] || IconsInfoObject["html"];
     return (
       <li key={`li-${index}`} className="skill">
         <IconComponent key={index} size={size} color={color} />
