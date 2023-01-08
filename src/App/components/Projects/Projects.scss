@@ -79,7 +79,7 @@
         justify-content: space-between;
         align-items: center;
         font-family: $work-font-family;
-        font-size: $font-size-p-m;
+        font-size: $font-size-p-ms;
         font-weight: $extra-thin;
         text-align: justify;
         position: absolute;
@@ -146,6 +146,9 @@
 @media screen and (max-width: 1155px) {
   .project {
     width: 60vw;
+    .project-info {
+      font-size: $font-size-p-m;
+    }
   }
 }
 
