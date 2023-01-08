@@ -8,6 +8,7 @@ $font-size-h3: calc(18px + 2vw);
 $font-size-h4: calc(15px + 1vw);
 $font-size-p-lg: calc(18px + 0.8vw);
 $font-size-p-m: calc(15px + 0.5vw);
+$font-size-p-ms: calc(12px + 0.5vw);
 $font-size-p-sm: calc(12px + 0.3vw);
 $font-size-p-xs: calc(10px + 0.3vw);
 $extra-thin: 300;
@@ -88,8 +89,13 @@ $mode: "light";
       }
     }
     .skill-name {
-      background-color: $dark-background-color;
-      color: $text-dark-bg;
+      // background-color: $dark-background-color;
+      // color: $text-dark-bg;
+    }
+    .skill {
+      // background-color: $dark-background-color;
+      color: $text-light-bg;
+      filter: contrast(0) brightness(0.5);
     }
     #contact .contact-info {
       .socials {
@@ -151,8 +157,12 @@ $mode: "light";
       }
     }
     .skill-name {
-      background-color: $light-background-color;
-      color: $text-light-bg;
+      // background-color: $light-background-color;
+      // color: $text-light-bg;
+    }
+    .skill {
+      filter: contrast(0) brightness(2);
+      color: $text-dark-bg;
     }
     #contact .contact-info {
       .socials {
