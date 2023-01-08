@@ -39,7 +39,7 @@ This screen capture shows the homepage for my portfolio.
 - The power of CI/CD - something I'd love to explore further.
 - Loved learning how powerful a library like gsap can be.
 - Re-using components
-- Client side vs server side rendering. My routes weren't refreshing as expected and it turned out I had missed a crucial detail from [create-react-app](https://create-react-app.dev/docs/deployment#github-pages)'s deployment section. Github's gh-pages do not support single page apps, which is why my links weren't refreshing. Thankfully, I found code by [Rafael Pedicini]("https://github.com/rafgraph/spa-github-pages") which fixes this issue.
+- Client side vs server side rendering. My routes weren't refreshing as expected and it turned out I had missed a crucial detail from [create-react-app](https://create-react-app.dev/docs/deployment#github-pages)'s deployment section. Github's gh-pages do not support single page apps, which is why my links weren't refreshing. Thankfully, I found code by [Rafael Pedicini](https://github.com/rafgraph/spa-github-pages) which fixes this issue.
 
 ## Future Features
 
