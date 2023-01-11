@@ -23,8 +23,8 @@ export default function Animate({ play, ballColor }) {
     tl.to(currentSVG, {
       stagger: 0.1,
       fill: ballColor.full,
-      fillOpacity: "0.2",
-      duration: 3,
+      fillOpacity: "0.3",
+      duration: 1,
     })
       .to(currentSVG, {
         fill: ballColor.medium,
@@ -40,16 +40,10 @@ export default function Animate({ play, ballColor }) {
       .to(currentSVG, { fill: ballColor.low, fillOpacity: "0", duration: 7 });
   };
 
-
   return (
     <div className={play ? "animate-play" : "animate"} ref={svgContainerRef}>
       <svg>
-        <circle
-          cx="1rem"
-          cy="1rem"
-          r="1rem"
-          onMouseEnter={onEnter}
-        />
+        <circle cx="1rem" cy="1rem" r="1rem" onMouseEnter={onEnter} />
       </svg>
     </div>
   );
