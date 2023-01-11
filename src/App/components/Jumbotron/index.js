@@ -33,18 +33,17 @@ function Jumbotron() {
       <section className="intro">
         <p>Hello, I am Sneha.</p>
         <h2>Your next creative web developer.</h2>
-        <div id="arrow-clicker" onClick={() => handleScroll()}>
-          <p>about</p>
-          <i className="down-arrow"></i>
+        <div className="clicker-container">
+          <div className="arrow-clicker" onClick={() => handleScroll()}>
+            <p>About</p>
+            <i className="down-arrow"></i>
+          </div>
         </div>
       </section>
       {Array(550)
         .fill(true)
         .map((_, i) => (
-          <Animate
-            key={i}
-            ballColor={ballColor}
-          />
+          <Animate key={i} ballColor={ballColor} />
         ))}
     </div>
   );

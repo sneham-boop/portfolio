@@ -66,16 +66,20 @@
   }
 }
 
-#arrow-clicker {
+.clicker-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   animation: moveupdown 1s infinite alternate-reverse ease-in-out;
-  cursor: pointer;
-  width: 100%;
-  p {
-    position: relative;
-    top: 6vh;
-    font-size: $font-size-p-sm;
-    font-weight: $bold;
+  .arrow-clicker {
+    cursor: pointer;
+    p {
+      margin-bottom: -36px;
+      font-size: $font-size-p-sm;
+      font-weight: $bold;
+    }
   }
 }
 
@@ -91,9 +95,9 @@
 
 @keyframes moveupdown {
   from {
-    top: 3vh;
+    top: 8vh;
   }
   to {
-    top: 1vh;
+    top: 10vh;
   }
 }
