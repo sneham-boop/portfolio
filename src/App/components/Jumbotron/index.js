@@ -1,25 +1,10 @@
-import { useState, useContext, useEffect } from "react";
+import { useContext } from "react";
 import "./Jumbotron.scss";
 import Animate from "./Animate";
 import { modeContext } from "../../../providers/ModeProvider";
 
 function Jumbotron() {
-  const { modeStyle } = useContext(modeContext);
-  const [ballColor, setBallColor] = useState({
-    full: "#ff7b00",
-    medium: "#bfd200",
-    low: "#ffff3f",
-  });
-
-  useEffect(() => {
-    if (modeStyle === "light") {
-      setBallColor({
-        full: "#072ac8",
-        medium: "#ffba08",
-        low: "#07a0c3",
-      });
-    }
-  }, [modeStyle]);
+  const { ballColor } = useContext(modeContext);
 
   const handleScroll = () => {
     const element = document.getElementById("about");

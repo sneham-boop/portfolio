@@ -6,27 +6,12 @@ import { isMobile } from "react-device-detect";
 
 function Play() {
   const [text, setText] = useState("");
-  const { modeStyle } = useContext(modeContext);
-  const [ballColor, setBallColor] = useState({
-    full: "#ff7b00",
-    medium: "#bfd200",
-    low: "#ffff3f",
-  });
+  const { ballColor } = useContext(modeContext);
 
   useEffect(() => {
     isMobile ? setText("Tap these dots.") : setText("Move around your cursor.");
 
   }, []);
-
-  useEffect(() => {
-    if (modeStyle === "dark") {
-      setBallColor({
-        full: "#072ac8",
-        medium: "#ffba08",
-        low: "#07a0c3",
-      });
-    }
-  }, [modeStyle]);
 
   return (
     <div className="play">
