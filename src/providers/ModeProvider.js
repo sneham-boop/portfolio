@@ -10,15 +10,15 @@ export default function DataProvider(props) {
   );
   const [ballColor, setBallColor] = useState({
     full: "#ff7b00",
-    medium: "#bfd200",
+    medium: "#e54d41",
     low: "#ffff3f",
   });
 
   useEffect(() => {
     if (modeStyle === "light") {
       setBallColor({
-        full: "#072ac8",
-        medium: "#ffba08",
+        full: "#ff7b00",
+        medium: "#e54d41",
         low: "#07a0c3",
       });
     }

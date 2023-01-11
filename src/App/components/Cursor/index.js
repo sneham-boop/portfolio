@@ -30,7 +30,7 @@ export default function Cursor({ app }) {
 
       const onMouseEnter = () =>
         gsap.to(".cursor__ball--big", {
-          duration: 0.6,
+          duration: 0.3,
           scale: 4,
         });
 

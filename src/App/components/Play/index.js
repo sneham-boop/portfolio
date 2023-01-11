@@ -10,18 +10,15 @@ function Play() {
 
   useEffect(() => {
     isMobile ? setText("Tap these dots.") : setText("Move around your cursor.");
-
   }, []);
 
   return (
     <div className="play">
-      <p>
-        {text}
-      </p>
+      <p>{text}</p>
       {Array(800)
         .fill(true)
         .map((_, i) => (
-          <Animate play={true} key={i} ballColor={ballColor}/>
+          <Animate play={true} key={i} ballColor={ballColor} />
         ))}
     </div>
   );

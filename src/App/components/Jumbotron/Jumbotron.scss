@@ -29,13 +29,13 @@
   }
   circle {
     opacity: 1;
-    fill: #c8e71800;
-    &:hover {
-      opacity: 1;
-    }
-    &:not(:hover) {
-      transition: 3s;
-    }
+    fill: #8c8c8c00;
+    // &:hover {
+    //   opacity: 1;
+    // }
+    // &:not(:hover) {
+    //   transition: 3s;
+    // }
   }
 }
 
