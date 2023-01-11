@@ -27,6 +27,7 @@
     text-align: end;
     &:hover {
       text-decoration: overline 1px;
+      cursor: none;
     }
     &:focus {
       font-weight: $thin;
@@ -59,7 +60,7 @@
   // border-radius: 2rem;
   // margin-left: 1em;
   &:hover {
-    cursor: pointer;
+    // cursor: pointer;
   }
 }
 

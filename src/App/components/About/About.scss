@@ -16,6 +16,9 @@
   }
   a {
     border-bottom: 1px solid;
+    &:hover {
+      cursor: none;
+    }
   }
   .about-text {
     display: flex;

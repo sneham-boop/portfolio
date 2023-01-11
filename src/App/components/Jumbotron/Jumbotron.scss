@@ -73,8 +73,11 @@
   align-items: center;
   position: relative;
   animation: moveupdown 1s infinite alternate-reverse ease-in-out;
+  &:hover {
+    cursor: none;
+  }
   .arrow-clicker {
-    cursor: pointer;
+    // cursor: pointer;
     p {
       margin-bottom: -36px;
       font-size: $font-size-p-sm;
@@ -88,7 +91,7 @@
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 30px;
-  cursor: pointer;
+  // cursor: pointer;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
