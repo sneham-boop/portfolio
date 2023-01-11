@@ -146,7 +146,7 @@
 @media screen and (max-width: 1155px) {
   .project {
     width: 60vw;
-    .project-info {
+    .project-title .info-container .project-info {
       font-size: $font-size-p-m;
     }
   }
