@@ -23,8 +23,10 @@
     align-items: center;
     gap: 3em;
     h2 {
-      width: 100%;
+      width: fit-content;
       text-align: center;
+      border-bottom: 2px double;
+      line-height: 0.95;
     }
   }
   .about-section {
