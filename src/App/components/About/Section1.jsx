@@ -1,4 +1,5 @@
-import picture from "../images/picture.jpg";
+// import picture from "../images/picture.jpg";
+import picture from "../images/Picture - Sneha.png";
 
 function Section1() {
   return (
