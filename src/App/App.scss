@@ -2,8 +2,9 @@
 
 #body {
   background-color: $background-color;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
   cursor: none;
 }
 
