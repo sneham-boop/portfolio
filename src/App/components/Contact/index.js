@@ -46,7 +46,7 @@ function Contact() {
       </section>
       <section className="contact-info">
         <Link to="/resume" className="resume-link" id="resume-button">
-          Download Resume
+          See Resume
         </Link>
         <div>
           <span className="contact-email">Email: </span>
