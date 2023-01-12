@@ -158,13 +158,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  #projects #projects-container .project {
-    width: 90vw;
-  }
-}
+// @media screen and (max-width: 600px) {
+//   #projects #projects-container .project {
+//     width: 90%;
+//   }
+// }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 600px) {
   #projects {
     .project-text {
       font-size: $font-size-p-m;
@@ -179,7 +179,8 @@
     row-gap: 3em;
   }
   #projects .project {
-    margin: 1em;
+    width: 90%;
+    margin: 2em;
     .project-title {
       align-items: center;
       h3 {
@@ -194,15 +195,14 @@
           animation: none;
         }
         img {
-          width: 90vw;
           border-radius: 0.2rem;
         }
         img:hover {
           animation: none;
         }
         .project-info {
-          width: 90vw;
           position: relative;
+          text-align: center;
           z-index: 1;
           height: fit-content;
           margin: 1em 0;
