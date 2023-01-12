@@ -166,7 +166,8 @@ $mode: "light";
     }
     #contact .contact-info {
       .socials {
-        background-color: lighten($color: $dark-background-color, $amount: 1);
+        // background-color: lighten($color: $dark-background-color, $amount: 1);
+        background-color: lighten($color: $dark-background-color, $amount: 3);
       }
       i:hover {
         color: fade-out($color: $text-dark-bg, $amount: 0.3);
