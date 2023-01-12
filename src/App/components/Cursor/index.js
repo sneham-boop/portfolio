@@ -13,7 +13,7 @@ export default function Cursor({ app }) {
   useEffect(() => {
     let ctx = gsap.context(() => {
       const element = app.current;
-      const hover = document.querySelectorAll("a, button, .arrow-clicker, #dark-mode, .social-icons i");
+      const hover = document.querySelectorAll("a, button, .arrow-clicker, #dark-mode, .social-icons i, .resume-link");
 
       const onMouseMove = (e) => {
         gsap.to(".cursor__ball--big", {

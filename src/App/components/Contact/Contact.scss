@@ -1,6 +1,7 @@
 @import "../../sass/global.module";
 
 #contact {
+  position: relative;
   padding: $padding-full-vw;
   width: 100%;
   height: $full-vh;
@@ -28,6 +29,22 @@
       font-weight: $extra-thin;
       text-align: center;
     }
+    // .resume-link {
+    //   // position: absolute;
+    //   // top: -60px;
+    //   font-size: $font-size-p-m;
+    //   font-weight: $extra-thin;
+    //   border: 1px solid;
+    //   border-radius: 0.2em;
+    //   padding: 0.2em 0.5em;
+    //   transition: 0.3s;
+    //   // transform: ;
+    //   &:hover {
+    //     border-radius: 2em;
+    //     transition: 0.3s;
+    //   }
+    // }
+    
   }
   .contact-info {
     width: 100%;
@@ -37,6 +54,7 @@
     align-items: center;
     gap: 2em;
     font-size: $font-size-p-m;
+    position: relative;
     div span {
       font-weight: $extra-thin;
       text-align: center;
@@ -45,14 +63,25 @@
       font-weight: $medium;
     }
     .resume-link {
+      position: relative;
       font-weight: $extra-thin;
       border: 1px solid;
       border-radius: 0.2em;
       padding: 0.2em 0.5em;
       transition: 0.3s;
+      animation: moveupdown 1s infinite alternate-reverse ease-in-out;
       &:hover {
         border-radius: 2em;
         transition: 0.3s;
+        cursor: none;
+      }
+    }
+    @keyframes moveupdown {
+      from {
+        top: 5px;
+      }
+      to {
+        top: -5px;
       }
     }
     .socials {
