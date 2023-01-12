@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import pdf from "../../documents/Resume.pdf";
+import pdf from "../../documents/Sneha Mahajan - Web Developer.pdf";
 import "./Resume.scss";
 
 function Resume() {
