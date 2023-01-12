@@ -10,8 +10,8 @@ function Section3() {
   return (
     <div className="about-section section-3">
       <p>
-        I'm currently looking for my next role. I'd love to talk to you more
-        about the problem you are trying to solve and how I may be able to help.
+        Currently I'm looking for my next role. I'd love to talk to you more
+        about the problem you are trying to solve and how I could help.
       </p>
       {/* <div>
         <Button1
