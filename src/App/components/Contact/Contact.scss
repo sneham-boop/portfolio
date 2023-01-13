@@ -47,27 +47,27 @@
       font-weight: $medium;
     }
     .resume-link {
-      // position: relative;
+      position: relative;
       font-weight: $extra-thin;
       border: 1px solid;
       border-radius: 0.2em;
       padding: 0.2em 0.5em;
       transition: 0.3s;
-      // animation: move-button 0.8s infinite alternate-reverse ease-in-out;
+      animation: move-button 0.8s infinite alternate-reverse ease-in-out;
       &:hover {
         border-radius: 2em;
         transition: 0.3s;
         cursor: none;
       }
     }
-    // @keyframes move-button {
-    //   from {
-    //     top: 0px;
-    //   }
-    //   to {
-    //     top: 0px;
-    //   }
-    // }
+    @keyframes move-button {
+      from {
+        top: 0px;
+      }
+      to {
+        top: -10px;
+      }
+    }
     .socials {
       // width: 70%;
       padding: 1em 0;
