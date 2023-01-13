@@ -40,8 +40,8 @@ function Contact() {
       <section className="contact-intro">
         <h2>CONTACT ME</h2>
         <p>
-          Thank you for taking the time to look at my portfolio. Let's talk
-          about how I can help you and your team in your next project.
+          Thank you for taking the time to look at what I've been upto. Let's
+          talk about how I can help you and your team in your next project.
         </p>
       </section>
       <section className="contact-info">

@@ -29,22 +29,6 @@
       font-weight: $extra-thin;
       text-align: center;
     }
-    // .resume-link {
-    //   // position: absolute;
-    //   // top: -60px;
-    //   font-size: $font-size-p-m;
-    //   font-weight: $extra-thin;
-    //   border: 1px solid;
-    //   border-radius: 0.2em;
-    //   padding: 0.2em 0.5em;
-    //   transition: 0.3s;
-    //   // transform: ;
-    //   &:hover {
-    //     border-radius: 2em;
-    //     transition: 0.3s;
-    //   }
-    // }
-    
   }
   .contact-info {
     width: 100%;
@@ -135,20 +119,21 @@
 
 @media screen and (max-width: 600px) {
   #contact {
+    margin-top: 2em;
     height: 100vh + 5;
     .contact-intro {
       p {
         width: 100%;
-        font-size: $font-size-p-lg;
+        font-size: $font-size-p-m;
       }
     }
     .contact-info {
-      font-size: $font-size-p-lg;
       div {
         text-align: center;
       }
       .socials {
-        width: 100%;
+        width: 100vw;
+        border-radius: 0;
         gap: 1em;
         h3 {
           font-size: $font-size-h2;
