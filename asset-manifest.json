@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.988bd397.css",
+    "main.css": "/static/css/main.1b89eed5.css",
     "main.js": "/static/js/main.03d9e2fd.js",
     "static/media/Picture - Sneha.png": "/static/media/Picture - Sneha.437771cff7b2d0c8178b.png",
     "static/media/Sneha Mahajan - Web Developer.pdf": "/static/media/Sneha Mahajan - Web Developer.309394b5408b35aa65bd.pdf",
     "index.html": "/index.html",
-    "main.988bd397.css.map": "/static/css/main.988bd397.css.map",
+    "main.1b89eed5.css.map": "/static/css/main.1b89eed5.css.map",
     "main.03d9e2fd.js.map": "/static/js/main.03d9e2fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.988bd397.css",
+    "static/css/main.1b89eed5.css",
     "static/js/main.03d9e2fd.js"
   ]
 }
