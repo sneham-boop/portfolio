@@ -1,7 +1,7 @@
 @import "../../sass/global.module";
 
 .jumbotron {
-  height: $full-vh + 20;
+  height: $full-vh+2;
   width: $full-vw;
   display: grid;
   grid-template-columns: repeat(32, 2rem);
@@ -102,5 +102,11 @@
   }
   to {
     top: 10vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotron {
+    height: $full-vh;
   }
 }
