@@ -1,10 +1,12 @@
 import "./Cursor.scss";
 import { gsap } from "gsap";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { modeContext } from "../../../providers/ModeProvider";
 import { isMobile } from "react-device-detect";
 
 export default function Cursor({ app }) {
   const [mobile, setMobile] = useState("");
+  const { ballCursorVisibility } = useContext(modeContext);
 
   useEffect(() => {
     isMobile ? setMobile(true) : setMobile(false);
@@ -17,7 +19,7 @@ export default function Cursor({ app }) {
 
       const onMouseMove = (e) => {
         gsap.to(".cursor__ball--big", {
-          duration: 1,
+          duration: 2,
           x: e.clientX - 16,
           y: e.clientY - 16,
         });
@@ -51,7 +53,7 @@ export default function Cursor({ app }) {
   });
   return (
     <>
-      {!mobile && (
+      {!mobile && ballCursorVisibility && (
         <div className="cursor">
           <div className="cursor__ball cursor__ball--big ">
             <svg height="2rem" width="2rem">

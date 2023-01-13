@@ -8,6 +8,7 @@ export default function DataProvider(props) {
   const [modeStyle, setModeStyle] = useState(
     getLocalStorage("snehaPortMode") || "light"
   );
+  const [ballCursorVisibility, setBallCursorVisibility] = useState(true);
   const [ballColor, setBallColor] = useState({
     full: "#ff7b00",
     medium: "#e54d41",
@@ -33,7 +34,9 @@ export default function DataProvider(props) {
   const data = {
     modeStyle,
     setModeStyle,
-    ballColor
+    ballColor,
+    ballCursorVisibility,
+    setBallCursorVisibility
   };
   return (
     <modeContext.Provider value={data}>{props.children}</modeContext.Provider>
