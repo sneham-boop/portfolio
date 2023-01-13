@@ -160,8 +160,9 @@
 
 @media screen and (max-width: 600px) {
   #about {
+    padding: 2em 0 2em 0;
     .about-text {
-      width: 80vw;
+      width: 80%;
       transition: 0.3s;
       p {
         font-size: $font-size-p-m;
@@ -206,8 +207,3 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  #about {
-    padding-bottom: 2em;
-  }
-}

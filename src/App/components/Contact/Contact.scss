@@ -63,27 +63,27 @@
       font-weight: $medium;
     }
     .resume-link {
-      position: relative;
+      // position: relative;
       font-weight: $extra-thin;
       border: 1px solid;
       border-radius: 0.2em;
       padding: 0.2em 0.5em;
       transition: 0.3s;
-      animation: moveupdown 1s infinite alternate-reverse ease-in-out;
+      // animation: move-button 0.8s infinite alternate-reverse ease-in-out;
       &:hover {
         border-radius: 2em;
         transition: 0.3s;
         cursor: none;
       }
     }
-    @keyframes moveupdown {
-      from {
-        top: 5px;
-      }
-      to {
-        top: -5px;
-      }
-    }
+    // @keyframes move-button {
+    //   from {
+    //     top: 0px;
+    //   }
+    //   to {
+    //     top: 0px;
+    //   }
+    // }
     .socials {
       // width: 70%;
       padding: 1em 0;
@@ -144,8 +144,11 @@
     }
     .contact-info {
       font-size: $font-size-p-lg;
+      div {
+        text-align: center;
+      }
       .socials {
-        width: 100vw;
+        width: 100%;
         gap: 1em;
         h3 {
           font-size: $font-size-h2;
