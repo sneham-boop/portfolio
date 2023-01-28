@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import pdf from "../../documents/Sneha Mahajan - Web Developer.pdf";
+import pdf from "../../documents/Sneha_Mahajan_Web_Developer_Resume.pdf";
 import { modeContext } from "../../../providers/ModeProvider";
 import "./Resume.scss";
 
