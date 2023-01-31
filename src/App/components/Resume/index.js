@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext } from "react";
-import pdf from "../../documents/Sneha_Mahajan_Web_Developer.pdf";
+import React, { useEffect, useContext } from "react";
+// import pdf from "../../documents/Sneha_Mahajan_Web_Developer.pdf";
 import { modeContext } from "../../../providers/ModeProvider";
 import "./Resume.scss";
 
@@ -15,11 +15,12 @@ function Resume() {
     return () => {
       setBallCursorVisibility(true);
     };
-  }, []);
+  });
   return (
     <>
       <section id="resume">
         <iframe
+          title="Resume"
           src="https://drive.google.com/file/d/1KELpmafcrL21AoqJU1U2-RlonXZZDpWv/preview"
           width="640"
           height="480"
