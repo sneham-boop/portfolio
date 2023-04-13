@@ -100,7 +100,7 @@ const projectsData = {
     live: "https://parkeat.vercel.app/",
     media: `${process.env.PUBLIC_URL}/ParkEat.png`,
     stack: () => {
-      const icons = ["react", "sass", "mongo"];
+      const icons = ["react", "sass", "mongo", "nextjs"];
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },

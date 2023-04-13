@@ -21,7 +21,8 @@ import {
   Canva,
   Git,
   Wix,
-  Greensock
+  Greensock,
+  Nextdotjs
 } from "@icons-pack/react-simple-icons";
 
 export const IconsInfoObject = {
@@ -47,5 +48,6 @@ export const IconsInfoObject = {
   jest: { slug: Jest, text: "Jest", color: "#C21325" },
   cypress: { slug: Cypress, text: "Cypress", color: "#17202C" },
   storybook: { slug: Storybook, text: "Storybook", color: "#FF4785" },
-  greensock: { slug: Greensock, text:"Greensock / GSAP", color: "#88CE02"}
+  greensock: { slug: Greensock, text:"Greensock / GSAP", color: "#88CE02"},
+  nextjs: { slug: Nextdotjs, text: "NextJs", color: "#000000"}
 };
