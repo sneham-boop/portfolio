@@ -87,7 +87,7 @@ const projectsData = {
   4: {
     name: "ParkEAT",
     description:
-      "An app that allows users to search and save popular eating spots near safe and reliable parking spaces in Toronto. This app is currently under construction. However, I have enabled auto-deployment on Netlify so you can click the live link to see the progress. Ask me more about how I thought of this app idea!",
+      "An app that allows users to search and save popular eating spots near safe and reliable parking spaces in Toronto. This app is currently under construction. However, I have enabled auto-deployment on Vercel so you can click the live link to see the progress. Ask me more about how I thought of this app idea!",
     details: [
       "Ask me! ;) ",
       "I'm applying all the skills I've learnt so far and learning some more along the way. Currently learning how to use NoSQL databases, since I'll be using MongoDB for this app.",
@@ -96,11 +96,11 @@ const projectsData = {
       "I'm hoping to incorporate some sort of sentiment analysis API for scoring parking spaces on safety, reliability and fun factor.",
       "Only manual testing so far.",
     ],
-    github: "https://github.com/sneham-boop/park-and-eat",
-    live: "https://parkeat.netlify.app/",
+    github: "https://github.com/sneham-boop/parkeat",
+    live: "https://parkeat.vercel.app/",
     media: `${process.env.PUBLIC_URL}/ParkEat.png`,
     stack: () => {
-      const icons = ["react", "sass", "mongo", "greensock"];
+      const icons = ["react", "sass", "mongo"];
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
