@@ -35,7 +35,7 @@ const projectsData = {
       "Yes. Based on feedback, I simplified the menu structure and added this FAQ page. I also had to fix a few broken links.",
     ],
     github: "https://github.com/sneham-boop/colourly",
-    live: null,
+    live: "https://colourly.vercel.app/",
     media:
       "https://github.com/sneham-boop/colourly/raw/main/docs/images/homepage.png",
     inspiredBy: "https://coolors.co/palettes/trending",
