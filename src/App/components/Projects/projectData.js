@@ -76,7 +76,7 @@ const projectsData = {
       "Me and my mentor were the only testers for this application. Cypress and Jest were used.",
     ],
     github: "https://github.com/sneham-boop/scheduler",
-    live: null,
+    live: "https://scheduler-sm.vercel.app/",
     media:
       "https://github.com/sneham-boop/scheduler/blob/master/documents/images/Main_page.png?raw=true",
     stack: () => {
