@@ -37,7 +37,7 @@ const projectsData = {
     github: "https://github.com/sneham-boop/colourly",
     live: "https://colourly.vercel.app/",
     media:
-      "https://github.com/sneham-boop/colourly/blob/main/docs/images/homepage.png",
+      "https://github.com/sneham-boop/colourly/blob/main/docs/images/homepage.png?raw=true",
     inspiredBy: "https://coolors.co/palettes/trending",
     stack: () => {
       const icons = ["html", "css", "js", "jq", "ex", "node", "psql"];
