@@ -22,7 +22,7 @@ const projectsData = {
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
-  3: {
+  1: {
     name: "Colourly",
     description:
       "Colourly is a simple full-stack application inspired by the amazing tool created by Coolers. It allows users to create their own colour palettes, see what others have created, save their favourites, delete pelettes, etc.",
@@ -44,7 +44,7 @@ const projectsData = {
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
-  2: {
+  5: {
     name: "Pristine Roboweld",
     description:
       "This website was developed for a metal fabrication business in Nashik, MH, India, my hometown. It is owned by my dad & brother and we worked as a team to create something that would be cost effective and easy for them to maintain by themselves, as well as reflective of what Pristine Roboweld stands for.",
@@ -63,7 +63,7 @@ const projectsData = {
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
-  1: {
+  2: {
     name: "Interview Scheduler",
     description:
       "An app that allows users to schedule interviews for the week. This was my first React app. Check out the GitHub link, I have included a few additional steps to help with any setbacks I faced during local deployment. This application also supports testing via the Jest, Storybook and Cypress frameworks.",
@@ -84,7 +84,7 @@ const projectsData = {
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
-  4: {
+  3: {
     name: "ParkEAT",
     description:
       "An app that allows users to search and save popular eating spots near safe and reliable parking spaces in Toronto. This app is currently under construction. However, I have enabled auto-deployment on Vercel so you can click the live link to see the progress. Ask me more about how I thought of this app idea!",
@@ -104,7 +104,7 @@ const projectsData = {
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
-  5: {
+  4: {
     name: "Art Shop & Blog",
     description:
       "I designed this website to sell art and share my thoughts on creativity. It started a few awkwardly placed images and grew into a desire to learn the nuts and bolts of web development. I keep iterating the design and this is the 4th or 5th live version.",
