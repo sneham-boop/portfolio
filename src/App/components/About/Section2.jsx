@@ -53,24 +53,25 @@ function Section2() {
       </div>
       <div className="section-2-text">
         <p>
-          When I am not working, you will find me being goofy or hiking with my
-          8 year old dog. I have a little home studio in which I love making
-          art. I also enjoy being involved in our local community art events.
+          Apart from my sense of humor and sparkling personality, I bring a
+          range of qualities to the table. I enjoy helping others and upon
+          completing a project, you will find me documenting and sharing my
+          experiences with others. My GitHub page is an example of this. After
+          every project, I've written up comprehensive instructions for those
+          interested in expanding their knowledge.
         </p>
         <p>
-          Besides a funky sense of humour and sparkling personality, I bring a
-          barrage of other qualities. I genuinely enjoy helping other people
-          succeed and after getting to the end of a project you will find me
-          documenting and sharing my experiences with others. My GitHub page is
-          an example of this. After every project, I've written up extensive
-          instructions for anyone interested in learning more.
-        </p>
-        <p>
-          An experience in electrical engineering and automation has toughened
-          my analytical and problem solving skills. Tell me something can't be
-          done and you'll find me knee deep in trying to find a solution. And…as
+          My experience in electrical engineering and automation has honed my
+          analytical and problem solving skills. Tell me something cannot be
+          done, and you'll find me fully immersed in finding a solution. And…as
           my friends and colleagues will attest, I am easy to work with and who
           doesn't appreciate that? <Emoji symbol="😉" label="wink" />
+        </p>
+        <p>
+          Outside of work, you will find me either being goofy or hiking with my
+          9-year-old dog. I enjoy participating in local art events, allowing me
+          to connect with fellow artists and contribute to the vibrant
+          creative scene in the Toronto area.
         </p>
       </div>
     </div>

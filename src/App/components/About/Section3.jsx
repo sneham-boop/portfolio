@@ -4,8 +4,8 @@ function Section3() {
   return (
     <div className="about-section section-3">
       <p>
-        Currently I'm looking for my next role. I'd love to talk to you more
-        about the problem you are trying to solve and how I could help.
+        Currently, I am actively seeking my next role. Let's connect and discuss
+        how I can contribute to your projects!
       </p>
     </div>
   );

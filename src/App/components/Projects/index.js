@@ -48,7 +48,7 @@ function Projects() {
       <Container className="projects" fluid>
         <h2>OTHER PROJECTS</h2>
         <p className="project-text">
-          These projects are rooted in real-world use cases. In the majority of
+          These projects are based on real-world use cases. In the majority of
           instances, I collaborated with actual businesses or individuals to
           craft their websites. I opted for WIX as my preferred platform due to
           its user-friendly interface and effortless maintenance capabilities.

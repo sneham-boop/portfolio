@@ -6,36 +6,32 @@ function Section1() {
     <div className="about-section section-1">
       <div className="section-1-text">
         <p>
-          I am a lifelong engineer and keen on all things visual and
-          interactive. And cake. I also really love cake.
+          I am a lifelong engineer with a strong passion for visual and
+          interactive experiences, and a love for cake (vanilla, if you're
+          taking notes).
         </p>
         <p>
-          Web development started in 2020 when I created a WIX{" "}
+          In 2020, I dove into web development, creating a{" "}
           <a href="https://www.snehakm.com" target="_blank" rel="noreferrer">
             website
           </a>{" "}
-          to sell art. As an engineer & artist, who loves breaking and
-          rebuilding things, the ability to create something functional and
-          beautiful that people could directly interact with was fulfilling.
-          After a few months of self-learning, there was no looking back for me.
-          In Oct 2022, I completed a Diploma in Full-Stack Web Development
-          through{" "}
+          to showcase and sell my artwork. Combining my engineering and artistic
+          skills, I found immense joy in building functional and visually
+          pleasing interactive platforms. Since then, I've continuously expanded
+          my skill set, currently exploring Next.js for efficient server-side
+          rendering (SSR) and delving into NoSQL databases, starting with
+          MongoDB. I'm currently working on an{" "}
           <a
-            href="https://www.lighthouselabs.ca/"
+            href="https://parkeat.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            Lighthouse Labs
+            app
           </a>{" "}
-          in Toronto.
-        </p>
-        <p>
-          I've learnt many new skills since then. What has been particularly
-          exciting, is plain old JavaScript and CSS what all can be done
-          with it to liven up a simple website. I've also learnt a little more
-          about NoSQL databases. Currently, I am using MongoDB in a project about finding
-          fun eating spots near dependable parking locations. Ask me more about the origin of
-          this idea when we chat!
+          that focuses on discovering enjoyable dining spots near reliable
+          parking locations in large cities, utilizing my MongoDB and Next.js knowledge. I'd be
+          happy to share more about the inspiration behind this project during
+          our chat.
         </p>
       </div>
       <div className="img-container">
