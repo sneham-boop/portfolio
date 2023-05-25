@@ -43,14 +43,14 @@ const projectsData = {
   3: {
     name: "Mom's Talk",
     description:
-      "This project is a collaborative effort with my best friend, who is a wonderfully resourceful and driven mommy. She and I noodled with this idea for the longest time and 2023 was finally the year it came into fruition. Both of us came up with the topics trained other mom's on how to navigate the world of blogging. More than anything, we had a ton of fun working on this project.",
+      "This project is a collaborative effort with a friend, who is a wonderfully resourceful and driven mommy. She and I noodled with this idea for the longest time and 2023 was finally the year it came into fruition. Both of us came up with the project scope, trained other mom's on how to navigate the world of blogging, racked our brains on how something like this might scale up or down. More than anything, we had a ton of fun working on this project.",
     details: [
-      "The idea came from simple over abundance of art that was accumulating in my little home studio. I wanted to try and sell it!",
-      "I chose WIX as the CMS platform early on and it's been a process to learn what all can be customized and what not. Now, having learnt how to make websites literally from scratch, I'd love to dig into their Velo/developer mode a little more.",
-      "Check out the live link. This is a functional e-commerce website where I sell art.",
-      "I'd probably not pay for a custom email address if I'd known about email aliases. This one isn't really related to web development. It just stung to know I could've gotten away without the extra email fees!",
-      "One of my goals is to code this whole website myself. E-commerce store and everything.",
-      "This is has been my most tested website. After getting input from my fellow testers, I re-designed the website to use more of the space on the screen. I've also since added multiple forms to grab data from visitors interested in subscribing to my newsletter.",
+      "This was my friends idea and I helped her execute it. She's a highly resourceful individual and always keen in helping others succeed, whether its mottherhood or something related to career. This was a way for her to share her learnings while parenting a baby in the middle of a pandemic and we see it grow slowly to become a place where other mom's can share their experiences as well.",
+      "I learned how important it was to not assume someone else's knowledge level when it comes to technology. Having been a blogger for a while myself, I took my experience for granted. But, it was an altogether different experience to guide someone else to do it.",
+      "Check out the live link. This is a functional blog that my friend uses actively and there's a readership of atleast 30+ individuals at this time. We are still growing!",
+      "My friend wanted to have an option to write in our native language, Marathi. WIX currently does not support this and I'd love to explore this further with a different platform or develop my own.",
+      "We have not yet discussed further features to add, but, adding a forum section where different conversation threads can exist might be of soem value.",
+      "Over 130 people have accessed this website to read our blog, and we have received compliments on the design as well as constructive criticism on the usability. Initial tests exposed a few issues with the responsiveness of the website on multiple devices. I've taken efforts after that to make it more mobile friendly and responsive.",
     ],
     github: null,
     live: "https://www.themomstalk.com/",
@@ -60,27 +60,6 @@ const projectsData = {
       return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
- 
-  // 4: {
-  //   name: "Remi",
-  //   description:
-  //     "Remi automatically categorizes items based on OpenAI's algorithm and multiple reminders may be added to each item on the list and an urgency level may be set. A colleague/friend can be added for further accountability of tasks.",
-  //   details: ["a", "b", "c", "d", "e", "f"],
-  //   github: "https://github.com/sneham-boop/remi",
-  //   live: null,
-  //   media:
-  //   "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
-  // },
-  // 5: {
-  //   name: "Mento",
-  //   description:
-  //     "Get matched with our mentors based on your interests and goals.",
-  //   details: ["a", "b", "c", "d", "e", "f"],
-  //   github: "https://github.com/sneham-boop/colourly",
-  //   live: null,
-  //   media:
-  //   "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
-  // },
 };
 
 export default projectsData;

@@ -37,23 +37,26 @@ function Projects() {
       <Container className="projects" fluid>
         <h2>PROJECTS</h2>
         <p className="project-text">
-          Whether it was better coding practices, code organization or backend
-          deployment, I've tried to carry forward the skills gained with each of
-          these projects. Interested in deploying a project on your own local
-          machine? Head over to the GitHub link. There are detailed
-          instructions.
+          Whether it be refining coding practices, enhancing code organization,
+          or streamlining backend deployment, I have strived to apply the skills
+          acquired from each of these projects. Are you interested in deploying
+          a project on your own local machine? Simply visit the provided GitHub
+          link for detailed instructions.
         </p>
         <div className="projects-container">{projects(projectsData)}</div>
       </Container>
       <Container className="projects" fluid>
-      <h2>OTHER PROJECTS</h2>
-      <p className="project-text">
-        These are project's I've done for real world use cases. In most cases,
-        there was a real business / person with whom I collaborated to create
-        this website.
-      </p>
-      <div className="projects-container other-projects">{projects(otherProjectsData)}</div>
-    </Container>
+        <h2>OTHER PROJECTS</h2>
+        <p className="project-text">
+          These projects are rooted in real-world use cases. In the majority of
+          instances, I collaborated with actual businesses or individuals to
+          craft their websites. I opted for WIX as my preferred platform due to
+          its user-friendly interface and effortless maintenance capabilities.
+        </p>
+        <div className="projects-container other-projects">
+          {projects(otherProjectsData)}
+        </div>
+      </Container>
     </>
   );
 }
