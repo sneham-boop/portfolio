@@ -66,14 +66,14 @@ const projectsData = {
   2: {
     name: "Interview Scheduler",
     description:
-      "An app that allows users to schedule interviews for the week. This was my first React app. Check out the GitHub link, I have included a few additional steps to help with any setbacks I faced during local deployment. This application also supports testing via the Jest, Storybook and Cypress frameworks.",
+      "An app that allows users to schedule interviews for the week. This app started out as a single page react app with a separate ExpressJS based server. I recently migrated this to Next.js and I've used my newly gained MongoDB skills for state persistence.",
     details: [
-      "This was my first ReactJS app and a huge shift from jQuery and EJS, which is what I was learning right before this. I remember feeling blown away by all the possibilities.",
+      "This was my first ReactJS app and a huge shift from jQuery and EJS, which is what I was learning right before this. I remember feeling blown away by all the possibilities. Eventually, I ended up migrating this app to Next.js. It was great practice to integrate the server side code and frontend into a single app and experiment with server side rendering.",
       "One main challenge was to learn how state management and prop drilling works in React. I was quite pleased to learn about the useContext hook after passing props down to multiple levels and getting thoroughly confused by what I was naming them by the end it of all. It was almost like the Rumors game I played as a child.",
-      "You will have to deploy this app locally on your machine to be able to test this.",
+      "Head over to the live link to test this app. It is currently deployed on Vercel.",
       "I would use the useContext hook and the browsers local storage for data persistence instead of passing all the data to each and every component. Prop drilling has definitely made this app more complex than it needed to be.",
-      "It would be helpful to have user authentication on this applicaton. Also, I would love to spend some time and deploy this app.",
-      "Me and my mentor were the only testers for this application. Cypress and Jest were used.",
+      "It would be helpful to have user authentication on this applicaton.",
+      "Me and my mentor were the only testers for this application. Cypress and Jest were used, however, it has not been tested after I migrated it to Next.js and MongoDB.",
     ],
     github: "https://github.com/sneham-boop/scheduler",
     live: "https://scheduler-sm.vercel.app/",

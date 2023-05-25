@@ -4,7 +4,7 @@ const projectsData = {
   0: {
     name: "Pristine Roboweld",
     description:
-      "This website was developed for a metal fabrication business in Nashik, MH, India, my hometown. It is owned by my dad & brother. We worked as a team to create something that would be cost effective and easy for them to maintain by themselves, as well as reflective of what Pristine Roboweld stands for.",
+      "This website was developed for Pristine Roboweld, a metal fabrication business in my hometown of Nashik, MH, India. Owned by my dad and brother, we worked as a team to improve their online presence and created an easily maintainable, cost-effective solution.",
     details: [
       "I took on this project to get an experience of working with an actual customer, even though, it was my own dad & brother in this case!",
       "I learnt that asking clear and direct questions was critical to getting my customer to think about what they wanted Pristine's brand to reflect.",
@@ -23,14 +23,14 @@ const projectsData = {
   2: {
     name: "Art Shop & Blog",
     description:
-      "I designed this website to sell art and share my thoughts on creativity. It started a few awkwardly placed images and grew into a desire to learn the nuts and bolts of web development. I keep iterating the design and this is the 4th or 5th live version.",
+      "I designed this website to sell art and share my thoughts on creativity. It started as a few awkwardly placed pictures of my art and grew into a desire to learn the nuts and bolts of web development. I routinely iterate the design and this is the 4th or 5th version.",
     details: [
-      "The idea came from simple over abundance of art that was accumulating in my little home studio. I wanted to try and sell it!",
+      "The idea came from over abundance of art that was accumulating in my little home studio. I wanted to share it on a platform different from social media and possibly even try and sell it!",
       "I chose WIX as the CMS platform early on and it's been a process to learn what all can be customized and what not. Now, having learnt how to make websites literally from scratch, I'd love to dig into their Velo/developer mode a little more.",
-      "Check out the live link. This is a functional e-commerce website where I sell art.",
+      "This is a functional e-commerce website where I sell my own art. Check it out!",
       "I'd probably not pay for a custom email address if I'd known about email aliases. This one isn't really related to web development. It just stung to know I could've gotten away without the extra email fees!",
-      "One of my goals is to code this whole website myself. E-commerce store and everything.",
-      "This is has been my most tested website. After getting input from my fellow testers, I re-designed the website to use more of the space on the screen. I've also since added multiple forms to grab data from visitors interested in subscribing to my newsletter.",
+      "One of my goals is to code this whole website myself. E-commerce store and everything. Definitely going to use Next.js for this.",
+      "This is has been my most tested website. After getting input from my artist friends and family, I re-designed the website to use more of the space on the screen. I've also since added multiple forms to grab data from visitors interested in subscribing to my newsletter.",
     ],
     github: null,
     live: "https://www.snehakm.com/",
@@ -43,8 +43,8 @@ const projectsData = {
   3: {
     name: "Mom's Talk",
     description:
-      "This project is a collaborative effort with a friend, who is a wonderfully resourceful and driven mommy. She and I noodled with this idea for the longest time and 2023 was finally the year it came into fruition. Both of us came up with the project scope, trained other mom's on how to navigate the world of blogging, racked our brains on how something like this might scale up or down. More than anything, we had a ton of fun working on this project.",
-    details: [
+      "This blog is a collaborative effort with a resourceful and driven mommy friend. In 2023, we brought our idea to life, defining the project scope, training other moms in blogging, and strategizing scalability. Above all, we had a ton of fun working on this project.",
+      details: [
       "This was my friends idea and I helped her execute it. She's a highly resourceful individual and always keen in helping others succeed, whether its mottherhood or something related to career. This was a way for her to share her learnings while parenting a baby in the middle of a pandemic and we see it grow slowly to become a place where other mom's can share their experiences as well.",
       "I learned how important it was to not assume someone else's knowledge level when it comes to technology. Having been a blogger for a while myself, I took my experience for granted. But, it was an altogether different experience to guide someone else to do it.",
       "Check out the live link. This is a functional blog that my friend uses actively and there's a readership of atleast 30+ individuals at this time. We are still growing!",
