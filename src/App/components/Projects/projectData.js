@@ -121,20 +121,27 @@ const projectsData = {
     media: `${process.env.PUBLIC_URL}/VisualArtistPage.png`,
     stack: () => {
       const icons = ["wix", "canva"];
-      return <Icons size={30} iconNames={icons} descShowFlag={false}/>;
+      return <Icons size={30} iconNames={icons} descShowFlag={false} />;
     },
   },
 
-  // 3: {
-  //   name: "ArtRoute",
-  //   description:
-  //     "Artists and craftspersons can use this application to plan and share their upcoming art drives. They can also manage their show setup list and enlist other artists for help. Visitors can pick out art drives to visit in their neighbourhood and plan a route. ",
-  //   details: ["a", "b", "c", "d", "e", "f"],
-  //   github: "https://github.com/sneham-boop/colourly",
-  //   live: null,
-  //   media:
-  //   "https://github.com/mariannebourcier/werun/raw/master/docs/images/homepage.png?raw=true",
-  // },
+  6: {
+    name: "ArtSee",
+    description:
+      "Artsee is a NextJS app that uses Artsy's API to explore art by famous artists.",
+    details: [
+      "I wanted to get more comfortable using NextJS and I am an artist. Thought it would be cool to connect to Artsy's API and allow some way to explore beautiful art by famous artists.",
+      "NextJS is a such a versatile platform. I loved how easy it was to setup API routes directly in the app. Couple that with the power of React and the possibilities are endless.",
+      "You can test the app by looking up artists in the input or click on any of the buttons, that will then search Artsy's API in the background. I tested the app via Postman, which came in very handy during the initial API set up process.",
+      "Next time I make another similar app, I want to try using TypeScript! I've heard how much of a difference it makes in error proofing everything and I want to explore that.",
+      "I'd love to add a way to save artists on different user profiles and use it as a way to save my inspirations.",
+      "I haven't really done any user testing with this app yet.",
+    ],
+    github: "https://github.com/sneham-boop/artsee",
+    live: "https://artsee-two.vercel.app/",
+    media:
+      "https://github.com/sneham-boop/artsee/blob/main/public/ExploreArt.png?raw=true",
+  },
   // 4: {
   //   name: "Remi",
   //   description:
