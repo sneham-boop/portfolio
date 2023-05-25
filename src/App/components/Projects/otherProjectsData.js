@@ -45,11 +45,11 @@ const projectsData = {
     description:
       "This blog is a collaborative effort with a resourceful and driven mommy friend. In 2023, we brought our idea to life, defining the project scope, training other moms in blogging, and strategizing scalability. Above all, we had a ton of fun working on this project.",
       details: [
-      "This was my friends idea and I helped her execute it. She's a highly resourceful individual and always keen in helping others succeed, whether its mottherhood or something related to career. This was a way for her to share her learnings while parenting a baby in the middle of a pandemic and we see it grow slowly to become a place where other mom's can share their experiences as well.",
-      "I learned how important it was to not assume someone else's knowledge level when it comes to technology. Having been a blogger for a while myself, I took my experience for granted. But, it was an altogether different experience to guide someone else to do it.",
-      "Check out the live link. This is a functional blog that my friend uses actively and there's a readership of atleast 30+ individuals at this time. We are still growing!",
-      "My friend wanted to have an option to write in our native language, Marathi. WIX currently does not support this and I'd love to explore this further with a different platform or develop my own.",
-      "We have not yet discussed further features to add, but, adding a forum section where different conversation threads can exist might be of soem value.",
+      "This was my friend's idea, and I helped her execute it. She is a highly resourceful individual and is always keen on helping others succeed, whether it is in motherhood or something related to their careers. This initiative was a way for her to share her learnings while parenting a baby in the middle of a pandemic, and we have witnessed it grow into a place where other moms can also share their experiences.",
+      "Ideas like these are executed by taking action consistently, even if progress can often seem slow. I'm proud of the result both of us contributed towards!",
+      "Check out the live link. This is a functional blog that my friend uses actively and we have a readership of atleast 30+ individuals at this time.",
+      "My friend wanted to have an option to write in our native language, Marathi. WIX currently does not support this and I'd love to explore this further with a different platform or quite likely, develop my own.",
+      "We have not yet discussed further features to add, but, adding a forum section where different conversation threads can exist might be of value.",
       "Over 130 people have accessed this website to read our blog, and we have received compliments on the design as well as constructive criticism on the usability. Initial tests exposed a few issues with the responsiveness of the website on multiple devices. I've taken efforts after that to make it more mobile friendly and responsive.",
     ],
     github: null,
