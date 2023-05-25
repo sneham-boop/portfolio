@@ -1,6 +1,6 @@
 @import "../../sass/global.module";
 
-#projects {
+.projects {
   position: relative;
   margin-top: 2em;
   padding: 0;
@@ -27,7 +27,7 @@
   }
 }
 
-#projects-container {
+.projects-container {
   margin-top: 3em;
   display: flex;
   flex-direction: row;
@@ -119,6 +119,10 @@
   }
 }
 
+// .other-projects .project{
+//   width: 30%;
+// }
+
 .project-modal {
   font-weight: $extra-thin;
   cursor: auto;
@@ -165,7 +169,7 @@
 // }
 
 @media screen and (max-width: 600px) {
-  #projects {
+  .projects {
     .project-text {
       font-size: $font-size-p-m;
       font-weight: $extra-thin;
@@ -174,11 +178,11 @@
       width: 100%;
     }
   }
-  #projects-container {
+  .projects-container {
     margin-top: 0;
     row-gap: 3em;
   }
-  #projects .project {
+  .projects .project {
     width: 90%;
     margin: 2em 0;
     .project-title {
